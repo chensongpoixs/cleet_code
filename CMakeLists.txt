@@ -7,5 +7,7 @@ ADD_DEFINITIONS(-g -Wall )
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 add_subdirectory(sum_of_two_numbers)
+add_subdirectory(2.add_two_numbers)
+add_subdirectory(3.longest_substring_without_repeating_characters)
 
 

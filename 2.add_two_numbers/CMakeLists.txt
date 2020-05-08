@@ -1,4 +1,4 @@
-project(1.csum_of_two_numbers)
+project(2.add_two_numbers)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 

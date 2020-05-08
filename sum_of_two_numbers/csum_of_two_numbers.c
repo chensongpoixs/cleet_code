@@ -3,7 +3,7 @@
 	
 	author:			chensong
 					
-	purpose:		sum_of_two_numbers
+	purpose:		1.sum_of_two_numbers
 我可能会遇到很多的人，听他们讲好2多的故事，我来写成故事或编成歌，用我学来的各种乐器演奏它。
 然后还可能在一个国家遇到一个心仪我的姑娘，她可能会被我帅气的外表捕获，又会被我深邃的内涵吸引，在某个下雨的夜晚，她会全身淋透然后要在我狭小的住处换身上的湿衣服。
 3小时候后她告诉我她其实是这个国家的公主，她愿意向父皇求婚。我不得已告诉她我是穿越而来的男主角，我始终要回到自己的世界。
@@ -34,7 +34,7 @@
 
 struct object 
 {
-	int m_index;
+	size_t m_index;
 	int m_value;
 };
 
@@ -43,14 +43,14 @@ static /*inline*/ int compare(const void * a, const void * b)
 	return ((struct object *)a)->m_value - ((struct object *)a)->m_value;
 }
 
-static int* two_sum(int *nums, size_t nums_size, int target)
+static size_t* two_sum(int *nums, size_t nums_size, int target)
 {
-	int i = 0;
-	int j = 0;
+	size_t i = 0;
+	size_t j = 0;
 	struct object * objs = malloc(nums_size * sizeof(*objs));
 	if (!objs)
 	{
-		printf("alloc failed nums_size = %lu\n", nums_size);
+		printf("alloc failed nums_size = %llu\n", nums_size);
 		return 0;
 	}
 	for (i = 0; i < nums_size; ++i)
@@ -61,7 +61,7 @@ static int* two_sum(int *nums, size_t nums_size, int target)
 	//排序
 	qsort(objs, nums_size, sizeof(*objs), compare);
 	
-	int * ret = malloc(2 * sizeof(int));
+	size_t * ret = malloc(2 * sizeof(size_t));
 	i = 0;
 	j = nums_size -1;
 	while (i < j)
@@ -101,10 +101,10 @@ int main(int argc, char *argv[])
 	int nums[] = {3, 2, 3};
 	int counts = sizeof(nums) / sizeof(*nums);
 	int target = 6;
-	int *find = two_sum(nums, counts, target);
+	size_t *find = two_sum(nums, counts, target);
 	if (find)
 	{
-		printf("find two index 1 = %d, index 2 = %d\n", find[0], find[1]);
+		printf("find two index 1 = %llu, index 2 = %llu\n", find[0], find[1]);
 	   free(find);
 		find = NULL;
 	}
