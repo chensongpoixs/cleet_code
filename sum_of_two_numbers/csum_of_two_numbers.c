@@ -50,7 +50,7 @@ static size_t* two_sum(int *nums, size_t nums_size, int target)
 	struct object * objs = malloc(nums_size * sizeof(*objs));
 	if (!objs)
 	{
-		printf("alloc failed nums_size = %llu\n", nums_size);
+		printf("alloc failed nums_size = %lu\n", nums_size);
 		return 0;
 	}
 	for (i = 0; i < nums_size; ++i)
@@ -104,8 +104,8 @@ int main(int argc, char *argv[])
 	size_t *find = two_sum(nums, counts, target);
 	if (find)
 	{
-		printf("find two index 1 = %llu, index 2 = %llu\n", find[0], find[1]);
-	   free(find);
+		printf("find two index 1 = %lu, index 2 = %lu\n", find[0], find[1]);
+	    free(find);
 		find = NULL;
 	}
 	else 
