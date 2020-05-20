@@ -43,11 +43,99 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+/**
+ * 复杂度分析
 
+时间复杂度：O(log(min(m, n)))
+首先，查找的区间是 [0,m]。
+而该区间的长度在每次循环之后都会减少为原来的一半。
+所以，我们只需要执行 log(m) 次循环。由于我们在每次循环中进行常量次数的操作，所以时间复杂度为 O(log(m)))。
+由于 m≤n，所以时间复杂度是 O(log(min(m,n)))。
+
+空间复杂度：O(1)O(1)，
+我们只需要恒定的内存来存储 9 个局部变量， 所以空间复杂度为 O(1)O(1)。
+
+ * @param arrayA
+ * @param arrayA_len
+ * @param arrayB
+ * @param arrayB_len
+ * @return
+ */
+#define  min(a, b)  ((a)>(b)?b:a)
+#define  max(a, b)  ((a)>(b)?a:b)
+
+double  find_the_median_of_two_positive_arrays(int *A, int arrayA_len, int *B, int arrayB_len)
+{
+    int *b = NULL;
+
+    // 判断两个有序数组 那个长度大的
+    if (arrayB_len < arrayA_len)
+    {
+        int temp_len = arrayA_len;
+        arrayA_len = arrayB_len;
+        arrayB_len = temp_len;
+        b = A;
+        A = B;
+        B = b;
+    }
+
+    int iMin = 0, iMax = arrayA_len;
+    // 两个有序数组中间数
+    int halfLen = (arrayA_len + arrayB_len + 1)/2;
+
+    // log(m)
+    while (iMin <= iMax)
+    {
+        int i = (iMin + iMax) / 2;
+        int j = halfLen - i;
+        if (i < iMax && B[j-1] > A[i]){
+            iMin = i + 1; // i is too small
+        }
+        else if (i > iMin && A[i-1] > B[j])
+        {
+            iMax = i - 1; // i is too big
+        }
+        else
+        { // i is perfect
+            int maxLeft = 0;
+            if (i == 0) { maxLeft = B[j-1]; }
+            else if (j == 0) { maxLeft = A[i-1]; }
+            else { maxLeft = max(A[i-1], B[j-1]); }
+            if ( (arrayA_len + arrayB_len) % 2 == 1 )
+            {
+                return maxLeft;
+            }
+
+            int minRight = 0;
+            if (i == arrayB_len)
+            {
+                minRight = B[j];
+            }
+            else if (j == arrayA_len)
+            {
+                minRight = A[i];
+            }
+            else
+            {
+                    minRight = min(B[j], A[i]);
+            }
+
+            return (maxLeft + minRight) / 2.0;
+        }
+    }
+    return 0.0;
+}
 
 int main(int argc, char *argv[])
 {
 
+    int arrayA[] = {1, 2};
+    int arrayB[] = {10, 11, 12, 13, 14, 15, 16, 17, 18};
+
+
+    double two_positive = find_the_median_of_two_positive_arrays(arrayA, sizeof(arrayA) /sizeof(int), arrayB, sizeof(arrayB) /sizeof(int));
+
+    printf("two_positive = %lf\n", two_positive);
     return EXIT_SUCCESS;
 }
 
