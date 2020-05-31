@@ -48,7 +48,7 @@ trie.search("app");     // 返回 true
 typedef struct {
 //    int m_word[128];  // ASCII
     int m_flag ;//是否一个字符串
-    void*  m_next_node_ptr[128];
+    void*  m_next_node_ptr[27];
 } Trie;
 //
 ///** Initialize your data structure here. */
@@ -63,14 +63,10 @@ Trie* trieCreate()
     }
 //    ptr->m_next_node_ptr = NULL;
     ptr->m_flag = 0;
-    for (int i = 0; i < 128; ++i)
+    for (int i = 0; i < 27; ++i)
     {
-
-
             ptr->m_next_node_ptr[i] = NULL;
-
     }
-
     return ptr;
 }
 //
@@ -86,7 +82,7 @@ void trieInsert(Trie* obj, char * word) {
         printf("word == null ptr\n");
         return;
     }
-    int word_len = strlen(word);
+    int word_len = strlen(word)+1;;
     printf("word_len = %d\n", word_len);
     //临时变量trie tree的变量
      Trie * ptr = obj;
@@ -94,27 +90,17 @@ void trieInsert(Trie* obj, char * word) {
      char c ;
     for (int i = 0; i < word_len; ++i)
     {
-        if (!ptr)
-        {
-            printf("NULL i = %d\n", i);
-            return;
-        }
-        c = word[i];
+        c = word[i] - 'a' < 0?0: (word[i] -'a'+1);
         if(ptr->m_next_node_ptr[ (int)c] == NULL /*-1*/)
         {
             //没有找到的情况
 //            printf("insert ok i = %d\n", i);
 //            ptr->m_word[(word[i])] = word[i];
-            if (ptr->m_next_node_ptr[ (int)c] != NULL )
-            {
-                printf("next i = %d, word = %c\n", i,  c);
-
-            }
-            if ((i + 1) == word_len)
-            {
-                ptr->m_flag = 1;
-
-            }
+//            if (ptr->m_next_node_ptr[ (int)c] != NULL )
+//            {
+//                printf("next i = %d, word = %c\n", i,  c);
+//
+//            }
             temp_node_ptr = trieCreate();
             if (!temp_node_ptr)
             {
@@ -125,6 +111,12 @@ void trieInsert(Trie* obj, char * word) {
 // 插入下一个节点指针
 
             ptr->m_next_node_ptr[ (int)c] = temp_node_ptr;
+            if ((i + 1) == word_len)
+            {
+                ptr->m_flag = 1;
+                return;
+            }
+
             //移动指针
             ptr = temp_node_ptr;
         }
@@ -137,7 +129,10 @@ void trieInsert(Trie* obj, char * word) {
                 ptr->m_flag = 1;
                 return;
             }
-
+            if (ptr->m_next_node_ptr[ (int)c] == NULL)
+            {
+                ptr->m_next_node_ptr[ (int)c] = trieCreate();
+            }
             ptr = ptr->m_next_node_ptr[ (int)c];
 
 
@@ -159,21 +154,18 @@ int trieSearch(Trie* obj, char * word) {
         printf("word == null ptr\n");
         return 0;
     }
-    int word_len = strlen(word);
+    int word_len = strlen(word) +1;
      Trie * ptr = obj;
      Trie * temp_node_ptr  = NULL;
      char c ;
     for (int i = 0; i < word_len; ++i)
     {
-        if (!ptr)
-        {
-            return 0;
-        }
-        c = word[i];
+        c = word[i] - 'a' < 0?0: (word[i] -'a'+1);
+        //c = word[i];
         if(ptr->m_next_node_ptr[(int)c] ==  NULL /*-1*/)
         {
             //没有找到
-//            printf("i = %d, word_len = %d, flag = %d\n", i, word_len, ptr->m_flag);
+            printf("i = %d, word_len = %d, flag = %d\n", i, word_len, ptr->m_flag);
             return 0;
         }
         else
@@ -209,18 +201,15 @@ int  trieStartsWith(Trie* obj, char * prefix) {
         printf("prefix == null ptr\n");
         return 0;
     }
-    int prefix_len = strlen(prefix);
+    int prefix_len = strlen(prefix) +1;;
      Trie * ptr = obj;
      Trie * temp_node_ptr  = NULL;
      char c ;
     for (int i = 0; i < prefix_len; ++i)
     {
-        if (!ptr)
-        {
-            return 0;
-        }
-        c = prefix[i];
-        if(ptr->m_next_node_ptr[(int)c] == NULL)
+//        c = prefix[i];
+        c = prefix[i] - 'a' < 0?0: (prefix[i] -'a'+1);
+        if(ptr->m_next_node_ptr[(int)c] == NULL   && c != '\0')
         {
             //没有找到
             return 0;
@@ -347,7 +336,7 @@ int main(int argc, char *argv[])
 
 //    ["Trie","startsWith"]
 //    [[],["a"]]
-    char * word = "startsWith";
+    char * word = "";
     char * prefix = "app";
     Trie* obj = trieCreate();;
 //    printf("obj = %p\n", obj);
@@ -355,7 +344,7 @@ int main(int argc, char *argv[])
     trieInsert(obj, word);
 //    printf("obj = %p\n", obj);
 //    show(obj);
-    word = "a";
+    word = "";
      int param_2 = trieSearch(obj, word);
 //    show(obj);
 //    printf("obj = %p\n", obj);
@@ -364,14 +353,14 @@ int main(int argc, char *argv[])
 //    show(obj);
 //    printf("obj = %p\n", obj);
 //    printf("param_2 = %d\n", param_2);
-    param_2 = trieStartsWith(obj, prefix);
+//    param_2 = trieStartsWith(obj, prefix);
 //    word = "app";
-       trieInsert(obj, prefix);
+//       trieInsert(obj, prefix);
 //    printf("obj = %p\n", obj);
-    printf("param_2 = %d\n", param_2);
-    int param_3 = trieSearch(obj, prefix);
+//    printf("param_2 = %d\n", param_2);
+//    int param_3 = trieSearch(obj, prefix);
 
-    printf("param_3 = %d\n", param_3);
+//    printf("param_3 = %d\n", param_3);
      trieFree(obj);
     return 0;
 }
