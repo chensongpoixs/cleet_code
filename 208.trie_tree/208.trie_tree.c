@@ -3,7 +3,7 @@
 
 	author:			chensong
 
-	purpose:		4.find_the_median_of_two_positive_arrays
+	purpose:		208.trie_tree
 我可能会遇到很多的人，听他们讲好2多的故事，我来写成故事或编成歌，用我学来的各种乐器演奏它。
 然后还可能在一个国家遇到一个心仪我的姑娘，她可能会被我帅气的外表捕获，又会被我深邃的内涵吸引，在某个下雨的夜晚，她会全身淋透然后要在我狭小的住处换身上的湿衣服。
 3小时候后她告诉我她其实是这个国家的公主，她愿意向父皇求婚。我不得已告诉她我是穿越而来的男主角，我始终要回到自己的世界。
@@ -91,6 +91,7 @@ void trieInsert(Trie* obj, char * word) {
     //临时变量trie tree的变量
      Trie * ptr = obj;
      Trie * temp_node_ptr  = NULL;
+     char c ;
     for (int i = 0; i < word_len; ++i)
     {
         if (!ptr)
@@ -98,14 +99,15 @@ void trieInsert(Trie* obj, char * word) {
             printf("NULL i = %d\n", i);
             return;
         }
-        if(ptr->m_next_node_ptr[(word[i])] == NULL /*-1*/)
+        c = word[i];
+        if(ptr->m_next_node_ptr[ (int)c] == NULL /*-1*/)
         {
             //没有找到的情况
 //            printf("insert ok i = %d\n", i);
 //            ptr->m_word[(word[i])] = word[i];
-            if (ptr->m_next_node_ptr[(word[i])] != NULL )
+            if (ptr->m_next_node_ptr[ (int)c] != NULL )
             {
-                printf("next i = %d, word = %c\n", i, word[i]);
+                printf("next i = %d, word = %c\n", i,  c);
 
             }
             if ((i + 1) == word_len)
@@ -122,7 +124,7 @@ void trieInsert(Trie* obj, char * word) {
 //
 // 插入下一个节点指针
 
-            ptr->m_next_node_ptr[(word[i])] = temp_node_ptr;
+            ptr->m_next_node_ptr[ (int)c] = temp_node_ptr;
             //移动指针
             ptr = temp_node_ptr;
         }
@@ -136,7 +138,7 @@ void trieInsert(Trie* obj, char * word) {
                 return;
             }
 
-            ptr = ptr->m_next_node_ptr[(word[i])];
+            ptr = ptr->m_next_node_ptr[ (int)c];
 
 
         }
@@ -160,13 +162,15 @@ int trieSearch(Trie* obj, char * word) {
     int word_len = strlen(word);
      Trie * ptr = obj;
      Trie * temp_node_ptr  = NULL;
+     char c ;
     for (int i = 0; i < word_len; ++i)
     {
         if (!ptr)
         {
             return 0;
         }
-        if(ptr->m_next_node_ptr[(word[i])] ==  NULL /*-1*/)
+        c = word[i];
+        if(ptr->m_next_node_ptr[(int)c] ==  NULL /*-1*/)
         {
             //没有找到
 //            printf("i = %d, word_len = %d, flag = %d\n", i, word_len, ptr->m_flag);
@@ -184,7 +188,7 @@ int trieSearch(Trie* obj, char * word) {
                 }
 
             }
-            temp_node_ptr = ptr->m_next_node_ptr[(word[i])];
+            temp_node_ptr = ptr->m_next_node_ptr[(int)c];
             ptr = temp_node_ptr;
 
         }
@@ -208,13 +212,15 @@ int  trieStartsWith(Trie* obj, char * prefix) {
     int prefix_len = strlen(prefix);
      Trie * ptr = obj;
      Trie * temp_node_ptr  = NULL;
+     char c ;
     for (int i = 0; i < prefix_len; ++i)
     {
         if (!ptr)
         {
             return 0;
         }
-        if(ptr->m_next_node_ptr[prefix[i]] == NULL)
+        c = prefix[i];
+        if(ptr->m_next_node_ptr[(int)c] == NULL)
         {
             //没有找到
             return 0;
@@ -222,7 +228,7 @@ int  trieStartsWith(Trie* obj, char * prefix) {
         else
         {
             //找到的情况
-            temp_node_ptr = ptr->m_next_node_ptr[(prefix[i])];
+            temp_node_ptr = ptr->m_next_node_ptr[(int)c];
             ptr = temp_node_ptr;
         }
     }
@@ -348,7 +354,7 @@ int main(int argc, char *argv[])
 //    show(obj);
     trieInsert(obj, word);
 //    printf("obj = %p\n", obj);
-    show(obj);
+//    show(obj);
     word = "a";
      int param_2 = trieSearch(obj, word);
 //    show(obj);
@@ -358,14 +364,14 @@ int main(int argc, char *argv[])
 //    show(obj);
 //    printf("obj = %p\n", obj);
 //    printf("param_2 = %d\n", param_2);
-//    param_2 = trieStartsWith(obj, prefix);
+    param_2 = trieStartsWith(obj, prefix);
 //    word = "app";
-//       trieInsert(obj, prefix);
+       trieInsert(obj, prefix);
 //    printf("obj = %p\n", obj);
-//    printf("param_2 = %d\n", param_2);
-//    int param_3 = trieSearch(obj, prefix);
+    printf("param_2 = %d\n", param_2);
+    int param_3 = trieSearch(obj, prefix);
 
-//    printf("param_3 = %d\n", param_3);
+    printf("param_3 = %d\n", param_3);
      trieFree(obj);
     return 0;
 }
