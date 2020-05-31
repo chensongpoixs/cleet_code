@@ -129,7 +129,7 @@ double  find_the_median_of_two_positive_arrays(int *A, int arrayA_len, int *B, i
 int main(int argc, char *argv[])
 {
 
-    int arrayA[] = {1, 2};
+    int arrayA[] = {1, 233};
     int arrayB[] = {10, 11, 12, 13, 14, 15, 16, 17, 18};
 
 

@@ -10,5 +10,8 @@ add_subdirectory(1.sum_of_two_numbers)
 add_subdirectory(2.add_two_numbers)
 add_subdirectory(3.longest_substring_without_repeating_characters)
 add_subdirectory(4.find_the_median_of_two_positive_arrays)
+#add_subdirectory(cvptr)
+add_subdirectory(5.longest_palindromic_substring)
+add_subdirectory(208.trie_tree)
 
 
