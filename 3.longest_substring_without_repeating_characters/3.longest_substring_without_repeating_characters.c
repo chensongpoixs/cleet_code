@@ -75,6 +75,7 @@ int main(int argc, char *argv[])
 		exit(-1);
 	}
 	printf("%d\n", length_of_longest_substring(argv[1]));
-	
+
+
 	return EXIT_SUCCESS;
 }
