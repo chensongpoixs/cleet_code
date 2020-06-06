@@ -12,6 +12,7 @@ add_subdirectory(3.longest_substring_without_repeating_characters)
 add_subdirectory(4.find_the_median_of_two_positive_arrays)
 #add_subdirectory(cvptr)
 add_subdirectory(5.longest_palindromic_substring)
+add_subdirectory(6.zigzag_conversion)
 add_subdirectory(208.trie_tree)
 add_subdirectory(211.add_and_search_word)
 
