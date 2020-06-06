@@ -243,8 +243,21 @@ char * convertmod(char * s, int numRows)
     struct clist * data_ptr = NULL;
     while (index < strlen(s) )
     {
-//        int num = (index +1) % ((numRows* 2) -2) ;
-        int mod =  index % numRows;//((num > numRows )? (((numRows* 2) -2) - numRows  ):(num)) %numRows;
+        int mod = 0;
+        int num = (index +1) % ((numRows* 2) -2) ;
+        if (num == 0)
+        {
+            mod = 1;
+        }
+        else
+        {
+            //这里因为 上面的inedx +1 所以要去了 1  分两种情况
+            // 1:一个是大于numRows时需要加1
+            // 2:小于numRows要减去1
+             mod =  num >numRows ? ((numRows* 2) -2) - num +1 : num-1; //TODO@chensong 2020-06-06 这里面有？？？
+        }
+
+        //((num > numRows )? (((numRows* 2) -2) - numRows  ):(num)) %numRows;
         if (index >= numRows)
         {
             clist * temp_ptr = malloc(sizeof(struct clist));
@@ -432,10 +445,17 @@ int main(int argc, char *argv[])
 {
 //    输入: s = "LEETC ODEIS HIRIN G", numRows = 4
 //    输出: "LDREOEIIECIHNTSG"
+//    "PAYPALISHIRING"
+//    4
     char * input = "PAYPALISHIRING";
-    char *ouput = convert(input, 3);
+                 // PINAALSRIGYHPI
+                 // PINALSIGYAHRPI
+                 // PINALSIGYHPAIR
+                 // PAHNAPLSIIGYIR
+                 // PAHNAPLSIIGYIR
+//    char *ouput = convert(input, 4);
 //    char *ouput = show(input, 4);
-//    char *ouput = convertmod(input, 3);
+    char *ouput = convertmod(input, 4);
     if (ouput)
     {
         printf("[output = %s]\n", ouput);

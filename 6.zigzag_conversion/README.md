@@ -56,3 +56,19 @@ T     S     G
 ``` 
 公式 = (numrows * 2 - 2) % numrows //得到当前行数
 ```
+
+
+```  
+        int mod = 0;
+        int num = (index +1) % ((numRows* 2) -2) ;
+        if (num == 0)
+        {
+            mod = 1; // 最后倒数一个数  
+        }
+        else
+        {    //这里因为 上面的inedx +1 所以要去了 1  分两种情况  
+            // 1:一个是大于numRows时需要加1
+            // 2:小于numRows要减去1
+             mod =  num >numRows ? ((numRows* 2) -2) - num +1 : num-1; //TODO@chensong 2020-06-06 这里面有？？？ 
+        }
+```
