@@ -72,3 +72,19 @@ T     S     G
              mod =  num >numRows ? ((numRows* 2) -2) - num +1 : num-1; //TODO@chensong 2020-06-06 这里面有？？？ 
         }
 ```
+
+
+
+
+
+
+
+
+步长计算公式
+
+``` 
+//步长计算公式  TODO@chensong  2020-06-07
+        int interval1 = numRows + numRows -2 - (rows * 2);
+        int interval2 = rows * 2;
+
+```

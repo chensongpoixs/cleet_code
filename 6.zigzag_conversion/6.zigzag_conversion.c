@@ -317,6 +317,57 @@ char * convertmod(char * s, int numRows)
     return zigzog;
 
 }
+
+/**
+ *取模
+ * @param s
+ * @param numRows
+ * @return
+ */
+char * convert_c(char * s, int numRows)
+{
+    //临界点情况
+    if (strlen(s) < 3 || !s || numRows < 2 || numRows >= strlen(s))
+    {
+        return s;
+    }
+    char *zigzag = malloc(strlen(s) +1);
+    if (!zigzag)
+    {
+        return s;
+    }
+    char *p = zigzag;
+    for (int rows = 0; rows < numRows; ++rows)
+    {
+        //步长计算公式  TODO@chensong  2020-06-07
+        // 计算中字符的步长  对应行数
+        int interval1 = numRows + numRows -2 - (rows * 2);
+        // 第二次 时候
+        int interval2 = rows * 2;
+
+        int i = rows;
+        int flag = 0;
+        while (i < strlen(s))
+        {
+            *p++ = s[i];
+            int data = 0;
+            do
+            {
+                data = flag == 0? interval1 : interval2;
+                flag = !flag;
+            }
+            while(data == 0);
+            i+=data;
+        }
+
+    }
+    zigzag[strlen(s)] = '\0';
+    return zigzag;
+}
+
+
+
+
 char* show(char * s, int numRows)
 {
     clist* m_list = malloc(sizeof(struct clist) * numRows);
@@ -454,8 +505,8 @@ int main(int argc, char *argv[])
                  // PAHNAPLSIIGYIR
                  // PAHNAPLSIIGYIR
 //    char *ouput = convert(input, 4);
-//    char *ouput = show(input, 4);
-    char *ouput = convertmod(input, 4);
+    char *ouput = convert_c(input, 4);
+//    char *ouput = convertmod(input, 4);
     if (ouput)
     {
         printf("[output = %s]\n", ouput);
