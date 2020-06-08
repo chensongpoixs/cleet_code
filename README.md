@@ -15,6 +15,7 @@ LeetCode刷题思路分析
 |2020-06-05|![5. 最长回文子串](https://github.com/chensongpoixs/cleet_code/tree/master/5.longest_palindromic_substring "5. 最长回文子串")||中等||
 |2020-06-06|![6. Z 字形变换](https://github.com/chensongpoixs/cleet_code/tree/master/6.zigzag_conversion "6. Z 字形变换")|模的使用和队列的性质|中等||
 |2020-06-07|![7. 整数反转](https://github.com/chensongpoixs/cleet_code/tree/master/7.reverse_integer "7. 整数反转")|二进制考察|简单||
+|2020-06-08|![8. 字符串转换整数 (atoi)](https://github.com/chensongpoixs/cleet_code/tree/master/8.string_to_integer "8. 字符串转换整数 (atoi)")|二进制考察|中等||
 |2020-05-31|![208. 实现 Trie (前缀树)](https://github.com/chensongpoixs/cleet_code/tree/master/208.trie_tree "208.实现 Trie (前缀树)")|trie tree|中等|3, 208,211|
 |2020-06-02|![211. 添加与搜索单词 - 数据结构设计](https://github.com/chensongpoixs/cleet_code/tree/master/211.add_and_search_word "211. 添加与搜索单词 - 数据结构设计")|trie tree, 深度优先遍历算法（DFS）|中等|3, 208, 211|
 
