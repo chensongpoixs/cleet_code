@@ -1,67 +1,67 @@
-# 208. ʵ�� Trie (ǰ׺��)
+# 208. 实现 Trie (前缀树)
    
    
    
-208. ��Ŀ��
+208. 题目：
 
-ʵ��һ�� Trie (ǰ׺��)������ insert, search, �� startsWith ������������
+实现一个 Trie (前缀树)，包含 insert, search, 和 startsWith 这三个操作。
 
-ʾ��:
+示例:
 
 ```
 Trie trie = new Trie();
 
 trie.insert("apple");
-trie.search("apple");   // ���� true
-trie.search("app");     // ���� false
-trie.startsWith("app"); // ���� true
+trie.search("apple");   // 返回 true
+trie.search("app");     // 返回 false
+trie.startsWith("app"); // 返回 true
 trie.insert("app");   
-trie.search("app");     // ���� true
+trie.search("app");     // 返回 true
    ```
    
    
    
 
    
-�ܽ�
-���������м��û������������������ݣ����ݽṹ Trie��ǰ׺������������Ĳ�����
+总结
+本文面向中级用户。它介绍了以下内容：数据结构 Trie（前缀树）及其最常见的操作。
 
-����
-Ӧ��
-Trie (����Ϊ "try") ��ǰ׺����һ�������ݽṹ�����ڼ����ַ������ݼ��еļ�����һ��Ч�����ݽṹ�ж���Ӧ�ã�
+正文
+应用
+Trie (发音为 "try") 或前缀树是一种树数据结构，用于检索字符串数据集中的键。这一高效的数据结构有多种应用：
 
-1. �Զ���ȫ
-   - �ȸ����������
-   - ƴд���
-2. ���ִ��������е�ƴд���
-   - IP ·�� (�ǰ׺ƥ��)
-3.  ʹ��Trie�����ǰ׺ƥ���㷨��Internet Э�飨IP��·��������ת����ѡ��·����
-4. T9 (�Ź���) ����Ԥ��
-   - T9���Ź������룩���� 20 ���� 90 ����������ֻ�����
-5. ������Ϸ
-   - Trie ����ͨ����֦�����ռ�����Ч��� Boggle ������Ϸ
-6.�������û�����
+1. 自动补全
+   - 谷歌的搜索建议
+   - 拼写检查
+2. 文字处理软件中的拼写检查
+   - IP 路由 (最长前缀匹配)
+3.  使用Trie树的最长前缀匹配算法，Internet 协议（IP）路由中利用转发表选择路径。
+4. T9 (九宫格) 打字预测
+   - T9（九宫格输入），在 20 世纪 90 年代常用于手机输入
+5. 单词游戏
+   - Trie 树可通过剪枝搜索空间来高效解决 Boggle 单词游戏
+6.黑名单用户过滤
 
-�������������ݽṹ����ƽ�����͹�ϣ����ʹ�����ܹ����ַ������ݼ����������ʡ�Ϊʲô���ǻ���Ҫ Trie ���أ����ܹ�ϣ�������� O(1)O(1) ʱ����Ѱ�Ҽ�ֵ��ȴ�޷���Ч��������²�����
+还有其他的数据结构，如平衡树和哈希表，使我们能够在字符串数据集中搜索单词。为什么我们还需要 Trie 树呢？尽管哈希表可以在 O(1)O(1) 时间内寻找键值，却无法高效的完成以下操作：
 
-�ҵ�����ͬһǰ׺��ȫ����ֵ��
-���ʵ���ö���ַ��������ݼ���
-Trie �����ڹ�ϣ������һ�������ǣ����Ź�ϣ����С���ӣ�����ִ����ĳ�ͻ��ʱ�临�Ӷȿ������ӵ� O(n)O(n)������ nn �ǲ���ļ������������ϣ����ȣ�Trie ���ڴ洢���������ͬǰ׺�ļ�ʱ����ʹ�ý��ٵĿռ䡣��ʱ Trie ��ֻ��Ҫ O(m)O(m) ��ʱ�临�Ӷȣ����� mm Ϊ����������ƽ�����в��Ҽ�ֵ��Ҫ O(m \log n)O(mlogn) ʱ�临�Ӷȡ�
+找到具有同一前缀的全部键值。
+按词典序枚举字符串的数据集。
+Trie 树优于哈希表的另一个理由是，随着哈希表大小增加，会出现大量的冲突，时间复杂度可能增加到 O(n)O(n)，其中 nn 是插入的键的数量。与哈希表相比，Trie 树在存储多个具有相同前缀的键时可以使用较少的空间。此时 Trie 树只需要 O(m)O(m) 的时间复杂度，其中 mm 为键长。而在平衡树中查找键值需要 O(m \log n)O(mlogn) 时间复杂度。
 
-Trie ���Ľ��ṹ
-Trie ����һ���и�������������������ֶΣ���
+Trie 树的结点结构
+Trie 树是一个有根的树，其结点具有以下字段：。
 
-��� RR ��ָ���ӽ������ӣ�����ÿ�����Ӷ�Ӧ��ĸ�����ݼ��е�һ����ĸ��
-�����мٶ� RR Ϊ 26��Сд������ĸ��������
-�����ֶΣ���ָ���ڵ��Ƕ�Ӧ���Ľ�β����ֻ�Ǽ�ǰ׺��
+最多 RR 个指向子结点的链接，其中每个链接对应字母表数据集中的一个字母。
+本文中假定 RR 为 26，小写拉丁字母的数量。
+布尔字段，以指定节点是对应键的结尾还是只是键前缀。
 
 
- 6. ���� "leet" �� Trie ���еı�ʾ
+ 6. 单词 "leet" 在 Trie 树中的表示
 
 ```
 
 typedef struct {
-    int m_flag ;//�Ƿ�һ���ַ���
+    int m_flag ;//是否一个字符串
     void*  m_next_node_ptr[128]; //ASCII  
 } Trie;
 
@@ -69,18 +69,18 @@ typedef struct {
 
 ```
 
-Trie ������������������Ǽ��Ĳ���Ͳ��ҡ�
+Trie 树中最常见的两个操作是键的插入和查找。
 
-�� Trie ���в����
-����ͨ������ Trie ��������һ���������ǴӸ���ʼ��������Ӧ�ڵ�һ�����ַ������ӡ������������
+向 Trie 树中插入键
+我们通过搜索 Trie 树来插入一个键。我们从根开始搜索它对应于第一个键字符的链接。有两种情况：
 
-���Ӵ��ڡ����������ƶ���������һ���Ӳ㡣�㷨����������һ�����ַ���
-���Ӳ����ڡ�����һ���µĽڵ㣬�������븸�ڵ�������������������뵱ǰ�ļ��ַ���ƥ�䡣
-�ظ����ϲ��裬ֱ������������һ���ַ���Ȼ�󽫵�ǰ�ڵ���Ϊ�����ڵ㣬�㷨��ɡ�
+链接存在。沿着链接移动到树的下一个子层。算法继续搜索下一个键字符。
+链接不存在。创建一个新的节点，并将它与父节点的链接相连，该链接与当前的键字符相匹配。
+重复以上步骤，直到到达键的最后一个字符，然后将当前节点标记为结束节点，算法完成。
 
 
 
- 7. �� Trie ���в����
+ 7. 向 Trie 树中插入键
 
 ``` 
 ///** Inserts a word into the trie. */
@@ -97,7 +97,7 @@ void trieInsert(Trie* obj, char * word) {
     }
     int word_len = strlen(word);
     printf("word_len = %d\n", word_len);
-    //��ʱ����trie tree�ı���
+    //临时变量trie tree的变量
      Trie * ptr = obj;
      Trie * temp_node_ptr  = NULL;
      char c ;
@@ -111,7 +111,7 @@ void trieInsert(Trie* obj, char * word) {
         c = word[i];
         if(ptr->m_next_node_ptr[ (int)c] == NULL /*-1*/)
         {
-            //û���ҵ������
+            //没有找到的情况
             if (ptr->m_next_node_ptr[ (int)c] != NULL )
             {
                 printf("next i = %d, word = %c\n", i,  c);
@@ -127,15 +127,15 @@ void trieInsert(Trie* obj, char * word) {
             {
                 return;
             }
-// ������һ���ڵ�ָ��
+// 插入下一个节点指针
 
             ptr->m_next_node_ptr[ (int)c] = temp_node_ptr;
-            //�ƶ�ָ��
+            //移动指针
             ptr = temp_node_ptr;
         }
         else
         {
-            //�ҵ������
+            //找到的情况
             if ((i + 1) == word_len)
             {
                 ptr->m_flag = 1;
@@ -147,13 +147,13 @@ void trieInsert(Trie* obj, char * word) {
 }
 ```
 
-���Ӷȷ���
+复杂度分析
 
-ʱ�临�Ӷȣ�O(m)O(m)������ mm Ϊ���������㷨��ÿ�ε����У�����Ҫô���Ҫô����һ���ڵ㣬ֱ�������β��ֻ��Ҫ mm �β�����
+时间复杂度：O(m)O(m)，其中 mm 为键长。在算法的每次迭代中，我们要么检查要么创建一个节点，直到到达键尾。只需要 mm 次操作。
 
-�ռ临�Ӷȣ�O(m)O(m)���������£��²���ļ��� Trie �������еļ�û�й���ǰ׺����ʱ��Ҫ���� mm ����㣬ʹ�� O(m)O(m) �ռ䡣
+空间复杂度：O(m)O(m)。最坏的情况下，新插入的键和 Trie 树中已有的键没有公共前缀。此时需要添加 mm 个结点，使用 O(m)O(m) 空间。
 
-�� Trie ���в��Ҽ�
+在 Trie 树中查找键
 
 
 ``` 
@@ -183,13 +183,13 @@ int trieSearch(Trie* obj, char * word) {
         c = word[i];
         if(ptr->m_next_node_ptr[(int)c] ==  NULL /*-1*/)
         {
-            //û���ҵ�
+            //没有找到
 //            printf("i = %d, word_len = %d, flag = %d\n", i, word_len, ptr->m_flag);
             return 0;
         }
         else
         {
-//            //�ҵ������
+//            //找到的情况
             if ((i + 1) == word_len)
             {
 
@@ -210,21 +210,21 @@ int trieSearch(Trie* obj, char * word) {
 
 ```
 
-ÿ������ trie �б�ʾΪ�Ӹ����ڲ��ڵ��Ҷ��·���������õ�һ�����ַ��Ӹ���ʼ������鵱ǰ�ڵ�������ַ���Ӧ�����ӡ������������
+每个键在 trie 中表示为从根到内部节点或叶的路径。我们用第一个键字符从根开始，。检查当前节点中与键字符对应的链接。有两种情况：
 
-�������ӡ������ƶ��������Ӻ���·���е���һ���ڵ㣬������������һ�����ַ���
-���������ӡ������޼��ַ����ҵ�ǰ�����Ϊ m_flag���򷵻� true�����������ֿ��ܣ������� false :
-���м��ַ�ʣ�࣬���޷����� Trie ���ļ�·�����Ҳ�������
-û�м��ַ�ʣ�࣬����ǰ���û�б��Ϊ m_flag��Ҳ����˵�������Ҽ�ֻ��Trie������һ������ǰ׺��
+存在链接。我们移动到该链接后面路径中的下一个节点，并继续搜索下一个键字符。
+不存在链接。若已无键字符，且当前结点标记为 m_flag，则返回 true。否则有两种可能，均返回 false :
+还有键字符剩余，但无法跟随 Trie 树的键路径，找不到键。
+没有键字符剩余，但当前结点没有标记为 m_flag。也就是说，待查找键只是Trie树中另一个键的前缀。
 
-���Ӷȷ���
+复杂度分析
 
-ʱ�临�Ӷ� : O(m)O(m)���㷨��ÿһ����������һ�����ַ�������������Ҫ mm �β�����
-�ռ临�Ӷ� : O(1)O(1)��
-���� Trie ���еļ�ǰ׺
-�÷������� Trie ����������ʱʹ�õķ����ǳ����ơ����ǴӸ����� Trie ����ֱ����ǰ׺��û���ַ��������޷��õ�ǰ�ļ��ַ����� Trie �е�·�����������ᵽ�ġ����������㷨Ψһ�������ǣ������ǰ׺��ĩβʱ�����Ƿ��� true�����ǲ���Ҫ���ǵ�ǰ Trie �ڵ��Ƿ��� ��isend�� ��ǣ���Ϊ�����������Ǽ���ǰ׺����������������
+时间复杂度 : O(m)O(m)。算法的每一步均搜索下一个键字符。最坏的情况下需要 mm 次操作。
+空间复杂度 : O(1)O(1)。
+查找 Trie 树中的键前缀
+该方法与在 Trie 树中搜索键时使用的方法非常相似。我们从根遍历 Trie 树，直到键前缀中没有字符，或者无法用当前的键字符继续 Trie 中的路径。与上面提到的“搜索键”算法唯一的区别是，到达键前缀的末尾时，总是返回 true。我们不需要考虑当前 Trie 节点是否用 “isend” 标记，因为我们搜索的是键的前缀，而不是整个键。
 
-���Ӷȷ���
+复杂度分析
 
-ʱ�临�Ӷ� : O(m)O(m)��
-�ռ临�Ӷ� : O(1)O(1)��
+时间复杂度 : O(m)O(m)。
+空间复杂度 : O(1)O(1)。
