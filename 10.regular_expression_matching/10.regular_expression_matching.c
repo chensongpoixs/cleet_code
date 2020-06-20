@@ -84,5 +84,16 @@ bool isMatch(char * s, char * p)
 
 int main(int argc, char *argv[])
 {
+    char * s = "mississippi";
+    char * p = "mis*is*p*.";
+    bool find = isMatch(s, p);
+    if (find)
+    {
+        printf("find true\n");
+    }
+    else
+    {
+        printf("not find false\n");
+    }
     return EXIT_SUCCESS;
 }
