@@ -20,7 +20,7 @@ jobs:
       run: pwd && cd bin && sudo ./2.add_two_numbers 34  54
     
     - name: 3.longest_substring_without_repeating_characters
-      run: pwd && cd bin && sudo ./3.longest_substring_without_repeating_characters
+      run: pwd && cd bin && sudo ./3.longest_substring_without_repeating_characters  dsfds
       
     - name: 4.find_the_median_of_two_positive_arrays
       run: pwd && cd bin && sudo ./4.find_the_median_of_two_positive_arrays
