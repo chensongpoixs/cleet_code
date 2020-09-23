@@ -1,0 +1,17 @@
+name: C/C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: 编译
+      run: mkdir -p linux_build && cd linux_build && cmake .. && make -j4
+
+    - name: 运行MediaServer
+      run: pwd && cd bin && sudo ./1.sum_of_two_numbers -d & && sudo ./2.add_two_numbers -d & && sudo ./3.longest_substring_without_repeating_characters -d & 
