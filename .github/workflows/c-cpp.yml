@@ -44,8 +44,7 @@ jobs:
     - name: 10.regular_expression_matching
       run: pwd && cd bin && sudo ./10.regular_expression_matching
     
-    - name: 208.trie_tree
-      run: pwd && cd bin && sudo ./208.trie_tree
+
       
     - name: 211.add_and_search_word
       run: pwd && cd bin && sudo ./211.add_and_search_word
