@@ -121,8 +121,9 @@ bool isMatch(char * s, char * p)
 // cmd ./test mississippi   mis*is*p*.
 int main(int argc, char *argv[])
 {
-    
-    bool find = isMatch(argv[1], argv[2]);
+    char * s = "mississippi";
+    char * p = "mis*is*p*.";
+    bool find = isMatch(s, p);
     if (find)
     {
         printf("find true\n");
