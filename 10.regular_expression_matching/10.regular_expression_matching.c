@@ -76,17 +76,53 @@ typedef int bool;
 
 bool isMatch(char * s, char * p)
 {
-
-    return true;
+    //判断是否空字符
+    if (*p == '\0')
+    {
+        return *s == '\0';
+    }
+    // p第二字符一定不是* 才会走下面的步骤  不是'*'走这一步骤判断
+    // 情况 1: s = "abwd"; p = "a";
+    // 情况 2: s = "abwd"; p = "."; 
+    if (*(p +1) == '\0' || *(p +1) != '*')
+    {
+        if (*s == '\0' || (*p != '.' && *s != *p))
+        {
+            return false;
+        }
+        else 
+        {
+            return  isMatch(s +1, p + 1);
+        }
+    }
+    // 如果当前p的字符串 是'*'走这一步骤   // 使用分而治之的思想来整理的
+    int len = strlen(s);
+    int i = -1;
+    // 前面第一个是 '.'或者 和 *p == *(s + i)  有可能 在s中有相同的字符  
+    //情况1: s = "bbbb" p = "b*";====> *p = *(s + i)的情况
+    //情况2: s = "abcdw"; p = ".*"; 对应的是 *p = ".";情况
+    while (i < len && (i < 0 || *p == '.' || *p == *(s +i)))
+    {
+        if (isMatch(s +i + 1, p + 2))
+        {
+            return true;
+        }
+        ++i;
+    }
+    return false;
 }
 
 
+/**
+ * char * s = "mississippi";
+    char * p = "mis*is*p*.";
+ */
 
+// cmd ./test mississippi   mis*is*p*.
 int main(int argc, char *argv[])
 {
-    char * s = "mississippi";
-    char * p = "mis*is*p*.";
-    bool find = isMatch(s, p);
+    
+    bool find = isMatch(argv[1], argv[2]);
     if (find)
     {
         printf("find true\n");
