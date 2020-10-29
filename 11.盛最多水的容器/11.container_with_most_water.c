@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 		nums[i+1] = argv[i+1];
 	}
 
-	printf("area size = %d\n", maxArea(height, height_size));
+	printf("area size = %d\n", maxArea(nums, count));
 	if (nums)
 	{
 		free(nums);
