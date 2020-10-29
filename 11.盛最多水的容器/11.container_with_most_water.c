@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 	}
 	for (int i = 0; i < count; ++i)
 	{
-		nums[i+1] = argv[i+1];
+		nums[i+1] = atoi(argv[i+1]);
 	}
 
 	printf("area size = %d\n", maxArea(nums, count));
