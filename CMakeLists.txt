@@ -17,6 +17,7 @@ add_subdirectory(7.reverse_integer)
 add_subdirectory(8.string_to_integer)
 add_subdirectory(9.palindrome_number)
 add_subdirectory(10.regular_expression_matching)
+add_subdirectory(11.盛最多水的容器)
 add_subdirectory(208.trie_tree)
 add_subdirectory(211.add_and_search_word)
 

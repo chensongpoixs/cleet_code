@@ -43,7 +43,9 @@ jobs:
       
     - name: 10.regular_expression_matching
       run: pwd && cd bin && sudo ./10.regular_expression_matching
-    
+
+    - name: 11.盛最多水的容器
+        run: pwd && cd bin && sudo ./11.盛最多水的容器 1 8 6 2 5 4 8 3 7
 
       
     - name: 211.add_and_search_word
