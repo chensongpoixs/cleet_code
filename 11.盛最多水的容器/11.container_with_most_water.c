@@ -64,17 +64,22 @@ int maxArea(int* height, int heightSize)
 int main(int argc, char *argv[])
 {
 
-	int height_size = argc -1;
-	int * height = malloc(height_size* sizeof(int));
-	if (!height)
+	int count = argc -1;
+	int * nums = malloc(count* sizeof(int));
+	if (!nums)
 	{
 		return -1;
 	}
-	for (int i = 0; i < argc; ++i)
+	for (int i = 0; i < count; ++i)
 	{
-		height[i+1] = argv[i+1];
+		nums[i+1] = argv[i+1];
 	}
 
 	printf("area size = %d\n", maxArea(height, height_size));
+	if (nums)
+	{
+		free(nums);
+		nums = NULL;
+	}
 	return 0;
 }
