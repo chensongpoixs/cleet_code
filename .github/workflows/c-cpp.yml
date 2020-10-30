@@ -47,6 +47,13 @@ jobs:
     - name: 11.盛最多水的容器
       run: pwd && cd bin && sudo ./11.盛最多水的容器 1 8 6 2 5 4 8 3 7
 
+    - name: 12.整数转罗马数字
+      run: pwd && cd bin && sudo ./12.整数转罗马数字 1994
+    
+    - name: 13.罗马数字转整数
+      run: pwd && cd bin && sudo ./13.罗马数字转整数 MCMXCIV
+
+
       
     - name: 211.add_and_search_word
       run: pwd && cd bin && sudo ./211.add_and_search_word
