@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v1
       
     - name: build
-      run: mkdir -p linux_build && cd linux_build && cmake .. && make -j4
+      run: mkdir -p linux_build && cd linux_build && cmake .. && make -j 4
 
     - name: 1.sum_of_two_numbers
       run: pwd && cd bin && sudo ./1.sum_of_two_numbers 
@@ -52,6 +52,9 @@ jobs:
     
     - name: 13.罗马数字转整数
       run: pwd && cd bin && sudo ./13.罗马数字转整数 MCMXCIV
+
+    - name: 14.最长公共前缀
+      run: pwd && cd bin && sudo ./14.最长公共前缀 flower flow flight
 
 
       

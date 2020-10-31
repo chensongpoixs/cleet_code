@@ -20,6 +20,7 @@ add_subdirectory(10.regular_expression_matching)
 add_subdirectory(11.盛最多水的容器)
 add_subdirectory(12.整数转罗马数字)
 add_subdirectory(13.罗马数字转整数)
+add_subdirectory(14.最长公共前缀)
 add_subdirectory(208.trie_tree)
 add_subdirectory(211.add_and_search_word)
 
