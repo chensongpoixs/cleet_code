@@ -1,9 +1,9 @@
 /***********************************************************************************************
-	created: 		2020-10-31
+	created: 		2020-11-01
 
 	author:			chensong
 
-	purpose:		14.最长公共前缀
+	purpose:		16.最接近的三数之和
 我可能会遇到很多的人，听他们讲好2多的故事，我来写成故事或编成歌，用我学来的各种乐器演奏它。
 然后还可能在一个国家遇到一个心仪我的姑娘，她可能会被我帅气的外表捕获，又会被我深邃的内涵吸引，在某个下雨的夜晚，她会全身淋透然后要在我狭小的住处换身上的湿衣服。
 3小时候后她告诉我她其实是这个国家的公主，她愿意向父皇求婚。我不得已告诉她我是穿越而来的男主角，我始终要回到自己的世界。
@@ -16,62 +16,96 @@
 安静，淡然，代码就是我的一切，写代码就是我本心回归的最好方式，我还没找到本心猎手，但我相信，顺着这个线索，我一定能顺藤摸瓜，把他揪出来。
 ************************************************************************************************/
 
-/*#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-*/
 
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
-* 编写一个函数来查找字符串数组中的最长公共前缀。
-*/
-char * res = NULL;
-char * longestCommonPrefix(char ** strs, int strsSize)
+ *16. 最接近的三数之和
+给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
+
+
+
+示例：
+
+输入：nums = [-1,2,1,-4], target = 1
+输出：2
+解释：与 target 最接近的和是 2 (-1 + 2 + 1 = 2) 。
+
+
+提示：
+
+3 <= nums.length <= 10^3
+-10^3 <= nums[i] <= 10^3
+-10^4 <= target <= 10^4
+通过次数163,843提交次数357,350
+ */
+int compare(const void *a, const void *b)
 {
-    int count = 0;
-    int i = 0;
-    if (!res)
-    {
-        res = malloc(1024);
-    }
-    while (strsSize > 0)
-    {
-        char c = strs[0][count];
-        for (i = 1; i < strsSize; ++i)
-        {
-            //这边访问内存不会溢出的是因为 下面 有判断 c != '\0'退出的了非常关键
-            if (c != strs[i][count] )
-            {
-                break;
-            }
-        }
-        // 比较的个数 i = strsSize 相等
-        if (i == strsSize && c != '\0')
-        {
-            res[count++] = c;
-        }
-        else  //说明不相等
-        {
-            break;
-        }
-    }
-    res[count] = '\0';
-    return res;
+	int *aa = (int *)a, *bb = (int *)b;
+	if (*aa > * bb)
+	{
+		return 1;
+	}
+	if (*aa == *bb)
+	{
+		return 0;
+	}
+	if (*aa < *bb)
+	{
+		return -1;
+	}
+	return 0;
 }
-
-
-int main(int argc , char *argv[])
+int threeSumClosest(int* nums, int numsSize, int target)
 {
-    if (argc < 4)
-    {
-        printf("./test flower flow flight ");
-        return -1;
-    }
+	int min_diff = INT_MAX;
+	if (nums == NULL || numsSize < 3)
+	{
+		return min_diff;
+	}
 
-    printf( "prefix = %s\n", longestCommonPrefix(&argv[1], argc-1));
+	qsort(&nums[0], numsSize, sizeof(int), compare);
+	for (int a = 0; a < numsSize - 2; ++a)
+	{
+		int b = a + 1;
+		int c = numsSize - 1;
+
+		while (b < c)
+		{
+			int diff = nums[a] + nums[b] + nums[c] - target;
+
+			if (abs(diff) < abs(min_diff))
+			{
+				min_diff = diff;
+			}
+			if (diff < 0)
+			{
+				++b;
+			}
+			else if (diff > 0)
+			{
+				--c;
+			}
+			else
+			{
+				return target;
+			}
+		}
+	}
+	return target + min_diff;
+
+
+}
+int main(int argc, char *argv[])
+{
+
+    int array[] = { -1,2,1,-4 };
+
+	printf("sum = %d\n",  threeSumClosest(&array[0], 4, 1));
+
+	while (1);
+
     return 0;
 }

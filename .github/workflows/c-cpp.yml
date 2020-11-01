@@ -57,7 +57,14 @@ jobs:
       run: pwd && cd bin && sudo ./14.最长公共前缀 flower flow flight
 
 
-      
+
+    - name: 15.三数之和
+      run: pwd && cd bin && sudo ./15.三数之和 
+
+    - name: 16.最接近的三数之和
+      run: pwd && cd bin && sudo ./16.最接近的三数之和
+
+
     - name: 211.add_and_search_word
       run: pwd && cd bin && sudo ./211.add_and_search_word
     

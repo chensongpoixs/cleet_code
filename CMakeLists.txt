@@ -2,7 +2,7 @@ project(cleet_code)
 cmake_minimum_required(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 SET(CMAKE_BUILD_TYPE Release)
-ADD_DEFINITIONS(-g -Wall )
+ADD_DEFINITIONS(  -g -Wall  )
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
@@ -21,6 +21,8 @@ add_subdirectory(11.盛最多水的容器)
 add_subdirectory(12.整数转罗马数字)
 add_subdirectory(13.罗马数字转整数)
 add_subdirectory(14.最长公共前缀)
+add_subdirectory(15.三数之和)
+add_subdirectory(16.最接近的三数之和)
 add_subdirectory(208.trie_tree)
 add_subdirectory(211.add_and_search_word)
 
