@@ -140,7 +140,7 @@ int main(int argc, char *argv[])
 		printf("[%d][%d][%d]\n", retarray[i][0], retarray[i][1], retarray[i][2]);
 	}
 
-	while (1);
+	
 
     return 0;
 }
