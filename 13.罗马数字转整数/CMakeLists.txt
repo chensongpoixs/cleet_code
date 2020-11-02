@@ -1,7 +1,7 @@
 project(13.罗马数字转整数)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-
+MESSAGE(STATUS ${PROJECT_NAME})
 file(GLOB ALL_C_SRCS
         ./*.c
         )

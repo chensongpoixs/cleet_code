@@ -1,7 +1,7 @@
 project(8.string_to_integer)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-
+MESSAGE(STATUS ${PROJECT_NAME})
 file(GLOB ALL_C_SRCS
         ./*.c
         )

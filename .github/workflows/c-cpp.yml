@@ -64,6 +64,8 @@ jobs:
     - name: 16.最接近的三数之和
       run: pwd && cd bin && sudo ./16.最接近的三数之和
 
+    - name: 17.电话号码的字母组合
+      run: pwd && cd bin && sudo ./17.电话号码的字母组合 3434
 
     - name: 211.add_and_search_word
       run: pwd && cd bin && sudo ./211.add_and_search_word

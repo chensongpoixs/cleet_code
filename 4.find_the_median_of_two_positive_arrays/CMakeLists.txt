@@ -1,7 +1,7 @@
 project(4.find_the_median_of_two_positive_arrays)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-
+MESSAGE(STATUS ${PROJECT_NAME})
 file(GLOB ALL_C_SRCS
         ./*.c
         )
