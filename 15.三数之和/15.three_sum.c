@@ -130,7 +130,7 @@ int main(int argc, char *argv[])
 
     int array[] = { -1, 0, 1, 2, -1, -4 };// {0, 0, 0, 0};
    
-	
+	printf("array [] = { -1, 0, 1, 2, -1, -4 }\n");
 	int retsize = 0;
 	int * retclomueesize = NULL;
 	int ** retarray = threeSum(&array[0], 6, &retsize, &retclomueesize);

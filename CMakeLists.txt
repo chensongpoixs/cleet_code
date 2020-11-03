@@ -24,6 +24,7 @@ add_subdirectory(14.最长公共前缀)
 add_subdirectory(15.三数之和)
 add_subdirectory(16.最接近的三数之和)
 add_subdirectory(17.电话号码的字母组合)
+add_subdirectory(18.四数之和)
 add_subdirectory(208.trie_tree)
 add_subdirectory(211.add_and_search_word)
 
