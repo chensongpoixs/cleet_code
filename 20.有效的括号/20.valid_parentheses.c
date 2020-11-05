@@ -99,15 +99,15 @@ bool isValid(char * s)
 
 int main(int argc, char *argv[])
 {
-    if (argc < 2)
+//    if (argc < 2)
+//    {
+//        printf("usage: ./test {} ()");
+//        return -1;
+//    }
+    static char* test[] = {"(", ")" "(){}" , "(){()}"};
+    for (int i = 0; i < 4; ++i)
     {
-        printf("usage: ./test {} ()");
-        return -1;
-    }
-
-    for (int i = 1; i < argc; ++i)
-    {
-        printf("[%s = %s]\n", argv[i], isValid(argv[i])== true? "true" : "false");
+        printf("[%s = %s]\n", test[i], isValid(test[i])== true? "true" : "false");
     }
     return 0;
 }
