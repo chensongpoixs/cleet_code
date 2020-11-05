@@ -104,10 +104,10 @@ int main(int argc, char *argv[])
 //        printf("usage: ./test {} ()");
 //        return -1;
 //    }
-    static char* test[] = {"(", ")" "(){}" , "(){()}"};
-    for (int i = 0; i < 4; ++i)
+    char * test = "(){()}";
+//    for (int i = 0; i < 4; ++i)
     {
-        printf("[%s = %s]\n", test[i], isValid(test[i])== true? "true" : "false");
+        printf("[%s = %s]\n", test, isValid(test)== true? "true" : "false");
     }
     return 0;
 }
