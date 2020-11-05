@@ -1,5 +1,5 @@
 /***********************************************************************************************
-	created: 		2020-11-01
+	created: 		2020-11-03
 
 	author:			chensong
 
@@ -340,119 +340,119 @@ int** fourSum(int* nums, int numsSize, int target, int* returnSize, int** return
 
     return array;
 }
-//
-//void knums(int * nums, int numsSize, int target, int value,  int k, int * returnSize, int **returnColumuSize , int **array, int* alloc_size)
-//{
-//    printf("%s, ret size = %d \n", __FUNCTION__, *returnSize);
-////    int **array = *retarray;
-//    if (k == 3)
-//    {
-//        if (nums == NULL || numsSize < 3)
-//        {
-//            printf("error   num == null, numsSize = %d\n", numsSize);
-//            return;
-//        }
-//        for (int i = 0; i < numsSize -2; ++i)
-//        {
-//            //
-//            if (i == 0 || (i > 0 && nums[i] != nums[i -1]))
-//            {
-//
-//                int b = i +1;
-//                int c = numsSize -1;
-////                printf("[ ------two = %d, three = %d]\n", b, c);
-//                while (b < c)
-//                {
-//
-//                    int diff = nums[i] + nums[b];
-//                    if (target - diff > 0)
-//                    {
-//                        while (++b < c && nums[b] == nums[b -1]){}
-//                    }
-//                    else if (target - diff < 0)
-//                    {
-//                        while (--c > b && nums[c] == nums[c+1]){}
-//                    }
-//                    else
-//                    {
-//                        if (*alloc_size == *returnSize)
-//                        {
-//                            *alloc_size *= 2;
-//                            array = realloc(array, *alloc_size * sizeof(int *));
-//                            (*returnColumuSize) = realloc((*returnColumuSize), *alloc_size * sizeof(int));
-//                        }
-//                            printf("[ ------two = %d, three = %d]\n", b, c);
-//                        (*returnColumuSize)[*returnSize] = 4;
-//                        array[*returnSize] = malloc(sizeof(int) * 4);
-//                        array[*returnSize][0] = value;
-//                        array[*returnSize][1] = nums[i];
-//                        array[*returnSize][2] = nums[b];
-//                        array[*returnSize][3] = nums[c];
-//                        (*returnSize)++;
-//
-//                        while (++b < c && nums[b] == nums[b -1]){}
-//
-//                        while (--c > b && nums[c] == nums[c+1]){}
-//                    }
-//                }
-//            }
-//        }
-//        for (int i = 0; i < *returnSize; ++i)
-//        {
-//            printf("[%d, %d, %d, %d]\n", array[i][0], array[i][1], array[i][2], array[i][3]);
-//
-//        }
-//
-//    }
-//    else
-//    {
-//        for (int i = 0; i < numsSize-3; ++i)
-//        {
-//            if (i == 0 ||(i > 0 && nums[i] != nums[i -1]))
-//            {
-////                (*stack)[0] = nums[i];
-////                *stack_size = 1;
-//                knums(nums+i+1, numsSize -i-1, target - nums[i], nums[i], k -1, returnSize, returnColumuSize , array, alloc_size);
-//            }
-//        }
-//    }
-//
-//}
-//
-//
-///**
-// * Return an array of arrays of size *returnSize.
-// * The sizes of the arrays are returned as *returnColumnSizes array.
-// * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
-// */
-//int** fourkSum(int* nums, int numsSize, int target, int* returnSize, int** returnColumnSizes)
-//{
-//    *returnSize = 0;
-//    if (nums == NULL || numsSize < 4)
-//    {
-//        return NULL;
-//    }
-//    quick_sort(nums, numsSize);
-//
-//    int alloc_size = 5;
-//    int **array = malloc(alloc_size * sizeof(int*));
-//    *returnColumnSizes = malloc(alloc_size *sizeof(int));
-//    int k = 4;
-//    int statck[4];
-//    int statck_size = 0;
-//
-//    knums(nums, numsSize, target, 0, k, returnSize, &*returnColumnSizes, array, &alloc_size);
-//
-//    printf("retsize = %d, alloc_size = %d\n", *returnSize, alloc_size);
-//
-//    for (int i = 0; i < *returnSize; ++i)
-//    {
-//        printf("[%d, %d, %d, %d]\n", array[i][0], array[i][1], array[i][2], array[i][3]);
-//
-//    }
-//
-//    return array;
-//}
+
+void knums(int * nums, int numsSize, int target, int value,  int k, int * returnSize, int **returnColumuSize , int **array, int* alloc_size)
+{
+    printf("%s, ret size = %d \n", __FUNCTION__, *returnSize);
+//    int **array = *retarray;
+    if (k == 3)
+    {
+        if (nums == NULL || numsSize < 3)
+        {
+            printf("error   num == null, numsSize = %d\n", numsSize);
+            return;
+        }
+        for (int i = 0; i < numsSize -2; ++i)
+        {
+            //
+            if (i == 0 || (i > 0 && nums[i] != nums[i -1]))
+            {
+
+                int b = i +1;
+                int c = numsSize -1;
+//                printf("[ ------two = %d, three = %d]\n", b, c);
+                while (b < c)
+                {
+
+                    int diff = nums[i] + nums[b];
+                    if (target - diff > 0)
+                    {
+                        while (++b < c && nums[b] == nums[b -1]){}
+                    }
+                    else if (target - diff < 0)
+                    {
+                        while (--c > b && nums[c] == nums[c+1]){}
+                    }
+                    else
+                    {
+                        if (*alloc_size == *returnSize)
+                        {
+                            *alloc_size *= 2;
+                            array = realloc(array, *alloc_size * sizeof(int *));
+                            (*returnColumuSize) = realloc((*returnColumuSize), *alloc_size * sizeof(int));
+                        }
+                            printf("[ ------two = %d, three = %d]\n", b, c);
+                        (*returnColumuSize)[*returnSize] = 4;
+                        array[*returnSize] = malloc(sizeof(int) * 4);
+                        array[*returnSize][0] = value;
+                        array[*returnSize][1] = nums[i];
+                        array[*returnSize][2] = nums[b];
+                        array[*returnSize][3] = nums[c];
+                        (*returnSize)++;
+
+                        while (++b < c && nums[b] == nums[b -1]){}
+
+                        while (--c > b && nums[c] == nums[c+1]){}
+                    }
+                }
+            }
+        }
+        for (int i = 0; i < *returnSize; ++i)
+        {
+            printf("[%d, %d, %d, %d]\n", array[i][0], array[i][1], array[i][2], array[i][3]);
+
+        }
+
+    }
+    else
+    {
+        for (int i = 0; i < numsSize-3; ++i)
+        {
+            if (i == 0 ||(i > 0 && nums[i] != nums[i -1]))
+            {
+//                (*stack)[0] = nums[i];
+//                *stack_size = 1;
+                knums(nums+i+1, numsSize -i-1, target - nums[i], nums[i], k -1, returnSize, returnColumuSize , array, alloc_size);
+            }
+        }
+    }
+
+}
+
+
+/**
+ * Return an array of arrays of size *returnSize.
+ * The sizes of the arrays are returned as *returnColumnSizes array.
+ * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
+ */
+int** fourkSum(int* nums, int numsSize, int target, int* returnSize, int** returnColumnSizes)
+{
+    *returnSize = 0;
+    if (nums == NULL || numsSize < 4)
+    {
+        return NULL;
+    }
+    quick_sort(nums, numsSize);
+
+    int alloc_size = 5;
+    int **array = malloc(alloc_size * sizeof(int*));
+    *returnColumnSizes = malloc(alloc_size *sizeof(int));
+    int k = 4;
+    int statck[4];
+    int statck_size = 0;
+
+    knums(nums, numsSize, target, 0, k, returnSize, &*returnColumnSizes, array, &alloc_size);
+
+    printf("retsize = %d, alloc_size = %d\n", *returnSize, alloc_size);
+
+    for (int i = 0; i < *returnSize; ++i)
+    {
+        printf("[%d, %d, %d, %d]\n", array[i][0], array[i][1], array[i][2], array[i][3]);
+
+    }
+
+    return array;
+}
 
 
  int main(int argc, char *argv[])
