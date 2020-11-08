@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/badge/zhihu-%E7%9F%A5%E4%B9%8E-blue)](https://www.zhihu.com/people/chensong-1-90)
 [![](https://img.shields.io/badge/csdn-CSDN-red)](https://blog.csdn.net/Poisx)
-
+[![](https://img.shields.io/badge/LeetCode-%E5%8A%9B%E6%89%A3-green)](https://leetcode-cn.com/u/chen-song-3)
 LeetCode刷题思路分析
 
 
