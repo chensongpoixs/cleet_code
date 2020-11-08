@@ -3,6 +3,7 @@
 [![](https://img.shields.io/badge/zhihu-%E7%9F%A5%E4%B9%8E-blue)](https://www.zhihu.com/people/chensong-1-90)
 [![](https://img.shields.io/badge/csdn-CSDN-red)](https://blog.csdn.net/Poisx)
 [![](https://img.shields.io/badge/LeetCode-%E5%8A%9B%E6%89%A3-green)](https://leetcode-cn.com/u/chen-song-3)
+
 LeetCode刷题思路分析
 
 
@@ -19,9 +20,3 @@ LeetCode刷题思路分析
 |2020-06-08|![9. 回文数](https://github.com/chensongpoixs/cleet_code/tree/master/9.palindrome_number "9. 回文数")|二进制考察|简单||
 |2020-05-31|![208. 实现 Trie (前缀树)](https://github.com/chensongpoixs/cleet_code/tree/master/208.trie_tree "208.实现 Trie (前缀树)")|trie tree|中等|3, 208,211|
 |2020-06-02|![211. 添加与搜索单词 - 数据结构设计](https://github.com/chensongpoixs/cleet_code/tree/master/211.add_and_search_word "211. 添加与搜索单词 - 数据结构设计")|trie tree, 深度优先遍历算法（DFS）|中等|3, 208, 211|
-
-
-
-2020-06-20 
-
-在618买一本算法书籍    过后再来刷题  有一些常见算法没有听说过模型   刷一些题目时 非常吃力   
