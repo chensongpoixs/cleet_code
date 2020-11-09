@@ -31,4 +31,5 @@ add_subdirectory(21.合并两个有序链表)
 add_subdirectory(208.trie_tree)
 add_subdirectory(867.转置矩阵)
 add_subdirectory(211.add_and_search_word)
+add_subdirectory(1074.元素和为目标值的子矩阵数量)
 
