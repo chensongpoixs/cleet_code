@@ -82,9 +82,15 @@ jobs:
 
     - name: 211.add_and_search_word
       run: pwd && cd bin && sudo ./211.add_and_search_word
+
+    - name: 328.奇偶链表
+      run: pwd && cd bin && sudo ./328.奇偶链表 1 2 3 4 5
       
     - name: 867.转置矩阵
       run: pwd && cd bin && sudo ./867.转置矩阵
+
+    - name: 922.按奇偶排序数组II
+      run: pwd && cd bin && sudo ./922.按奇偶排序数组II 4 2 5 7
 
     - name: 1074.元素和为目标值的子矩阵数量
       run: pwd && cd bin && sudo ./1074.元素和为目标值的子矩阵数量
