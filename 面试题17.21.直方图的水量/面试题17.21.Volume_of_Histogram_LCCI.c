@@ -84,6 +84,7 @@ typedef  struct cListNode {
 	struct cListNode* next;
 }cListNode;
 
+// 有序链表是从小到大的顺序
 void insert_value(struct cListNode * list_ptr, int value)
 {
 	if (!list_ptr)
@@ -94,6 +95,7 @@ void insert_value(struct cListNode * list_ptr, int value)
 	struct cListNode * pre_list_ptr = list_ptr;
 	while (cur_list_ptr)
 	{
+		//当前节点的数大于该值直接插入到当前节点前面
 		if (cur_list_ptr->value > value)
 		{
 			// insert
@@ -105,12 +107,12 @@ void insert_value(struct cListNode * list_ptr, int value)
 			return;
 		}
 		else if (cur_list_ptr->value < value)
-		{
+		{  // 当前节点的值小于 要插入的值就需要查找下一个节点的数进行比较
 			pre_list_ptr = cur_list_ptr;
 			cur_list_ptr = cur_list_ptr->next;
 		}
 		else
-		{
+		{ //说明当前节点的值和要比较的值相等就不要插入的了  去重的
 			return;
 		}
 
@@ -212,7 +214,6 @@ int trap_stack(int* height, int heightSize)
 	}
 	return area_size;
 }
-
 
 
 
