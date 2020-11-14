@@ -20,6 +20,6 @@ LeetCode刷题思路分析
 |2020-06-08|![9. 回文数](https://github.com/chensongpoixs/cleet_code/tree/master/9.palindrome_number "9. 回文数")|二进制考察|简单||
 |2020-05-31|![208. 实现 Trie (前缀树)](https://github.com/chensongpoixs/cleet_code/tree/master/208.trie_tree "208.实现 Trie (前缀树)")|trie tree|中等|3, 208,211|
 |2020-06-02|![211. 添加与搜索单词 - 数据结构设计](https://github.com/chensongpoixs/cleet_code/tree/master/211.add_and_search_word "211. 添加与搜索单词 - 数据结构设计")|trie tree, 深度优先遍历算法（DFS）|中等|3, 208, 211|
-|2020-11-03|![1074.元素和为目标值的子矩阵数量]( "1074.元素和为目标值的子矩阵数量")|困难|哈希函数,前缀和||
-|2020-11-14|![1122. 数组的相对排序](https://github.com/chensongpoixs/cleet_code/tree/master "1122. 数组的相对排序")|简单|快速排序算法,去重方法||
-|2020-11-14|![面试题 17.21. 直方图的水量](https://github.com/chensongpoixs/cleet_code/tree/master/%E9%9D%A2%E8%AF%95%E9%A2%9817.21.%E7%9B%B4%E6%96%B9%E5%9B%BE%E7%9A%84%E6%B0%B4%E9%87%8F "面试题 17.21. 直方图的水量")|困难|有序链表||
+|2020-11-03|![1074.元素和为目标值的子矩阵数量]( "1074.元素和为目标值的子矩阵数量")|哈希函数,前缀和|困难||
+|2020-11-14|![1122. 数组的相对排序](https://github.com/chensongpoixs/cleet_code/tree/master "1122. 数组的相对排序")|快速排序算法,去重方法|简单||
+|2020-11-14|![面试题 17.21. 直方图的水量](https://github.com/chensongpoixs/cleet_code/tree/master/%E9%9D%A2%E8%AF%95%E9%A2%9817.21.%E7%9B%B4%E6%96%B9%E5%9B%BE%E7%9A%84%E6%B0%B4%E9%87%8F "面试题 17.21. 直方图的水量")|有序链表|困难||
