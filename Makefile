@@ -11,22 +11,22 @@ SRCS328 = $(EXE328)/328.Odd_Even_Linked_List.c
 OBJS21 = $(SRCS21:.c = .o)
 OBJS328 = $(SRCS328:.c = .o)
 
-
+#编写makefile 必须使用tab 
 
 all: $(OBJS21) $(OBJS328)
-    $(CC) -o bin/$(EXE21)  $(OBJS21) -Wall -g
+	$(CC) -o bin/$(EXE21)  $(OBJS21) -Wall -g
 	$(CC) -o bin/$(EXE328)  $(OBJS328) -Wall -g
-    $(V)echo '$(EXE21)  ^_^ ^_^ 陈丽 ^_^ ^_^'
+	$(V)echo '$(EXE21)  ^_^ ^_^ 陈丽 ^_^ ^_^'
 
 #模式匹配
 %.c%.o:
-    $(V)echo '$@++++++$^ ^_^ ^_^ 陈丽 ^_^ ^_^'
-    $(CC) -Wall -g -o $@ -c $^
+	$(V)echo '$@++++++$^ ^_^ ^_^ 陈丽 ^_^ ^_^'
+	$(CC) -Wall -g -o $@ -c $^
 
 
-.PHONY: exepath clean                                                                                                                                                                                                               
-exepath:
+.PHONY: path clean                                                                                                                                                                                                               
+path:
 	$(V)mkdir $(BIN_PATH)
 #clean 清空二进制文件
 clean:
-    -rm -f bin
+	-rm -f bin
