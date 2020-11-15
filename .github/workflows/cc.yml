@@ -19,4 +19,6 @@ jobs:
       run: make
     - name: make clean
       run: make clean
+    - name: 1476.子矩形查询
+      run: pwd && cd bin && sudo ./1476.子矩形查询
 

@@ -100,6 +100,9 @@ jobs:
      
     - name: 1122.数组的相对排序
       run: pwd && cd bin && sudo ./1122.数组的相对排序
+    
+    - name: 1476.子矩形查询
+      run: pwd && cd bin && sudo ./1476.子矩形查询
       
     - name: 面试题17.21.直方图的水量
       run: pwd && cd bin && sudo ./面试题17.21.直方图的水量
