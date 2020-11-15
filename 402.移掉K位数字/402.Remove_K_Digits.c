@@ -151,6 +151,6 @@ int main(int argc, char *argv[])
 
 	printf("[new_num = %s]\n", removeKdigits(num, k));
 
-	while (1);
+	
 	return EXIT_SUCCESS;
 }
