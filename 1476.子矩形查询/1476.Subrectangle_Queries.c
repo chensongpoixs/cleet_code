@@ -49,7 +49,7 @@ void show_rect(SubrectangleQueries * obj)
 			{
 				printf(", ");
 			}
-			printf("%d", i, j, obj->rect[i][j]);
+			printf("%d", obj->rect[i][j]);
 	       
 	    }
 		printf("]\n");
