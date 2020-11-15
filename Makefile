@@ -11,7 +11,7 @@ EXE1476 = 1476.子矩形查询
 SRCS21 = $(EXE21)/21.merge_two_sorted_lists.c
 SRCS328 = $(EXE328)/328.Odd_Even_Linked_List.c
 SRCS402 = $(EXE402)/402.Remove_K_Digits.c
-SRCS1476 = $(EXE1476)/402.Remove_K_Digits.c
+SRCS1476 = $(EXE1476)/1476.Subrectangle_Queries.c
 OBJS21 = $(SRCS21:.c = .o)
 OBJS328 = $(SRCS328:.c = .o)
 OBJS402 = $(SRCS402:.c = .o)
