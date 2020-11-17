@@ -30,7 +30,7 @@ all: $(OBJS21) $(OBJS328) $(OBJS402)  $(OBJS406) $(OBJS1030) $(OBJS1476)
 	$(CC) -o bin/$(EXE328)  $(OBJS328) -Wall -g
 	$(CC) -o bin/$(EXE402)  $(OBJS402) -Wall -g
 	$(CC) -o bin/$(EXE406)  $(OBJS406) -Wall -g
-	$(CC) -o bin/$(SRCS1030)  $(OBJS1030) -Wall -g
+	$(CC) -o bin/$(EXE1030)  $(OBJS1030) -Wall -g
 	$(CC) -o bin/$(EXE1476)  $(OBJS1476) -Wall -g
 	$(V)echo '$(EXE21)  ^_^ ^_^ 陈丽 ^_^ ^_^'
 
