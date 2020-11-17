@@ -226,19 +226,22 @@ int main(int argc, char *argv[])
     int **arrsys = allCellsDistOrder(stoi(argv[1]), atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), &retsize, &returncolumnsizes);
     if (arrsys)
     {
+        printf("[");
         for (int i = 0; i < retsize; ++i)
         {
-            for (int j = 0; j < returncolumnsizes[i]; ++j)
+           // for (int j = 0; j < returncolumnsizes[i]; ++j)
             {
                 if (i != 0 )
                 {
                     printf(", ");
                 }
                 printf("[%d, %d]", arrsys[i][0], arrsys[i][1]);
-                free(arrsys[i]);
-                arrsys[i] = NULL;
+               
             }
+             free(arrsys[i]);
+             arrsys[i] = NULL;
         }
+        printf("]\n");
         free(arrsys);
         free(returncolumnsizes);
     }
