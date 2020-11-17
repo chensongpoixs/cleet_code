@@ -223,7 +223,7 @@ int main(int argc, char *argv[])
 
     int retsize = 0;
     int * returncolumnsizes = NULL;
-    int **arrsys = allCellsDistOrder(stoi(argv[1]), atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), &retsize, &returncolumnsizes);
+    int **arrsys = allCellsDistOrder(atoi(argv[1]), atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), &retsize, &returncolumnsizes);
     if (arrsys)
     {
         printf("[");
