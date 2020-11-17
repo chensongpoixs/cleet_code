@@ -27,3 +27,4 @@ LeetCode刷题思路分析
 |2020-11-15|![1476. 子矩形查询](https://github.com/chensongpoixs/cleet_code/tree/master/1476.%E5%AD%90%E7%9F%A9%E5%BD%A2%E6%9F%A5%E8%AF%A2 "1476. 子矩形查询")|需要花一点时间认真读题|中等||10 minute|
 |2020-11-17|![1030. 距离顺序排列矩阵单元格](https://github.com/chensongpoixs/cleet_code/tree/master "1030. 距离顺序排列矩阵单元格")||简单||30 minute|
 |2020-11-17|![406.根据身高重建队列](https://github.com/chensongpoixs/cleet_code/tree/master "406.根据身高重建队列")|排序问题（） 队列问题|中等||参考LeetCode题解分析|
+|2020-11-18|![面试题 17.10. 主要元素](https://github.com/chensongpoixs/cleet_code/tree/master "面试题 17.10. 主要元素")|选举问题大于2n+1, 摩尔投票法(redis中哨兵选举问题)|简单|||
