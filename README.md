@@ -25,6 +25,8 @@ LeetCode刷题思路分析
 |2020-11-14|![面试题 17.21. 直方图的水量](https://github.com/chensongpoixs/cleet_code/tree/master/%E9%9D%A2%E8%AF%95%E9%A2%9817.21.%E7%9B%B4%E6%96%B9%E5%9B%BE%E7%9A%84%E6%B0%B4%E9%87%8F "面试题 17.21. 直方图的水量")|有序链表|困难||
 |2020-11-15|![402. 移掉K位数字](https://github.com/chensongpoixs/cleet_code/tree/master/402.%E7%A7%BB%E6%8E%89K%E4%BD%8D%E6%95%B0%E5%AD%97 "402. 移掉K位数字")|一个数中删除一位使变成最小值, 数学常识|中等||10 hour|
 |2020-11-15|![1476. 子矩形查询](https://github.com/chensongpoixs/cleet_code/tree/master/1476.%E5%AD%90%E7%9F%A9%E5%BD%A2%E6%9F%A5%E8%AF%A2 "1476. 子矩形查询")|需要花一点时间认真读题|中等||10 minute|
-|2020-11-17|![1030. 距离顺序排列矩阵单元格](https://github.com/chensongpoixs/cleet_code/tree/master "1030. 距离顺序排列矩阵单元格")||简单||30 minute|
-|2020-11-17|![406.根据身高重建队列](https://github.com/chensongpoixs/cleet_code/tree/master "406.根据身高重建队列")|排序问题（） 队列问题|中等||参考LeetCode题解分析|
-|2020-11-18|![面试题 17.10. 主要元素](https://github.com/chensongpoixs/cleet_code/tree/master "面试题 17.10. 主要元素")|选举问题大于2n+1, 摩尔投票法(redis中哨兵选举问题)|简单|||
+|2020-11-17|![1030. 距离顺序排列矩阵单元格](https://github.com/chensongpoixs/cleet_code/tree/master/1030.%E8%B7%9D%E7%A6%BB%E9%A1%BA%E5%BA%8F%E6%8E%92%E5%88%97%E7%9F%A9%E9%98%B5%E5%8D%95%E5%85%83%E6%A0%BC "1030. 距离顺序排列矩阵单元格")||简单||30 minute|
+|2020-11-17|![406.根据身高重建队列](https://github.com/chensongpoixs/cleet_code/tree/master/406.%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97 "406.根据身高重建队列")|排序问题（） 队列问题|中等||参考LeetCode题解分析|
+|2020-11-18|![面试题 17.10. 主要元素](https://github.com/chensongpoixs/cleet_code/tree/master/%E9%9D%A2%E8%AF%95%E9%A2%9817.10.%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0 "面试题 17.10. 主要元素")|选举问题大于2n+1, 摩尔投票法(redis中哨兵选举问题)|简单|||
+|2020-11-18|![1535.找出数组游戏的赢家](https://github.com/chensongpoixs/cleet_code/tree/master "1535.找出数组游戏的赢家")|最细读题,其实只需要遍历一次就可以判断了，两个数比较一定是有大小的|中等|||
+|2020-11-18|![134. 加油站](https://github.com/chensongpoixs/cleet_code/tree/master "134. 加油站")|这到题目需要数学公式推理|中等|||
