@@ -28,5 +28,7 @@ LeetCode刷题思路分析
 |2020-11-17|![1030. 距离顺序排列矩阵单元格](https://github.com/chensongpoixs/cleet_code/tree/master/1030.%E8%B7%9D%E7%A6%BB%E9%A1%BA%E5%BA%8F%E6%8E%92%E5%88%97%E7%9F%A9%E9%98%B5%E5%8D%95%E5%85%83%E6%A0%BC "1030. 距离顺序排列矩阵单元格")||简单||30 minute|
 |2020-11-17|![406.根据身高重建队列](https://github.com/chensongpoixs/cleet_code/tree/master/406.%E6%A0%B9%E6%8D%AE%E8%BA%AB%E9%AB%98%E9%87%8D%E5%BB%BA%E9%98%9F%E5%88%97 "406.根据身高重建队列")|排序问题（） 队列问题|中等||参考LeetCode题解分析|
 |2020-11-18|![面试题 17.10. 主要元素](https://github.com/chensongpoixs/cleet_code/tree/master/%E9%9D%A2%E8%AF%95%E9%A2%9817.10.%E4%B8%BB%E8%A6%81%E5%85%83%E7%B4%A0 "面试题 17.10. 主要元素")|选举问题大于2n+1, 摩尔投票法(redis中哨兵选举问题)|简单|||
-|2020-11-18|![1535.找出数组游戏的赢家](https://github.com/chensongpoixs/cleet_code/tree/master "1535.找出数组游戏的赢家")|最细读题,其实只需要遍历一次就可以判断了，两个数比较一定是有大小的|中等|||
-|2020-11-18|![134. 加油站](https://github.com/chensongpoixs/cleet_code/tree/master "134. 加油站")|这到题目需要数学公式推理|中等|||
+|2020-11-18|![1535.找出数组游戏的赢家](https://github.com/chensongpoixs/cleet_code/tree/master/1535.%E6%89%BE%E5%87%BA%E6%95%B0%E7%BB%84%E6%B8%B8%E6%88%8F%E7%9A%84%E8%B5%A2%E5%AE%B6 "1535.找出数组游戏的赢家")|最细读题,其实只需要遍历一次就可以判断了，两个数比较一定是有大小的|中等|||
+|2020-11-18|![134. 加油站](https://github.com/chensongpoixs/cleet_code/tree/master/134.%E5%8A%A0%E6%B2%B9%E7%AB%99 "134. 加油站")|这到题目需要数学公式推理|中等|||
+|2020-11-19|![283. 移动零](https://github.com/chensongpoixs/cleet_code/tree/master "283. 移动零")|双指针的使用|简单|||
+|2020-11-19|![1552.两球之间的磁力](https://github.com/chensongpoixs/cleet_code/tree/master "1552.两球之间的磁力")|对数据的进行分析|中等|N数相加的问题||

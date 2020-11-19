@@ -118,6 +118,9 @@ jobs:
     - name: 1535.找出数组游戏的赢家
       run: pwd && cd bin && sudo ./1535.找出数组游戏的赢家
 
+    - name: 1552.两球之间的磁力
+      run: pwd && cd bin && sudo ./1552.两球之间的磁力
+
     - name: 面试题17.10.主要元素
       run: pwd && cd bin && sudo ./面试题17.10.主要元素
 
