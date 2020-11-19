@@ -85,6 +85,9 @@ jobs:
     - name: 211.add_and_search_word
       run: pwd && cd bin && sudo ./211.add_and_search_word
 
+    - name: 283.移动零
+      run: pwd && cd bin && sudo ./283.移动零
+
     - name: 328.奇偶链表
       run: pwd && cd bin && sudo ./328.奇偶链表 1 2 3 4 5
       
