@@ -48,6 +48,7 @@ add_subdirectory(1476.子矩形查询)
 add_subdirectory(1535.找出数组游戏的赢家)
 add_subdirectory(1552.两球之间的磁力)
 add_subdirectory(1588.所有奇数长度子数组的和)
+add_subdirectory(1638.统计只差一个字符的子串数目)
 add_subdirectory(面试题17.10.主要元素)
 add_subdirectory(面试题17.21.直方图的水量)
 
