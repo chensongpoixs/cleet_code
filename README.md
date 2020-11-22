@@ -5,7 +5,7 @@
 [![](https://img.shields.io/badge/LeetCode-%E5%8A%9B%E6%89%A3-green)](https://leetcode-cn.com/u/chen-song-3)
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201121214036703.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1BvaXN4,size_16,color_FFFFFF,t_70#pic_center)
+![](https://img-blog.csdnimg.cn/20201121214036703.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1BvaXN4,size_16,color_FFFFFF,t_70#pic_center)
 
 
 
@@ -41,3 +41,4 @@ LeetCode刷题思路分析
 |2020-11-20|[648.单词替换](https://github.com/chensongpoixs/cleet_code/tree/master "648.单词替换")|trie树,字典树|中等|trie tree||
 |2020-11-21|[148. 排序链表](https://github.com/chensongpoixs/cleet_code/tree/master "148. 排序链表")|归并排序(时间复杂度O(N*logN))|中等|排序问题||
 |2020-11-22|[242. 有效的字母异位词](https://github.com/chensongpoixs/cleet_code/tree/master "242. 有效的字母异位词")|hashtable 哈希表的使用 |简单|||
+|2020-11-22|[1588.所有奇数长度子数组的和](https://github.com/chensongpoixs/cleet_code/tree/master "1588.所有奇数长度子数组的和")|数学知识解决 奇数和偶数个数问题的平均数求解问题 时间复杂度O(N) |简单|||

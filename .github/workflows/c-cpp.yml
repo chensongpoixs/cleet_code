@@ -134,7 +134,13 @@ jobs:
 
     - name: 1552.两球之间的磁力
       run: pwd && cd bin && sudo ./1552.两球之间的磁力
+      
 
+    - name: 1588.所有奇数长度子数组的和
+      run: pwd && cd bin && sudo ./1588.所有奇数长度子数组的和
+      
+      
+      
     - name: 面试题17.10.主要元素
       run: pwd && cd bin && sudo ./面试题17.10.主要元素
 
