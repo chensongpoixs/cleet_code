@@ -28,7 +28,10 @@
  *     struct ListNode *next;
  * };
  */
-
+struct ListNode {
+  int val;
+  struct ListNode *next;
+};
 struct ListNode* merge(struct ListNode* head1, struct ListNode* head2) {
     struct ListNode* dummyHead = malloc(sizeof(struct ListNode));
     dummyHead->val = 0;

@@ -1,4 +1,4 @@
-project(977.ÓÐÐòÊý×éµÄÆ½·½)
+project(977.æœ‰åºæ•°ç»„çš„å¹³æ–¹)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 
