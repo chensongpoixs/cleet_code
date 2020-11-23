@@ -103,6 +103,9 @@ jobs:
     - name: 406.根据身高重建队列
       run: pwd && cd bin && sudo ./406.根据身高重建队列
 
+    - name: 452.用最少数量的箭引爆气球
+      run: pwd && cd bin && sudo ./452.用最少数量的箭引爆气球
+
     - name: 648.单词替换
       run: pwd && cd bin && sudo ./648.单词替换
 
