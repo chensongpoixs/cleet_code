@@ -43,3 +43,4 @@ LeetCode刷题思路分析
 |2020-11-22|[242. 有效的字母异位词](https://github.com/chensongpoixs/cleet_code/tree/master "242. 有效的字母异位词")|hashtable 哈希表的使用 |简单|||
 |2020-11-22|[1588.所有奇数长度子数组的和](https://github.com/chensongpoixs/cleet_code/tree/master "1588.所有奇数长度子数组的和")|数学知识解决 奇数和偶数个数问题的平均数求解问题 时间复杂度O(N) |简单|||
 |2020-11-23|[452. 用最少数量的箭引爆气球](https://github.com/chensongpoixs/cleet_code/tree/master "452. 用最少数量的箭引爆气球")|排序+贪心算法|中等|||
+|2020-11-24|[222.完全二叉树的节点个数](https://github.com/chensongpoixs/cleet_code/tree/master "222.完全二叉树的节点个数")|二叉树的考察|中等|||

@@ -87,6 +87,9 @@ jobs:
 
     - name: 211.add_and_search_word
       run: pwd && cd bin && sudo ./211.add_and_search_word
+      
+    - name: 222.完全二叉树的节点个数
+      run: pwd && cd bin && sudo ./0222.Count_Complete_Tree_Nodes
 
     - name: 242.有效的字母异位词
       run: pwd && cd bin && sudo ./242.有效的字母异位词
