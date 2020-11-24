@@ -27,7 +27,11 @@
  * };
  */
 
-
+struct TreeNode {
+     int val;
+     struct TreeNode *left;
+     struct TreeNode *right;
+};
 int num = 0;
 void tree_node(struct TreeNode * root)
 {
