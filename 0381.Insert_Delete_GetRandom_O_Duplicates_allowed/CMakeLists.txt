@@ -1,4 +1,4 @@
-project(0381.Insert_Delete_GetRandom_O(1)_Duplicates_allowed)
+project(0381.Insert_Delete_GetRandom_O_Duplicates_allowed)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})
