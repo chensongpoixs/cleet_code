@@ -152,12 +152,80 @@ char * sortString(char * s)
     return result;
 }
 
+char * sortString_bucket(char * s)
+{
+    if (!s)
+    {
+        return "";
+    }
+    if (strlen(s)<= 1)
+    {
+        return s;
+    }
 
+    // quick_sort(s, strlen(s));
+    // // int * arrays = malloc(strlen(s) * sizeof(int));
+    // // memset(arrays, 0, sizeof(int) * strlen(s));
+    // char * result = malloc((strlen(s)+1) * sizeof(char));
+    // char cur_str = 'a' - 1 ;
+
+    int size = strlen(s);
+    int bucket[26] ={0};
+    for (int i = 0; i < size; ++i)
+    {
+        ++bucket[s[i]-'a'] ;
+    }
+    int run = 1;
+    int result_size = 0;
+    int left  = 1;
+    
+    while (run)
+    {
+        if (left == 1)
+        {
+            for (int i = 0; i < 26; ++i)
+            {
+                if (bucket[i] > 0)
+                {
+                    s[result_size++] = 'a'+i;
+                    --bucket[i];
+                    // arrays[i] = 1;
+                }
+            }
+            left = 0;
+        }
+        else 
+        {
+            for (int i = 25; i >= 0; --i)
+            {
+                
+                if (bucket[i] > 0)
+                {
+                    // printf("i = %d , %c \n", i, s[i]);
+                     s[result_size++] = 'a'+i;
+                    --bucket[i];
+                    // arrays[i] = 1;
+                }
+            } 
+            left = 1;
+           
+        }
+        if (result_size >= size)
+        {
+            run = 0;
+            s[result_size] = '\0';
+        }
+
+        
+    }
+    // free(arrays);
+    return s;
+}
 int main(int argc, char *argv[])
 {
 	char *s = "rsdfdsafsadfyiuewopredsafdsafat";
 	printf("s = %s\n", s);
-	char* out_s = sortString(s);
+	char* out_s = sortString_bucket(s);
 	if (out_s)
 	{
 		printf("out = %s\n", out_s);
