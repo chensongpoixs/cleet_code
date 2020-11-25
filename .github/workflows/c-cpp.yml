@@ -136,6 +136,10 @@ jobs:
      
     - name: 1122.数组的相对排序
       run: pwd && cd bin && sudo ./1122.数组的相对排序
+      
+      
+    - name: 1370.上升下降字符串
+      run: pwd && cd bin && sudo ./1370.Increasing_Decreasing_String
     
     - name: 1476.子矩形查询
       run: pwd && cd bin && sudo ./1476.子矩形查询
