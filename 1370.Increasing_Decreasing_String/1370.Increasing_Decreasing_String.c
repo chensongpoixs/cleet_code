@@ -229,7 +229,7 @@ int main(int argc, char *argv[])
 	if (out_s)
 	{
 		printf("out = %s\n", out_s);
-		free(out_s);
+		
 	}
 	
 	
