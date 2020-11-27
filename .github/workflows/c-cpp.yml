@@ -122,6 +122,9 @@ jobs:
     - name: 648.单词替换
       run: pwd && cd bin && sudo ./648.单词替换
 
+    - name: 720.词典中最长的单词
+      run: pwd && cd bin && sudo ./0720.Longest_Word_in_Dictionary
+
 
     - name: 867.转置矩阵
       run: pwd && cd bin && sudo ./867.转置矩阵
