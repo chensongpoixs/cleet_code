@@ -46,3 +46,4 @@ LeetCode刷题思路分析
 |2020-11-24|[222.完全二叉树的节点个数](https://github.com/chensongpoixs/cleet_code/tree/master "222.完全二叉树的节点个数")|二叉树的考察|中等|||
 |2020-11-24|[381. O(1) 时间插入、删除和获取随机元素 - 允许重复](https://github.com/chensongpoixs/cleet_code/tree/master "381. O(1) 时间插入、删除和获取随机元素 - 允许重复")|哈希函数, 动态数组|困难|||
 |2020-11-25|[164. 最大间距](https://github.com/chensongpoixs/cleet_code/tree/master/0164.Maximum_Gap "164. 最大间距")|排序算法|困难|||
+|2020-11-27|[720. 词典中最长的单词](https://github.com/chensongpoixs/cleet_code/tree/master/0720.Longest_Word_in_Dictionary "720. 词典中最长的单词")|trie tree 字典树, 深度遍历|简单|||
