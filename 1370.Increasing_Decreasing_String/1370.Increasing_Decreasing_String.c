@@ -225,7 +225,8 @@ int main(int argc, char *argv[])
 {
 	char *s = "rsdfdsafsadfyiuewopredsafdsafat";
 	printf("s = %s\n", s);
-	char* out_s = sortString_bucket(s);
+	char *ptr = malloc(sizeof(char )* strlen(s));
+	char* out_s = sortString_bucket(ptr);
 	if (out_s)
 	{
 		printf("out = %s\n", out_s);
