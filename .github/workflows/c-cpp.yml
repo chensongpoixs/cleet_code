@@ -118,6 +118,12 @@ jobs:
 
     - name: 452.用最少数量的箭引爆气球
       run: pwd && cd bin && sudo ./452.用最少数量的箭引爆气球
+      
+    - name: 454. 四数相加 II
+      run: pwd && cd bin && sudo ./0454.fourSumCount
+      
+    - name: 493.翻转对
+      run: pwd && cd bin && sudo ./0493.ReversePairs
 
     - name: 648.单词替换
       run: pwd && cd bin && sudo ./648.单词替换
