@@ -124,6 +124,11 @@ jobs:
       
     - name: 493.翻转对
       run: pwd && cd bin && sudo ./0493.ReversePairs
+    - name: 0621.任务调度器
+      run: pwd && cd bin && sudo ./0621.TaskScheduler     
+      
+      
+      
 
     - name: 648.单词替换
       run: pwd && cd bin && sudo ./648.单词替换
