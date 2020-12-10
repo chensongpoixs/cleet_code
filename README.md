@@ -49,4 +49,6 @@ LeetCode刷题思路分析
 |2020-11-27|[720. 词典中最长的单词](https://github.com/chensongpoixs/cleet_code/tree/master/0720.Longest_Word_in_Dictionary "720. 词典中最长的单词")|trie tree 字典树, 深度遍历|简单|||
 |2020-11-28|[454. 四数相加 II](https://github.com/chensongpoixs/cleet_code/tree/master/0454.fourSumCount "454. 四数相加 II")|哈希函数时间复杂度O(1)|中等|||
 |2020-12-05|[621. 任务调度器](https://github.com/chensongpoixs/cleet_code/tree/master/0454.fourSumCount "621. 任务调度器")|桶排序,次数最多的|中等|||
+|2020-12-10|[62. 不同路径](https://github.com/chensongpoixs/cleet_code/tree/master/0062.UniquePaths "62. 不同路径")|动态规划,排列组合|中等|||
+|2020-12-10|[63. 不同路径II](https://github.com/chensongpoixs/cleet_code/tree/master/0062.UniquePathsII "63. 不同路径II")|动态规划|中等|||
 
