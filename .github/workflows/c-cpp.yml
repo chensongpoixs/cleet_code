@@ -108,6 +108,10 @@ jobs:
     - name: 283.移动零
       run: pwd && cd bin && sudo ./283.移动零
 
+    - name: 0300. 最长递增子序列
+      run: pwd && cd bin && sudo ./0300.LongestIncreasingSubsequence
+
+
     - name: 328.奇偶链表
       run: pwd && cd bin && sudo ./328.奇偶链表 1 2 3 4 5
       
@@ -143,6 +147,9 @@ jobs:
       run: pwd && cd bin && sudo ./0720.Longest_Word_in_Dictionary
 
 
+    - name: 0738. 单调递增的数字
+      run: pwd && cd bin && sudo ./0738.MonotoneIncreasingDigits
+      
     - name: 867.转置矩阵
       run: pwd && cd bin && sudo ./867.转置矩阵
 
