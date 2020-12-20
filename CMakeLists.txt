@@ -2,7 +2,7 @@ project(cleet_code)
 cmake_minimum_required(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 SET(CMAKE_BUILD_TYPE Release)
-ADD_DEFINITIONS(  -g -Wall  )
+ADD_DEFINITIONS(-std=c++11  -g -Wall  )
 
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
@@ -62,6 +62,7 @@ add_subdirectory(1535.找出数组游戏的赢家)
 add_subdirectory(1552.两球之间的磁力)
 add_subdirectory(1588.所有奇数长度子数组的和)
 add_subdirectory(1638.统计只差一个字符的子串数目)
+add_subdirectory(5630.MaximumErasureValue)
 add_subdirectory(面试题17.10.主要元素)
 add_subdirectory(面试题17.21.直方图的水量)
 

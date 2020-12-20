@@ -190,6 +190,9 @@ jobs:
       
     - name: 1638.统计只差一个字符的子串数目
       run: pwd && cd bin && sudo ./1638.统计只差一个字符的子串数目
+    
+    - name: 5630. 删除子数组的最大得分
+      run: pwd && cd bin && sudo ./5630.MaximumErasureValue
       
       
     - name: 面试题17.10.主要元素
