@@ -54,4 +54,6 @@ LeetCode刷题思路分析
 |2020-12-14|[738. 单调递增的数字](https://github.com/chensongpoixs/cleet_code/tree/master/0738.MonotoneIncreasingDigitse "738. 单调递增的数字")|位运算|中等|||
 |2020-12-19|[300. 最长递增子序列](https://github.com/chensongpoixs/cleet_code/tree/master/0300.LongestIncreasingSubsequence "300. 最长递增子序列")|动态规划|中等|||
 |2020-12-20|[5630. 删除子数组的最大得分](https://github.com/chensongpoixs/cleet_code/tree/master/5630.MaximumErasureValue "5630. 删除子数组的最大得分")|哈希， 前缀和 |中等|||
+|2020-12-23|[387. 字符串中的第一个唯一字符](https://github.com/chensongpoixs/cleet_code/tree/master/0387.FirstUniqueCharacterinaString "387. 字符串中的第一个唯一字符")|哈希|简单|||
+|2020-12-23|[49. 字母异位词分组](https://github.com/chensongpoixs/cleet_code/tree/master/0049.GroupAnagrams "49. 字母异位词分组")|哈希, 字典树|中等|||
 

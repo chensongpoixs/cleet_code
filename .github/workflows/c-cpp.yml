@@ -78,6 +78,9 @@ jobs:
 
     - name: 21.合并两个有序链表
       run: pwd && cd bin && sudo ./21.合并两个有序链表 1 2 4 7 1 3 4 7 89
+
+    - name: 0049. 字母异位词分组
+      run: pwd && cd bin && sudo ./0049.GroupAnagrams
       
     - name: 0062.不同路径
       run: pwd && cd bin && sudo ./0062.UniquePaths
@@ -119,6 +122,9 @@ jobs:
 
     - name: 381. O(1) 时间插入、删除和获取随机元素 - 允许重复
       run: pwd && cd bin && sudo ./0381.Insert_Delete_GetRandom_O_Duplicates_allowed
+
+    - name: 387. 字符串中的第一个唯一字符
+      run: pwd && cd bin && sudo ./0387.FirstUniqueCharacterinaString
 
     - name: 402.移掉K位数字
       run: pwd && cd bin && sudo ./402.移掉K位数字 
