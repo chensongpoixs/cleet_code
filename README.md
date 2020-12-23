@@ -53,4 +53,4 @@ LeetCode刷题思路分析
 |2020-12-10|[63. 不同路径II](https://github.com/chensongpoixs/cleet_code/tree/master/0062.UniquePathsII "63. 不同路径II")|动态规划|中等|||
 |2020-12-14|[738. 单调递增的数字](https://github.com/chensongpoixs/cleet_code/tree/master/0738.MonotoneIncreasingDigitse "738. 单调递增的数字")|位运算|中等|||
 |2020-12-19|[300. 最长递增子序列](https://github.com/chensongpoixs/cleet_code/tree/master/0300.LongestIncreasingSubsequence "300. 最长递增子序列")|动态规划|中等|||
-
+|2020-12-23|[387. 字符串中的第一个唯一字符](https://github.com/chensongpoixs/cleet_code/tree/master/0387.FirstUniqueCharacterinaString "387. 字符串中的第一个唯一字符")|哈希|简单|||

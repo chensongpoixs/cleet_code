@@ -120,6 +120,9 @@ jobs:
     - name: 381. O(1) 时间插入、删除和获取随机元素 - 允许重复
       run: pwd && cd bin && sudo ./0381.Insert_Delete_GetRandom_O_Duplicates_allowed
 
+    - name: 387. 字符串中的第一个唯一字符
+      run: pwd && cd bin && sudo ./0387.FirstUniqueCharacterinaString
+
     - name: 402.移掉K位数字
       run: pwd && cd bin && sudo ./402.移掉K位数字 
 
