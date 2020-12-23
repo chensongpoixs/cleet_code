@@ -1,4 +1,4 @@
-project(402.移掉K位数字)
+project(0402.Remove_K_Digits)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 

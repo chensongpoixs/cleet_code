@@ -116,7 +116,7 @@ jobs:
 
 
     - name: 0328.奇偶链表
-      run: pwd && cd bin && sudo ./328.奇偶链表 1 2 3 4 5
+      run: pwd && cd bin && sudo ./0328.Odd_Even_Linked_List 1 2 3 4 5
       
 
 
@@ -126,8 +126,8 @@ jobs:
     - name: 387. 字符串中的第一个唯一字符
       run: pwd && cd bin && sudo ./0387.FirstUniqueCharacterinaString
 
-    - name: 402.移掉K位数字
-      run: pwd && cd bin && sudo ./402.移掉K位数字 
+    - name: 0402.移掉K位数字
+      run: pwd && cd bin && sudo ./0402.Remove_K_Digits 
 
     - name: 406.根据身高重建队列
       run: pwd && cd bin && sudo ./406.根据身高重建队列
