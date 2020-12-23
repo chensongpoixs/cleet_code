@@ -44,40 +44,40 @@ jobs:
     - name: 10.regular_expression_matching
       run: pwd && cd bin && sudo ./10.regular_expression_matching
 
-    - name: 11.盛最多水的容器
-      run: pwd && cd bin && sudo ./11.盛最多水的容器 1 8 6 2 5 4 8 3 7
+    - name: 0011.盛最多水的容器
+      run: pwd && cd bin && sudo ./0011.container_with_most_water 1 8 6 2 5 4 8 3 7
 
-    - name: 12.整数转罗马数字
-      run: pwd && cd bin && sudo ./12.整数转罗马数字 1994
+    - name: 0012.整数转罗马数字
+      run: pwd && cd bin && sudo ./0012.integer_to_roman 1994
     
-    - name: 13.罗马数字转整数
-      run: pwd && cd bin && sudo ./13.罗马数字转整数 MCMXCIV
+    - name: 0013.罗马数字转整数
+      run: pwd && cd bin && sudo ./13.roman_to_integer MCMXCIV
 
-    - name: 14.最长公共前缀
-      run: pwd && cd bin && sudo ./14.最长公共前缀 flower flow flight
+    - name: 0014.最长公共前缀
+      run: pwd && cd bin && sudo ./0014.longest_common_prefix flower flow flight
 
 
 
-    - name: 15.三数之和
-      run: pwd && cd bin && sudo ./15.三数之和 
+    - name: 0015.三数之和
+      run: pwd && cd bin && sudo ./15.three_sum 
 
-    - name: 16.最接近的三数之和
-      run: pwd && cd bin && sudo ./16.最接近的三数之和
+    - name: 0016.最接近的三数之和
+      run: pwd && cd bin && sudo ./0016.3sum_closest
 
-    - name: 17.电话号码的字母组合
-      run: pwd && cd bin && sudo ./17.电话号码的字母组合 3434
+    - name: 0017.电话号码的字母组合
+      run: pwd && cd bin && sudo ./0017.letter_combinations_of_phone_number 3434
 
-    - name: 18.四数之和
-      run: pwd && cd bin && sudo ./18.四数之和
+    - name: 0018.四数之和
+      run: pwd && cd bin && sudo ./0018.fourSum
 
-    - name: 19.删除链表的倒数第N个节点
-      run: pwd && cd bin && sudo ./19.删除链表的倒数第N个节点 1 2 4 5 6 3
+    - name: 0019.删除链表的倒数第N个节点
+      run: pwd && cd bin && sudo ./0019.remove_nth_node_from_endof_list 1 2 4 5 6 3
 
-    - name: 20.有效的括号
-      run: pwd && cd bin && sudo ./20.有效的括号 
+    - name: 0020.有效的括号
+      run: pwd && cd bin && sudo ./0020.valid_parentheses
 
-    - name: 21.合并两个有序链表
-      run: pwd && cd bin && sudo ./21.合并两个有序链表 1 2 4 7 1 3 4 7 89
+    - name: 0021.合并两个有序链表
+      run: pwd && cd bin && sudo ./0021.merge_two_sorted_lists 1 2 4 7 1 3 4 7 89
 
     - name: 0049. 字母异位词分组
       run: pwd && cd bin && sudo ./0049.GroupAnagrams
@@ -88,34 +88,34 @@ jobs:
     - name: 0063.不同路径II
       run: pwd && cd bin && sudo ./0063.UniquePathsII
 
-    - name: 134.加油站
-      run: pwd && cd bin && sudo ./134.加油站
+    - name: 0134.加油站
+      run: pwd && cd bin && sudo ./0134.Gas_Station
 
-    - name: 148.排序链表
-      run: pwd && cd bin && sudo ./148.排序链表 4 19 14 5 -3 1 8 5 11 15  -3
+    - name: 0148.排序链表
+      run: pwd && cd bin && sudo ./0148.Sort_List 4 19 14 5 -3 1 8 5 11 15  -3
       
       
-    - name: 164. 最大间距
+    - name: 0164. 最大间距
       run: pwd && cd bin && sudo ./0164.Maximum_Gap
 
 
-    - name: 211.add_and_search_word
+    - name: 0211.add_and_search_word
       run: pwd && cd bin && sudo ./211.add_and_search_word
       
-    - name: 222.完全二叉树的节点个数
+    - name: 0222.完全二叉树的节点个数
       run: pwd && cd bin && sudo ./0222.Count_Complete_Tree_Nodes
 
-    - name: 242.有效的字母异位词
-      run: pwd && cd bin && sudo ./242.有效的字母异位词
+    - name: 0242.有效的字母异位词
+      run: pwd && cd bin && sudo ./0242.Valid_Anagram
 
-    - name: 283.移动零
-      run: pwd && cd bin && sudo ./283.移动零
+    - name: 0283.移动零
+      run: pwd && cd bin && sudo ./0283.Move_Zeroes
 
     - name: 0300. 最长递增子序列
       run: pwd && cd bin && sudo ./0300.LongestIncreasingSubsequence
 
 
-    - name: 328.奇偶链表
+    - name: 0328.奇偶链表
       run: pwd && cd bin && sudo ./328.奇偶链表 1 2 3 4 5
       
 
