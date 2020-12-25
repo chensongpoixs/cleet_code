@@ -1,9 +1,9 @@
-project(5630.MaximumErasureValue)
+project(1535.Find_the_Winner_of_an_Array_Game)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-ADD_DEFINITIONS(-std=c++11 )
+
 file(GLOB ALL_C_SRCS
-        ./*.cpp
+        ./*.c
         )
 
 add_executable(${PROJECT_NAME} ${ALL_C_SRCS})

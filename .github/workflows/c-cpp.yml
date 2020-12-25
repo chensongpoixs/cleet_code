@@ -129,11 +129,11 @@ jobs:
     - name: 0402.移掉K位数字
       run: pwd && cd bin && sudo ./0402.Remove_K_Digits 
 
-    - name: 406.根据身高重建队列
-      run: pwd && cd bin && sudo ./406.根据身高重建队列
+    - name: 0406.根据身高重建队列
+      run: pwd && cd bin && sudo ./0406.Queue_Reconstruction_by_Height
 
     - name: 452.用最少数量的箭引爆气球
-      run: pwd && cd bin && sudo ./452.用最少数量的箭引爆气球
+      run: pwd && cd bin && sudo ./0452.Minimum_Number_of_Arrows_to_Burst_Balloons
       
     - name: 454. 四数相加 II
       run: pwd && cd bin && sudo ./0454.fourSumCount
@@ -146,8 +146,8 @@ jobs:
       
       
 
-    - name: 648.单词替换
-      run: pwd && cd bin && sudo ./648.单词替换
+    - name: 0648.单词替换
+      run: pwd && cd bin && sudo ./0648.Replace_Words
 
     - name: 720.词典中最长的单词
       run: pwd && cd bin && sudo ./0720.Longest_Word_in_Dictionary
@@ -156,56 +156,56 @@ jobs:
     - name: 0738. 单调递增的数字
       run: pwd && cd bin && sudo ./0738.MonotoneIncreasingDigits
       
-    - name: 867.转置矩阵
-      run: pwd && cd bin && sudo ./867.转置矩阵
+    - name: 0867.转置矩阵
+      run: pwd && cd bin && sudo ./0867.transpose_matrix
 
-    - name: 922.按奇偶排序数组II
-      run: pwd && cd bin && sudo ./922.按奇偶排序数组II 4 2 5 7
+    - name: 0922.按奇偶排序数组II
+      run: pwd && cd bin && sudo ./0922.Sort_Array_By_Parity_II 4 2 5 7
 
 
-    - name: 977.有序数组的平方
-      run: pwd && cd bin && sudo ./977.有序数组的平方
+    - name: 0977.有序数组的平方
+      run: pwd && cd bin && sudo ./0977.SquaresofaSorted_Array
 
     - name: 1030.距离顺序排列矩阵单元格
-      run: pwd && cd bin && sudo ./1030.距离顺序排列矩阵单元格  2 3 1 2
+      run: pwd && cd bin && sudo ./1030.Matrix_Cells_in_Distance_Order  2 3 1 2
 
     - name: 1074.元素和为目标值的子矩阵数量
-      run: pwd && cd bin && sudo ./1074.元素和为目标值的子矩阵数量
+      run: pwd && cd bin && sudo ./1074.number_of_submatrices_thatJ_sum_to_target
      
     - name: 1122.数组的相对排序
-      run: pwd && cd bin && sudo ./1122.数组的相对排序
+      run: pwd && cd bin && sudo ./1122.Relative_Sort_Array
       
       
     - name: 1370.上升下降字符串
       run: pwd && cd bin && sudo ./1370.Increasing_Decreasing_String
     
     - name: 1476.子矩形查询
-      run: pwd && cd bin && sudo ./1476.子矩形查询
+      run: pwd && cd bin && sudo ./1476.Subrectangle_Queries
 
     - name: 1535.找出数组游戏的赢家
-      run: pwd && cd bin && sudo ./1535.找出数组游戏的赢家
+      run: pwd && cd bin && sudo ./1535.Find_the_Winner_of_an_Array_Game
 
     - name: 1552.两球之间的磁力
-      run: pwd && cd bin && sudo ./1552.两球之间的磁力
+      run: pwd && cd bin && sudo ./1552.Magnetic_Force_Between_Two_Balls
       
 
     - name: 1588.所有奇数长度子数组的和
-      run: pwd && cd bin && sudo ./1588.所有奇数长度子数组的和
+      run: pwd && cd bin && sudo ./1588.Sum_of_All_Odd_Length_Subarrays
       
       
       
     - name: 1638.统计只差一个字符的子串数目
-      run: pwd && cd bin && sudo ./1638.统计只差一个字符的子串数目
+      run: pwd && cd bin && sudo ./1638.Count_Substrings_That_Differ_by_One_Character
     
     - name: 5630. 删除子数组的最大得分
       run: pwd && cd bin && sudo ./5630.MaximumErasureValue
       
       
     - name: 面试题17.10.主要元素
-      run: pwd && cd bin && sudo ./面试题17.10.主要元素
+      run: pwd && cd bin && sudo ./Interviewquestions17.10.Find_Majority_Element_LCCI
 
     - name: 面试题17.21.直方图的水量
-      run: pwd && cd bin && sudo ./面试题17.21.直方图的水量
+      run: pwd && cd bin && sudo ./Interviewquestions17.21.Volume_of_Histogram_LCCI
 
 
 

@@ -1,10 +1,10 @@
-project(5630.MaximumErasureValue)
+﻿project(Interviewquestions17.10.Find_Majority_Element_LCCI)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-ADD_DEFINITIONS(-std=c++11 )
+MESSAGE(STATUS ${PROJECT_NAME})
 file(GLOB ALL_C_SRCS
-        ./*.cpp
-        )
+./*.c
+)
 
 add_executable(${PROJECT_NAME} ${ALL_C_SRCS})
 target_link_libraries(${PROJECT_NAME})

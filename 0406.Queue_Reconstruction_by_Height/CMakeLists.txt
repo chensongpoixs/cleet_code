@@ -1,9 +1,9 @@
-project(5630.MaximumErasureValue)
+project(0406.Queue_Reconstruction_by_Height)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-ADD_DEFINITIONS(-std=c++11 )
+
 file(GLOB ALL_C_SRCS
-        ./*.cpp
+        ./*.c
         )
 
 add_executable(${PROJECT_NAME} ${ALL_C_SRCS})

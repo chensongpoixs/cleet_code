@@ -1,10 +1,10 @@
-project(5630.MaximumErasureValue)
+﻿project(1476.Subrectangle_Queries)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-ADD_DEFINITIONS(-std=c++11 )
+
 file(GLOB ALL_C_SRCS
-        ./*.cpp
-        )
+./*.c
+)
 
 add_executable(${PROJECT_NAME} ${ALL_C_SRCS})
 target_link_libraries(${PROJECT_NAME})
