@@ -1,7 +1,7 @@
 project(1535.Find_the_Winner_of_an_Array_Game)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-
+MESSAGE(STATUS ${PROJECT_NAME})
 file(GLOB ALL_C_SRCS
         ./*.c
         )

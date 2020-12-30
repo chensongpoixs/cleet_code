@@ -1,10 +1,9 @@
-project(5630.MaximumErasureValue)
+project(1578.MinimumDeletionCosttoAvoidRepeatingLetters)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})
-ADD_DEFINITIONS(-std=c++11 )
 file(GLOB ALL_C_SRCS
-        ./*.cpp
+        ./*.c
         )
 
 add_executable(${PROJECT_NAME} ${ALL_C_SRCS})

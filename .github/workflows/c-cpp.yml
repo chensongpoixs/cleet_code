@@ -140,6 +140,10 @@ jobs:
       
     - name: 493.翻转对
       run: pwd && cd bin && sudo ./0493.ReversePairs
+
+    - name: 605. 种花问题
+      run: pwd && cd bin && sudo ./0605.CanPlaceFlowers
+
     - name: 0621.任务调度器
       run: pwd && cd bin && sudo ./0621.TaskScheduler     
       
@@ -188,6 +192,8 @@ jobs:
     - name: 1552.两球之间的磁力
       run: pwd && cd bin && sudo ./1552.Magnetic_Force_Between_Two_Balls
       
+    - name: 1578. 避免重复字母的最小删除成本
+      run: pwd && cd bin && sudo ./1578.MinimumDeletionCosttoAvoidRepeatingLetters
 
     - name: 1588.所有奇数长度子数组的和
       run: pwd && cd bin && sudo ./1588.Sum_of_All_Odd_Length_Subarrays

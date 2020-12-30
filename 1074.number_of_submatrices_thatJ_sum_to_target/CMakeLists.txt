@@ -1,7 +1,7 @@
 project(1074.number_of_submatrices_thatJ_sum_to_target)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-
+MESSAGE(STATUS ${PROJECT_NAME})
 file(GLOB ALL_C_SRCS
         ./*.c
         )

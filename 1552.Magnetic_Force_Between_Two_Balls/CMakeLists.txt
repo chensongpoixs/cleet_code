@@ -1,7 +1,7 @@
 project(1552.Magnetic_Force_Between_Two_Balls)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-
+MESSAGE(STATUS ${PROJECT_NAME})
 file(GLOB ALL_C_SRCS
 ./*.c
 )

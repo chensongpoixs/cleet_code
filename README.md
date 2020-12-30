@@ -56,4 +56,6 @@ LeetCode刷题思路分析
 |2020-12-20|[5630. 删除子数组的最大得分](https://github.com/chensongpoixs/cleet_code/tree/master/5630.MaximumErasureValue "5630. 删除子数组的最大得分")|哈希， 前缀和 |中等|||
 |2020-12-23|[387. 字符串中的第一个唯一字符](https://github.com/chensongpoixs/cleet_code/tree/master/0387.FirstUniqueCharacterinaString "387. 字符串中的第一个唯一字符")|哈希|简单|||
 |2020-12-23|[49. 字母异位词分组](https://github.com/chensongpoixs/cleet_code/tree/master/0049.GroupAnagrams "49. 字母异位词分组")|哈希, 字典树|中等|||
+|2020-12-30|[605. 种花问题](https://github.com/chensongpoixs/cleet_code/tree/master/0605.CanPlaceFlowers "605. 种花问题")|排序, 贪心算法|简单|||
+|2020-12-30|[1578. 避免重复字母的最小删除成本](https://github.com/chensongpoixs/cleet_code/tree/master/1578.MinimumDeletionCosttoAvoidRepeatingLetters "1578. 避免重复字母的最小删除成本")|贪心算法|中等|||
 
