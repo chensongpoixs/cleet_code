@@ -88,6 +88,9 @@ jobs:
     - name: 0063.不同路径II
       run: pwd && cd bin && sudo ./0063.UniquePathsII
 
+    - name: 0069. x 的平方根
+      run: pwd && cd bin && sudo ./0069.Sqrtx
+
     - name: 0134.加油站
       run: pwd && cd bin && sudo ./0134.Gas_Station
 
@@ -104,6 +107,9 @@ jobs:
       
     - name: 0222.完全二叉树的节点个数
       run: pwd && cd bin && sudo ./0222.Count_Complete_Tree_Nodes
+
+    - name: 0239. 滑动窗口最大值
+      run: pwd && cd bin && sudo ./0239.SlidingWindowMaximum
 
     - name: 0242.有效的字母异位词
       run: pwd && cd bin && sudo ./0242.Valid_Anagram

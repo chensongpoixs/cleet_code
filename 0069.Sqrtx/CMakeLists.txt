@@ -1,4 +1,4 @@
-project(208.trie_tree)
+project(0069.Sqrtx)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

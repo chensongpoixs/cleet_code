@@ -58,4 +58,6 @@ LeetCode刷题思路分析
 |2020-12-23|[49. 字母异位词分组](https://github.com/chensongpoixs/cleet_code/tree/master/0049.GroupAnagrams "49. 字母异位词分组")|哈希, 字典树|中等|||
 |2020-12-30|[605. 种花问题](https://github.com/chensongpoixs/cleet_code/tree/master/0605.CanPlaceFlowers "605. 种花问题")|排序, 贪心算法|简单|||
 |2020-12-30|[1578. 避免重复字母的最小删除成本](https://github.com/chensongpoixs/cleet_code/tree/master/1578.MinimumDeletionCosttoAvoidRepeatingLetters "1578. 避免重复字母的最小删除成本")|贪心算法|中等|||
+|2021-01-02|[69. x 的平方根](https://github.com/chensongpoixs/cleet_code/tree/master/0069.Sqrtx "69. x 的平方根")|二分查找|简单|||
+|2001-01-02|[239. 滑动窗口最大值](https://github.com/chensongpoixs/cleet_code/tree/master/0239.SlidingWindowMaximum "239. 滑动窗口最大值")|minheap|head|||
 
