@@ -91,6 +91,9 @@ jobs:
     - name: 0069. x 的平方根
       run: pwd && cd bin && sudo ./0069.Sqrtx
 
+    - name: 0086. 分隔链表
+      run: pwd && cd bin && sudo ./0086.PartitionList
+
     - name: 0134.加油站
       run: pwd && cd bin && sudo ./0134.Gas_Station
 
@@ -211,6 +214,9 @@ jobs:
     
     - name: 5630. 删除子数组的最大得分
       run: pwd && cd bin && sudo ./5630.MaximumErasureValue
+
+    - name: 5642. 大餐计数
+      run: pwd && cd bin && sudo ./5642.CountGoodMeals
       
       
     - name: 面试题17.10.主要元素

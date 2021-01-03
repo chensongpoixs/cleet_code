@@ -59,5 +59,7 @@ LeetCode刷题思路分析
 |2020-12-30|[605. 种花问题](https://github.com/chensongpoixs/cleet_code/tree/master/0605.CanPlaceFlowers "605. 种花问题")|排序, 贪心算法|简单|||
 |2020-12-30|[1578. 避免重复字母的最小删除成本](https://github.com/chensongpoixs/cleet_code/tree/master/1578.MinimumDeletionCosttoAvoidRepeatingLetters "1578. 避免重复字母的最小删除成本")|贪心算法|中等|||
 |2021-01-02|[69. x 的平方根](https://github.com/chensongpoixs/cleet_code/tree/master/0069.Sqrtx "69. x 的平方根")|二分查找|简单|||
-|2001-01-02|[239. 滑动窗口最大值](https://github.com/chensongpoixs/cleet_code/tree/master/0239.SlidingWindowMaximum "239. 滑动窗口最大值")|minheap|head|||
+|2021-01-02|[239. 滑动窗口最大值](https://github.com/chensongpoixs/cleet_code/tree/master/0239.SlidingWindowMaximum "239. 滑动窗口最大值")|minheap|head|||
+|2021-01-03|[86. 分隔链表](https://github.com/chensongpoixs/cleet_code/tree/master/0086.PartitionList "86. 分隔链表")|双指针,链表|中等|||
+|2021-01-03|[5642. 大餐计数](https://github.com/chensongpoixs/cleet_code/tree/master/5642.CountGoodMeals "5642. 大餐计数")|哈希,2的幂|中等|||
 
