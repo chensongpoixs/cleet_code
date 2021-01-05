@@ -168,7 +168,11 @@ jobs:
 
     - name: 0738. 单调递增的数字
       run: pwd && cd bin && sudo ./0738.MonotoneIncreasingDigits
-      
+
+    - name: 0830. 较大分组的位置
+      run: pwd && cd bin && sudo ./0830.PositionsofLargeGroups
+
+
     - name: 0867.转置矩阵
       run: pwd && cd bin && sudo ./0867.transpose_matrix
 
@@ -216,7 +220,7 @@ jobs:
       run: pwd && cd bin && sudo ./5630.MaximumErasureValue
 
     - name: 5642. 大餐计数
-      run: pwd && cd bin && sudo ./5642.CountGoodMeals
+      run: pwd && cd bin && sudo ./5642.CountGoodMeals 4567 83 34 34 34 343 232 232 232 232 232 23
       
       
     - name: 面试题17.10.主要元素

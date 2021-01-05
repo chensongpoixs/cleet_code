@@ -62,4 +62,6 @@ LeetCode刷题思路分析
 |2021-01-02|[239. 滑动窗口最大值](https://github.com/chensongpoixs/cleet_code/tree/master/0239.SlidingWindowMaximum "239. 滑动窗口最大值")|minheap|head|||
 |2021-01-03|[86. 分隔链表](https://github.com/chensongpoixs/cleet_code/tree/master/0086.PartitionList "86. 分隔链表")|双指针,链表|中等|||
 |2021-01-03|[5642. 大餐计数](https://github.com/chensongpoixs/cleet_code/tree/master/5642.CountGoodMeals "5642. 大餐计数")|哈希,2的幂|中等|||
+|2021-01-05|[830. 较大分组的位置](https://github.com/chensongpoixs/cleet_code/tree/master/0830.PositionsofLargeGroups "830. 较大分组的位置")|数组|简单|||
+
 
