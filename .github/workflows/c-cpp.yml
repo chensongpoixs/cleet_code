@@ -150,6 +150,9 @@ jobs:
     - name: 493.翻转对
       run: pwd && cd bin && sudo ./0493.ReversePairs
 
+    - name: 0547. 省份数量
+      run: pwd && cd bin && sudo ./0547.NumberofProvinces
+
     - name: 605. 种花问题
       run: pwd && cd bin && sudo ./0605.CanPlaceFlowers
 
