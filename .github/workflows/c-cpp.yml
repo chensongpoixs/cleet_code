@@ -230,7 +230,10 @@ jobs:
     - name: 5642. 大餐计数
       run: pwd && cd bin && sudo ./5642.CountGoodMeals 4567 83 34 34 34 343 232 232 232 232 232 23
       
-      
+
+    - name: 面试题 17.07. 婴儿名字
+      run: pwd && cd bin && sudo ./Interview17.07.BabyNamesLCCI
+
     - name: 面试题17.10.主要元素
       run: pwd && cd bin && sudo ./Interviewquestions17.10.Find_Majority_Element_LCCI
 

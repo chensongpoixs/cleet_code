@@ -64,5 +64,6 @@ LeetCode刷题思路分析
 |2021-01-03|[5642. 大餐计数](https://github.com/chensongpoixs/cleet_code/tree/master/5642.CountGoodMeals "5642. 大餐计数")|哈希,2的幂|中等|||
 |2021-01-05|[830. 较大分组的位置](https://github.com/chensongpoixs/cleet_code/tree/master/0830.PositionsofLargeGroups "830. 较大分组的位置")|数组|简单|||
 |2021-01-13|[990. 等式方程的可满足性](https://github.com/chensongpoixs/cleet_code/tree/master/0990.SatisfiabilityofEqualityEquations "990. 等式方程的可满足性")|并查集|中等|||
+|2021-01-13|[面试题 17.07. 婴儿名字](https://github.com/chensongpoixs/cleet_code/tree/master/Interview17.07.BabyNamesLCCI "面试题 17.07. 婴儿名字")|深度优先搜索,广度优先搜索,并查集|中等|||
 
 

@@ -1,7 +1,8 @@
-project(1370.Increasing_Decreasing_String)
+project(Interview17.07.BabyNamesLCCI)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
-
+MESSAGE(STATUS ${PROJECT_NAME})
+ADD_DEFINITIONS(-std=c++11 )
 file(GLOB ALL_C_SRCS
         ./*.cpp
         )

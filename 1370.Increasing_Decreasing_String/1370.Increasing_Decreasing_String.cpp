@@ -20,6 +20,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <queue>
+#include <iostream>
+std::queue<char> m_queue;
 
 int parition(char * s, int start, int end)
 {
