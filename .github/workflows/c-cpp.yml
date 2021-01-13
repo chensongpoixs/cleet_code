@@ -186,6 +186,11 @@ jobs:
     - name: 0977.有序数组的平方
       run: pwd && cd bin && sudo ./0977.SquaresofaSorted_Array
 
+    - name: 0990. 等式方程的可满足性
+      run: pwd && cd bin && sudo ./0990.SatisfiabilityofEqualityEquations
+
+
+
     - name: 1030.距离顺序排列矩阵单元格
       run: pwd && cd bin && sudo ./1030.Matrix_Cells_in_Distance_Order  2 3 1 2
 

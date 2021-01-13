@@ -1,4 +1,4 @@
-project(0977.SquaresofaSorted_Array)
+project(0990.SatisfiabilityofEqualityEquations)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})
