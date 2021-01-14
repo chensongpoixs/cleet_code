@@ -22,34 +22,41 @@
 #include <stdlib.h>
 
 
-void init(int * unid_find, int size)
+/**
+ * 并查集初始化
+ * @param union_find
+ * @param size
+ */
+void init(int * union_find, int size)
 {
     for (int i = 0; i <=size; ++i)
     {
-        unid_find[i] = i ;
+        union_find[i] = i ;
     }
 }
 
-
-int getfriend(int * unid_find, int v)
+/**
+ * 并查集 查找 那个集合
+ * @param union_find
+ * @param v
+ * @return
+ */
+int getfriend(int * union_find, int v)
 {
-    if (unid_find[v] == v)
+    if (union_find[v] == v)
     {
         return v;
     }
     //查找上一个节点的数据
-    return unid_find[v] = getfriend(&unid_find[0], unid_find[v]);
+    return union_find[v] = getfriend(&union_find[0], union_find[v]);
 }
 /**
 * 并查集
 */
 int findCircleNum(int** isConnected, int isConnectedSize, int* isConnectedColSize)
 {
-    // int size = 2e3+1;
-    // printf("%d\n", size);
-    // return 0;
     int arrays[(int)2e2+1] ={0}; // 科学计数法 e = 10
-    printf("%d\n", isConnectedSize);
+//    printf("%d\n", isConnectedSize);
     init(&arrays[0], isConnectedSize );
     int hash[isConnectedSize+1];
     for (int i = 1; i <= isConnectedSize; ++i)
@@ -104,21 +111,14 @@ int findCircleNum(int** isConnected, int isConnectedSize, int* isConnectedColSiz
         }
     }
 
+     //多出统计不同集合
+     // 需要时间复杂度O(N) , 空间复杂度O(N)
+     //
     int count = 0;
     for (int i = 1; i <= isConnectedSize; ++i)
     {
-        // if (i % 30 == 0)
-        // {
-        //     printf("\n");
-        // }
-        // printf("%d, ", arrays[i]);
-        // if (i != arrays[i])
-        {
             ++hash[arrays[i]];
-        }
-
     }
-    // printf("\n");
     for (int i = 1; i <= isConnectedSize; ++i)
     {
         if (hash[i]>0)
@@ -131,7 +131,77 @@ int findCircleNum(int** isConnected, int isConnectedSize, int* isConnectedColSiz
 }
 
 
+/**
+* 查并集  优化过的代码 时间复杂度是O(n^2)
+*/
+int findCircleNumCount(int** isConnected, int isConnectedSize, int* isConnectedColSize)
+{
+    int arrays[(int)2e2+1] ={0}; // 科学计数法 e = 10
+    init(&arrays[0], isConnectedSize );
+    int count = isConnectedSize;
+    int j = 0;
+    int iv = 0;
+    int jv = 0;
+    for (int i = 1; i <= isConnectedSize; ++i)
+    {
+        for (j = i+1; j <= isConnectedColSize[i-1]; ++j)
+        {
+            if (i < j &&  isConnected[i-1][j-1] == 1)
+            {
+                iv = getfriend(&arrays[0], i);
+                jv = getfriend(&arrays[0], j);
+                if (iv != jv)
+                {
+                    --count;
+                    if (iv <= jv)
+                    {
+                        arrays[j] = iv;
+                        arrays[jv] = iv;
+
+                    }
+                    else
+                    {
+                        arrays[j] = jv;
+                        arrays[iv] = jv;
+
+                    }
+                    // printf("i = %d, j = %d, iv = %d, jv = %d\n", i, j, iv, jv);
+                }
+            }
+        }
+    }
+    return count;
+}
 int main(int argc, char *argv[])
 {
+    int **arrays_ptr = malloc(sizeof(int *) *3);
+    arrays_ptr[0] = malloc(sizeof(int) *3);
+    arrays_ptr[0][0] = 1;
+    arrays_ptr[0][1] = 1;
+    arrays_ptr[0][2] = 0;
+    arrays_ptr[1] = malloc(sizeof(int) *3);
+    arrays_ptr[1][0] = 1;
+    arrays_ptr[1][1] = 1;
+    arrays_ptr[1][2] = 0;
+    arrays_ptr[2] = malloc(sizeof(int) *3);
+    arrays_ptr[2][0] = 0;
+    arrays_ptr[2][1] = 0;
+    arrays_ptr[2][2] = 1;
+    printf("{{1,1,0},{1,1,0},{0,0,1}}\n");
+    int arraycol[3] = {3, 3, 3};
+    printf("count = %d\n", findCircleNumCount(arrays_ptr, 3, &arraycol[0]));
+    if (arrays_ptr)
+    {
+        for (int i = 0; i < 3; ++i)
+        {
+            if (arrays_ptr[i])
+            {
+                free(arrays_ptr[i]);
+                arrays_ptr[i] = NULL;
+            }
+        }
+        free(arrays_ptr);
+        arrays_ptr = NULL;
+    }
     return EXIT_SUCCESS;
 }
