@@ -3,7 +3,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 
 file(GLOB ALL_C_SRCS
-        ./*.cpp
+        ./*.c
         )
 
 add_executable(${PROJECT_NAME} ${ALL_C_SRCS})

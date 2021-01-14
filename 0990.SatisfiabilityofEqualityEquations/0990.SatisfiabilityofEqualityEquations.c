@@ -21,6 +21,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+#define bool int
+#define true 1
+#define false 0
+
 void init(int * union_find)
 {
     for (int i = 1; i < 27; ++i)
