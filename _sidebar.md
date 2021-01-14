@@ -1,76 +1,77 @@
 
-* [Array](https://github.com/chensongpoixs/cleet_code/tree/master/Array/README.md  "Array")
+- 数组(Array)
+     - [introduction](Array/README.md)
+     
+- 动态规划(DynamicProgramming)
 
-* [DynamicProgramming](https://github.com/chensongpoixs/cleet_code/tree/master/DynamicProgramming/README.md  "DynamicProgramming")
+- 字符串(String)
 
-* [String](https://github.com/chensongpoixs/cleet_code/tree/master/String/README.md  "String")
+- 数学(Math)
 
-* [Math](https://github.com/chensongpoixs/cleet_code/tree/master/Math/README.md  "Math")
+- 树(Tree)
 
-* [Tree](https://github.com/chensongpoixs/cleet_code/tree/master/Tree/README.md  "Tree")
+- 深度优先搜索(DepthfirstSearch)
 
-* [DepthfirstSearch](https://github.com/chensongpoixs/cleet_code/tree/master/DepthfirstSearch/README.md  "DepthfirstSearch")
+- 哈希表(HashTable)
 
-* [HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable")
+- 贪心算法(Greedy)
 
-* [Greedy](https://github.com/chensongpoixs/cleet_code/tree/master/Greedy/README.md  "Greedy")
+- 二分查找(BinarySearch)
 
-* [BinarySearch](https://github.com/chensongpoixs/cleet_code/tree/master/BinarySearch/README.md  "BinarySearch")
+- 广度优先搜索(BreadthFirstSearch)
 
-* [BreadthFirstSearch](https://github.com/chensongpoixs/cleet_code/tree/master/BreadthFirstSearch/README.md  "BreadthFirstSearch")
+- 双指针(TwoPointers)
 
-* [TwoPointers](https://github.com/chensongpoixs/cleet_code/tree/master/TwoPointers/README.md  "TwoPointers")
+- 排序(Sort)
 
-* [Sort](https://github.com/chensongpoixs/cleet_code/tree/master/Sort/README.md  "Sort")
+- 回溯算法(Backtracking)
 
-* [Backtracking](https://github.com/chensongpoixs/cleet_code/tree/master/Backtracking/README.md  "Backtracking")
+- 栈(Stack)
 
-* [Stack](https://github.com/chensongpoixs/cleet_code/tree/master/Stack/README.md  "Stack")
+- 设计(Design)
 
-* [Design](https://github.com/chensongpoixs/cleet_code/tree/master/Design/README.md  "Design")
+- 位运算(BitManipulation)
 
-* [BitManipulation](https://github.com/chensongpoixs/cleet_code/tree/master/BitManipulation/README.md  "BitManipulation")
+- 链表(LinkedList)
 
-* [LinkedList](https://github.com/chensongpoixs/cleet_code/tree/master/LinkedList/README.md  "LinkedList")
+- 图(Graph)
 
-* [Graph](https://github.com/chensongpoixs/cleet_code/tree/master/Graph/README.md  "Graph")
+- 堆(Heap)
 
-* [Heap](https://github.com/chensongpoixs/cleet_code/tree/master/Heap/README.md  "Heap")
+- 递归(Recursion)
 
-* [Recursion](https://github.com/chensongpoixs/cleet_code/tree/master/Recursion/README.md  "Recursion")
+- 并查集(UnionFind)
 
-* [UnionFind](https://github.com/chensongpoixs/cleet_code/tree/master/UnionFind/README.md  "UnionFind")
+- SlidingWindow
 
-* [SlidingWindow](https://github.com/chensongpoixs/cleet_code/tree/master/SlidingWindow/README.md  "SlidingWindow")
+- 分治算法(DivideandConquer)
 
-* [DivideandConquer](https://github.com/chensongpoixs/cleet_code/tree/master/DivideandConquer/README.md  "DivideandConquer")
+- 字典树(Trie)
 
-* [Trie](https://github.com/chensongpoixs/cleet_code/tree/master/Trie/README.md  "Trie")
+- 线段树(SegmentTree)
 
-* [SegmentTree](https://github.com/chensongpoixs/cleet_code/tree/master/SegmentTree/README.md  "SegmentTree")
+- OrderedMap
 
-* [OrderedMap](https://github.com/chensongpoixs/cleet_code/tree/master/OrderedMap/README.md  "OrderedMap")
+- 几何(Geometry)
 
-* [Geometry](https://github.com/chensongpoixs/cleet_code/tree/master/Geometry/README.md  "Geometry")
+- 队列(Queue)
 
-* [Queue](https://github.com/chensongpoixs/cleet_code/tree/master/Queue/README.md  "Queue")
+- 极小化极大(Minimax)
 
-* [Minimax](https://github.com/chensongpoixs/cleet_code/tree/master/Minimax/README.md  "Minimax")
+- 树状数组(BinaryIndexTree)
 
-* [BinaryIndexTree](https://github.com/chensongpoixs/cleet_code/tree/master/BinaryIndexTree/README.md  "BinaryIndexTree")
+- 脑筋急转弯(Brainteaser)
 
-* [Brainteaser](https://github.com/chensongpoixs/cleet_code/tree/master/Brainteaser/README.md  "Brainteaser")
+- LineSweep
 
-* [LineSweep](https://github.com/chensongpoixs/cleet_code/tree/master/LineSweep/README.md  "LineSweep")
+- Random
 
-* [Random](https://github.com/chensongpoixs/cleet_code/tree/master/Random/README.md  "Random")
+- 拓扑排序(TopologicalSort)
 
-* [TopologicalSort](https://github.com/chensongpoixs/cleet_code/tree/master/TopologicalSort/README.md  "TopologicalSort")
+- 二叉搜索树(BinarySearchTree)
 
-* [BinarySearchTree](https://github.com/chensongpoixs/cleet_code/tree/master/BinarySearchTree/README.md  "BinarySearchTree")
+- 记忆力(Memoization)
 
-* [Memoization](https://github.com/chensongpoixs/cleet_code/tree/master/Memoization/README.md  "Memoization")
+- RejectionSampling
 
-* [RejectionSampling](https://github.com/chensongpoixs/cleet_code/tree/master/RejectionSampling/README.md  "RejectionSampling")
-
-* [ReservoirSampling](https://github.com/chensongpoixs/cleet_code/tree/master/ReservoirSampling/README.md  "ReservoirSampling")
+- 蓄水池抽样(ReservoirSampling)
