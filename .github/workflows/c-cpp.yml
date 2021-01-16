@@ -216,6 +216,12 @@ jobs:
     - name: 1578. 避免重复字母的最小删除成本
       run: pwd && cd bin && sudo ./1578.MinimumDeletionCosttoAvoidRepeatingLetters
 
+
+    - name: 1584. 连接所有点的最小费用
+      run: pwd && cd bin && sudo ./1584.MinCosttoConnectAllPoints
+
+
+
     - name: 1588.所有奇数长度子数组的和
       run: pwd && cd bin && sudo ./1588.Sum_of_All_Odd_Length_Subarrays
       
