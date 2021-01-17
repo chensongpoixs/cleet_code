@@ -49,6 +49,7 @@ LeetCode刷题思路分析
 |[605. 种花问题](https://github.com/chensongpoixs/cleet_code/tree/master/0605.CanPlaceFlowers "605. 种花问题")|2020-12-30|排序, 贪心算法|Easy|||
 |[621. 任务调度器](https://github.com/chensongpoixs/cleet_code/tree/master/0454.fourSumCount "621. 任务调度器")|2020-12-05|桶排序,次数最多的|Medium|||
 |[648.单词替换](https://github.com/chensongpoixs/cleet_code/tree/master "648.单词替换")|2020-11-20|[Trie](https://github.com/chensongpoixs/cleet_code/tree/master/Trie/README.md  "Trie")|Medium|trie tree||
+|[684. 冗余连接](https://github.com/chensongpoixs/cleet_code/tree/master/0684.RedundantConnection "684. 冗余连接")|2021-01-17|[UnionFind](https://github.com/chensongpoixs/cleet_code/tree/master/UnionFind/README.md  "UnionFind") |Medium|||
 |[720. 词典中最长的单词](https://github.com/chensongpoixs/cleet_code/tree/master/0720.Longest_Word_in_Dictionary "720. 词典中最长的单词")|2020-11-27|[Trie](https://github.com/chensongpoixs/cleet_code/tree/master/Trie/README.md  "Trie"), 深度遍历|Easy|||
 |[738. 单调递增的数字](https://github.com/chensongpoixs/cleet_code/tree/master/0738.MonotoneIncreasingDigitse "738. 单调递增的数字")|2020-12-14|位运算|Medium|||
 |[830. 较大分组的位置](https://github.com/chensongpoixs/cleet_code/tree/master/0830.PositionsofLargeGroups "830. 较大分组的位置")|2021-01-05|数组|Easy|||

@@ -125,18 +125,18 @@ public:
     {
         int count = 0;
         //时间复杂度降低到O(N^2)
-        std::unordered_map<long long , int>  m_key_count;
+        std::unordered_map<long long , int>  m_target;
         for (int i = 0; i < nums.size(); ++i)
         {
             for (int j = i+1; j < nums.size(); ++j)
             {
                 if (i != j)
                 {
-                    ++m_key_count[nums[i]* nums[j]];
+                    ++m_target[nums[i]* nums[j]];
                 }
             }
         }
-        for (const std::pair<long long , int> &_pair: m_key_count)
+        for (const std::pair<long long , int> &_pair: m_target)
         {
             if (_pair.second> 1)
             {
