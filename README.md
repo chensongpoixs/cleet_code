@@ -63,6 +63,7 @@ LeetCode刷题思路分析
 |[1578. 避免重复字母的最小删除成本](https://github.com/chensongpoixs/cleet_code/tree/master/1578.MinimumDeletionCosttoAvoidRepeatingLetters "1578. 避免重复字母的最小删除成本")|2020-12-30|贪心算法|Medium|||
 |[1584. 连接所有点的最小费用](https://github.com/chensongpoixs/cleet_code/tree/master/1584.MinCosttoConnectAllPoints "1584. 连接所有点的最小费用")|2021-01-16|[UnionFind](https://github.com/chensongpoixs/cleet_code/tree/master/UnionFind/README.md  "UnionFind"), [HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable"),   |Medium|||
 |[1588.所有奇数长度子数组的和](https://github.com/chensongpoixs/cleet_code/tree/master/1588.Sum_of_All_Odd_Length_Subarrays "1588.所有奇数长度子数组的和")|2020-11-22|数学知识解决 奇数和偶数个数问题的平均数求解问题 时间复杂度O(N) |Easy|||
+|[5243. 同积元组](https://github.com/chensongpoixs/cleet_code/tree/master/5243.TuplewithSameProduct "5243. 同积元组")|2021-01-17|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable"), [Math](https://github.com/chensongpoixs/cleet_code/tree/master/Math/README.md  "Math") |Medium|||
 |[5630. 删除子数组的最大得分](https://github.com/chensongpoixs/cleet_code/tree/master/5630.MaximumErasureValue "5630. 删除子数组的最大得分")|2020-12-20|哈希， 前缀和 |Medium|||
 |[5642. 大餐计数](https://github.com/chensongpoixs/cleet_code/tree/master/5642.CountGoodMeals "5642. 大餐计数")|2021-01-03|哈希,2的幂|Medium|||
 |[面试题 17.07. 婴儿名字](https://github.com/chensongpoixs/cleet_code/tree/master/Interview17.07.BabyNamesLCCI "面试题 17.07. 婴儿名字")|2021-01-13|深度优先搜索,广度优先搜索,并查集|Medium|||

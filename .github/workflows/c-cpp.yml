@@ -229,7 +229,11 @@ jobs:
       
     - name: 1638.统计只差一个字符的子串数目
       run: pwd && cd bin && sudo ./1638.Count_Substrings_That_Differ_by_One_Character
-    
+
+
+    - name: 5243. 同积元组
+      run: pwd && cd bin && sudo ./5243.TuplewithSameProduct
+
     - name: 5630. 删除子数组的最大得分
       run: pwd && cd bin && sudo ./5630.MaximumErasureValue
 
