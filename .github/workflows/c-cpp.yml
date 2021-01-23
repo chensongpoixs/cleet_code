@@ -204,7 +204,9 @@ jobs:
     - name: 1122.数组的相对排序
       run: pwd && cd bin && sudo ./1122.Relative_Sort_Array
       
-      
+    - name: 1319. 连通网络的操作次数
+      run: pwd && cd bin && sudo ./1319.NumberofOperationstoMakeNetworkConnected
+
     - name: 1370.上升下降字符串
       run: pwd && cd bin && sudo ./1370.Increasing_Decreasing_String
     

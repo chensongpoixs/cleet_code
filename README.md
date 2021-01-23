@@ -58,6 +58,7 @@ LeetCode刷题思路分析
 |[1074.元素和为目标值的子矩阵数量]( "1074.元素和为目标值的子矩阵数量")|2020-11-03|哈希函数,前缀和|Hard||
 |[1122. 数组的相对排序](https://github.com/chensongpoixs/cleet_code/tree/master/1122.Relative_Sort_Array "1122. 数组的相对排序")|2020-11-14|快速排序算法,去重方法|Easy||
 |[1030. 距离顺序排列矩阵单元格](https://github.com/chensongpoixs/cleet_code/tree/master/1030.Matrix_Cells_in_Distance_Order "1030. 距离顺序排列矩阵单元格")|2020-11-17||Easy||30 minute|
+|[1319. 连通网络的操作次数](https://github.com/chensongpoixs/cleet_code/tree/master/1319.NumberofOperationstoMakeNetworkConnected "1319. 连通网络的操作次数")|2021-01-23|[UnionFind](https://github.com/chensongpoixs/cleet_code/tree/master/UnionFind/README.md  "UnionFind"), [DepthfirstSearch](https://github.com/chensongpoixs/cleet_code/tree/master/DepthfirstSearch/README.md  "DepthfirstSearch"), [BreadthFirstSearch](https://github.com/chensongpoixs/cleet_code/tree/master/BreadthFirstSearch/README.md  "BreadthFirstSearch")|Medium|||
 |[1476. 子矩形查询](https://github.com/chensongpoixs/cleet_code/tree/master/1476.Subrectangle_Queries "1476. 子矩形查询")|2020-11-15|需要花一点时间认真读题|Medium||10 minute|
 |[1535.找出数组游戏的赢家](https://github.com/chensongpoixs/cleet_code/tree/master/1535.Find_the_Winner_of_an_Array_Game "1535.找出数组游戏的赢家")|2020-11-18|最细读题,其实只需要遍历一次就可以判断了，两个数比较一定是有大小的|Medium|||
 |[1552.两球之间的磁力](https://github.com/chensongpoixs/cleet_code/tree/master/1552.Magnetic_Force_Between_Two_Balls "1552.两球之间的磁力")|2020-11-19|对数据的进行分析|Medium|N数相加的问题||
