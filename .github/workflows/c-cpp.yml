@@ -221,6 +221,9 @@ jobs:
       
     - name: 1578. 避免重复字母的最小删除成本
       run: pwd && cd bin && sudo ./1578.MinimumDeletionCosttoAvoidRepeatingLetters
+      
+    - name: 1579. 保证图可完全遍历
+      run: pwd && cd bin && sudo ./1579.RemoveMaxNumberofEdgestoKeepGraphFullyTraversable
 
 
     - name: 1584. 连接所有点的最小费用
