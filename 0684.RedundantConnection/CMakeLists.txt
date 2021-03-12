@@ -1,4 +1,4 @@
-project(0648.Replace_Words)
+project(0684.RedundantConnection)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

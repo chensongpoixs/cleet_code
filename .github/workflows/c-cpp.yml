@@ -165,6 +165,10 @@ jobs:
     - name: 0648.单词替换
       run: pwd && cd bin && sudo ./0648.Replace_Words
 
+
+    - name: 0684. 冗余连接
+      run: pwd && cd bin && sudo ./0684.RedundantConnection
+
     - name: 720.词典中最长的单词
       run: pwd && cd bin && sudo ./0720.Longest_Word_in_Dictionary
 
@@ -200,7 +204,9 @@ jobs:
     - name: 1122.数组的相对排序
       run: pwd && cd bin && sudo ./1122.Relative_Sort_Array
       
-      
+    - name: 1319. 连通网络的操作次数
+      run: pwd && cd bin && sudo ./1319.NumberofOperationstoMakeNetworkConnected
+
     - name: 1370.上升下降字符串
       run: pwd && cd bin && sudo ./1370.Increasing_Decreasing_String
     
@@ -215,6 +221,15 @@ jobs:
       
     - name: 1578. 避免重复字母的最小删除成本
       run: pwd && cd bin && sudo ./1578.MinimumDeletionCosttoAvoidRepeatingLetters
+      
+    - name: 1579. 保证图可完全遍历
+      run: pwd && cd bin && sudo ./1579.RemoveMaxNumberofEdgestoKeepGraphFullyTraversable
+
+
+    - name: 1584. 连接所有点的最小费用
+      run: pwd && cd bin && sudo ./1584.MinCosttoConnectAllPoints
+
+
 
     - name: 1588.所有奇数长度子数组的和
       run: pwd && cd bin && sudo ./1588.Sum_of_All_Odd_Length_Subarrays
@@ -223,7 +238,11 @@ jobs:
       
     - name: 1638.统计只差一个字符的子串数目
       run: pwd && cd bin && sudo ./1638.Count_Substrings_That_Differ_by_One_Character
-    
+
+
+    - name: 5243. 同积元组
+      run: pwd && cd bin && sudo ./5243.TuplewithSameProduct
+
     - name: 5630. 删除子数组的最大得分
       run: pwd && cd bin && sudo ./5630.MaximumErasureValue
 

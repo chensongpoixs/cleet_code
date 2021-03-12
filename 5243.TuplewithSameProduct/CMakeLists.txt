@@ -1,9 +1,10 @@
-project(0648.Replace_Words)
+project(5243.TuplewithSameProduct)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})
+ADD_DEFINITIONS(-std=c++11 )
 file(GLOB ALL_C_SRCS
-        ./*.c
+        ./*.cpp
         )
 
 add_executable(${PROJECT_NAME} ${ALL_C_SRCS})
