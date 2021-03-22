@@ -38,6 +38,7 @@ LeetCode刷题思路分析
 |[222.完全二叉树的节点个数](https://github.com/chensongpoixs/cleet_code/tree/master/0222.Count_Complete_Tree_Nodes "222.完全二叉树的节点个数")|2020-11-24|二叉树的考察|Medium|||
 |[239. 滑动窗口最大值](https://github.com/chensongpoixs/cleet_code/tree/master/0239.SlidingWindowMaximum "239. 滑动窗口最大值")|2021-01-02|minheap|head|||
 |[242. 有效的字母异位词](https://github.com/chensongpoixs/cleet_code/tree/master/0242.Valid_Anagram "242. 有效的字母异位词")|2020-11-22|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable") |Easy|||
+|[268. 丢失的数字](https://github.com/chensongpoixs/cleet_code/tree/master/0268.Missing_Number "268. 丢失的数字")|2021-03-22|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable")、[Bit Manipulation](https://github.com/chensongpoixs/cleet_code/tree/master/Bit_Manipulation/README.md  "Bit Manipulation")、[Math](https://github.com/chensongpoixs/cleet_code/tree/master/Math/README.md  "Math")、[Array](https://github.com/chensongpoixs/cleet_code/tree/master/Array/README.md  "Array") |Easy|||
 |[283. 移动零](https://github.com/chensongpoixs/cleet_code/tree/master "283. 移动零")|2020-11-19|双指针的使用|Easy|||
 |[300. 最长递增子序列](https://github.com/chensongpoixs/cleet_code/tree/master/0300.LongestIncreasingSubsequence "300. 最长递增子序列")|2020-12-19|动态规划|Medium|||
 |[381. O(1) 时间插入、删除和获取随机元素 - 允许重复](https://github.com/chensongpoixs/cleet_code/tree/master/0381.Insert_Delete_GetRandom_O_Duplicates_allowed "381. O(1) 时间插入、删除和获取随机元素 - 允许重复")|2020-11-24|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable"), 动态数组|Hard|||
@@ -103,6 +104,9 @@ LeetCode刷题思路分析
 [Sort](https://github.com/chensongpoixs/cleet_code/tree/master/Sort/README.md  "Sort")
 
 [Backtracking](https://github.com/chensongpoixs/cleet_code/tree/master/Backtracking/README.md  "Backtracking")
+
+
+[Bit Manipulation](https://github.com/chensongpoixs/cleet_code/tree/master/Bit_Manipulation/README.md  "Bit Manipulation")
 
 [Stack](https://github.com/chensongpoixs/cleet_code/tree/master/Stack/README.md  "Stack")
 

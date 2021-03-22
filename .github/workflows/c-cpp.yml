@@ -117,6 +117,10 @@ jobs:
     - name: 0242.有效的字母异位词
       run: pwd && cd bin && sudo ./0242.Valid_Anagram
 
+    - name: 0268.丢失的数字
+      run: pwd && cd bin && sudo ./0268.Missing_Number
+
+
     - name: 0283.移动零
       run: pwd && cd bin && sudo ./0283.Move_Zeroes
 
