@@ -43,6 +43,7 @@ LeetCode刷题思路分析
 |[300. 最长递增子序列](https://github.com/chensongpoixs/cleet_code/tree/master/0300.LongestIncreasingSubsequence "300. 最长递增子序列")|2020-12-19|动态规划|Medium|||
 |[381. O(1) 时间插入、删除和获取随机元素 - 允许重复](https://github.com/chensongpoixs/cleet_code/tree/master/0381.Insert_Delete_GetRandom_O_Duplicates_allowed "381. O(1) 时间插入、删除和获取随机元素 - 允许重复")|2020-11-24|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable"), 动态数组|Hard|||
 |[387. 字符串中的第一个唯一字符](https://github.com/chensongpoixs/cleet_code/tree/master/0387.FirstUniqueCharacterinaString "387. 字符串中的第一个唯一字符")|2020-12-23|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable")|Easy|||
+|[393. UTF-8 编码验证](https://github.com/chensongpoixs/cleet_code/tree/master/0393.UTF-8Validation "393. UTF-8 编码验证")|2021-04-07|[Bit Manipulation](https://github.com/chensongpoixs/cleet_code/tree/master/Bit_Manipulation/README.md  "Bit Manipulation")|Medium|||
 |[402. 移掉K位数字](https://github.com/chensongpoixs/cleet_code/tree/master/0402.Remove_K_Digits "402. 移掉K位数字")|2020-11-15|一个数中删除一位使变成最小值, 数学常识|Medium||10 hour|
 |[406.根据身高重建队列](https://github.com/chensongpoixs/cleet_code/tree/master/0406.Queue_Reconstruction_by_Height "406.根据身高重建队列")|2020-11-17|排序问题（） 队列问题|Medium||参考LeetCode题解分析|
 |[452. 用最少数量的箭引爆气球](https://github.com/chensongpoixs/cleet_code/tree/master "452. 用最少数量的箭引爆气球")|2020-11-23|排序+贪心算法|Medium|||

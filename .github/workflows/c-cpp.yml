@@ -139,6 +139,9 @@ jobs:
     - name: 387. 字符串中的第一个唯一字符
       run: pwd && cd bin && sudo ./0387.FirstUniqueCharacterinaString
 
+    - name: 0393. UTF-8 编码验证
+      run: pwd && cd bin && sudo ./0393.UTF-8Validation
+
     - name: 0402.移掉K位数字
       run: pwd && cd bin && sudo ./0402.Remove_K_Digits 
 
