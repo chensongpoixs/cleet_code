@@ -200,6 +200,8 @@ jobs:
     - name: 0990. 等式方程的可满足性
       run: pwd && cd bin && sudo ./0990.SatisfiabilityofEqualityEquations
 
+    - name: 1011. 在 D 天内送达包裹的能力
+      run: pwd && cd bin && sudo ./1011.CapacityToShipPackagesWithinDDays
 
 
     - name: 1030.距离顺序排列矩阵单元格

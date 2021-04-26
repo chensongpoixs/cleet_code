@@ -57,6 +57,7 @@ LeetCode刷题思路分析
 |[830. 较大分组的位置](https://github.com/chensongpoixs/cleet_code/tree/master/0830.PositionsofLargeGroups "830. 较大分组的位置")|2021-01-05|数组|Easy|||
 |[990. 等式方程的可满足性](https://github.com/chensongpoixs/cleet_code/tree/master/0990.SatisfiabilityofEqualityEquations "990. 等式方程的可满足性")|2021-01-13|并查集|Medium|||
 |[977.有序数组的平方](https://github.com/chensongpoixs/cleet_code/tree/master "977.有序数组的平方")|2020-11-20|排序|Easy|||
+|[1011. 在 D 天内送达包裹的能力](https://github.com/chensongpoixs/cleet_code/tree/master/1011.CapacityToShipPackagesWithinDDays "1011. 在 D 天内送达包裹的能力")|2021-04-26|[Array](https://github.com/chensongpoixs/cleet_code/tree/master/Array/README.md  "Array"),[BinarySearch](https://github.com/chensongpoixs/cleet_code/tree/master/BinarySearch/README.md  "BinarySearch") |Hard||
 |[1074.元素和为目标值的子矩阵数量]( "1074.元素和为目标值的子矩阵数量")|2020-11-03|哈希函数,前缀和|Hard||
 |[1122. 数组的相对排序](https://github.com/chensongpoixs/cleet_code/tree/master/1122.Relative_Sort_Array "1122. 数组的相对排序")|2020-11-14|快速排序算法,去重方法|Easy||
 |[1030. 距离顺序排列矩阵单元格](https://github.com/chensongpoixs/cleet_code/tree/master/1030.Matrix_Cells_in_Distance_Order "1030. 距离顺序排列矩阵单元格")|2020-11-17||Easy||30 minute|
