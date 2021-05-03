@@ -48,6 +48,33 @@ int reverse(int x)
 }
 
 
+/**
+ * TODO@chensong 2021-05-03
+ * int 类型有符号内存溢出问题
+ *  [-2147483648, 1534236469]
+ * @param x
+ * @return
+ */
+int reverse_two(int x)
+{
+    long cur_x = x;
+    int ans_signed = 1;
+    if (cur_x < 0)
+    {
+        ans_signed = -1;
+        cur_x *= -1;
+    }
+    long ans = 0;
+
+    while (cur_x != 0)
+    {
+        long temp = cur_x / 10;
+        ans = ans * 10 + (cur_x - (temp * 10));
+        cur_x = temp;
+    }
+    return ans * ans_signed;
+}
+
 int main(int argc, char *argv[])
 {
 

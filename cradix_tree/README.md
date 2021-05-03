@@ -1,65 +1,65 @@
-# »ùÊıÊ÷
+ï»¿# åŸºæ•°æ ‘
 
-»ùÊıÊ÷½á¹¹Í¼
-
-
+åŸºæ•°æ ‘ç»“æ„å›¾
 
 
-@[TOC](Êı¾İ½á¹¹Ö®»ùÊıÊ÷£¨radix_tree£©)
-
-# »ùÊıÊ÷£¨radix_tree£©
-
-»ùÊıÊ÷Êı¾İ½á¹¹ÊÇÔÚ×ÖµäÊ÷£¨trie_tree£©µÄÔ­ÀíÉÏÓÅ»¯¹ıÀ´µÄ£¬ ÊÇ¸ü¼ÓºÏÀíµÄÊ¹ÓÃÄÚ´æºÍ²éÑ¯µÄĞ§ÂÊ¡£
-
-## Ò»£¬»ùÊıÊ÷Êı¾İµÄ½á¹¹µÄ½éÉÜ
 
 
-»ùÊıÊ÷Êı¾İ½á¹¹ÊÇ×ÖµäÊ÷ÉÏ½øĞĞ¿ÉÒÔÇ°ÏîÑ¹ËõµÄÊı¾İÓÅ»¯µÄ£¬»ù±¾ºÍ×ÖµäÊ÷ÊıÊÇÒ»ÑùµÄµ±ÊÇÓĞÇø±ğµÄÊÇ½øĞĞÄÚ´æÓÅ»¯µÄ²Ù×÷¡£»ùÊıÊ÷Í¨³£Ê¹ÓÃÔÚipµØÖ·±£´æ²Ù×÷¡£
+@[TOC](æ•°æ®ç»“æ„ä¹‹åŸºæ•°æ ‘ï¼ˆradix_treeï¼‰)
 
-### 1£¬ Ã»ÓĞ½øĞĞÇ°ÏîÑ¹ËõµÄ½á¹¹
+# åŸºæ•°æ ‘ï¼ˆradix_treeï¼‰
+
+åŸºæ•°æ ‘æ•°æ®ç»“æ„æ˜¯åœ¨å­—å…¸æ ‘ï¼ˆtrie_treeï¼‰çš„åŸç†ä¸Šä¼˜åŒ–è¿‡æ¥çš„ï¼Œ æ˜¯æ›´åŠ åˆç†çš„ä½¿ç”¨å†…å­˜å’ŒæŸ¥è¯¢çš„æ•ˆç‡ã€‚
+
+## ä¸€ï¼ŒåŸºæ•°æ ‘æ•°æ®çš„ç»“æ„çš„ä»‹ç»
+
+
+åŸºæ•°æ ‘æ•°æ®ç»“æ„æ˜¯å­—å…¸æ ‘ä¸Šè¿›è¡Œå¯ä»¥å‰é¡¹å‹ç¼©çš„æ•°æ®ä¼˜åŒ–çš„ï¼ŒåŸºæœ¬å’Œå­—å…¸æ ‘æ•°æ˜¯ä¸€æ ·çš„å½“æ˜¯æœ‰åŒºåˆ«çš„æ˜¯è¿›è¡Œå†…å­˜ä¼˜åŒ–çš„æ“ä½œã€‚åŸºæ•°æ ‘é€šå¸¸ä½¿ç”¨åœ¨ipåœ°å€ä¿å­˜æ“ä½œã€‚
+
+### 1ï¼Œ æ²¡æœ‰è¿›è¡Œå‰é¡¹å‹ç¼©çš„ç»“æ„
 
 ![](https://github.com/chensongpoixs/cleet_code/tree/master/cradix_tree/radix_tree.png)
 
-### 2£¬ Ç°ÏîÑ¹ËõµÄ²Ù×÷½á¹¹Í¼
+### 2ï¼Œ å‰é¡¹å‹ç¼©çš„æ“ä½œç»“æ„å›¾
 
 
-À¶É«½ÚµãÏÂÃæ¶¼»ÆÉ«½ÚµãÃ»ÓĞÀ¶É«µÄ½Úµã¾Í½øĞĞÑ¹ËõµÄ¹¤×÷
+è“è‰²èŠ‚ç‚¹ä¸‹é¢éƒ½é»„è‰²èŠ‚ç‚¹æ²¡æœ‰è“è‰²çš„èŠ‚ç‚¹å°±è¿›è¡Œå‹ç¼©çš„å·¥ä½œ
 
 
 ![](https://github.com/chensongpoixs/cleet_code/tree/master/cradix_tree/radix_tree_df.png)
 
 
-## ¶ş£¬ »ùÊıÊ÷Ó¦ÓÃ³¡¾°½éÉÜ
+## äºŒï¼Œ åŸºæ•°æ ‘åº”ç”¨åœºæ™¯ä»‹ç»
 
 
-Ó¦ÓÃÓÃÓÚIP Â·ÓÉµÄÓ³Éä¹ØÏµÖĞ¡£
+åº”ç”¨ç”¨äºIP è·¯ç”±çš„æ˜ å°„å…³ç³»ä¸­ã€‚
 
 
 
-## Èı£¬»ùÊıÊ÷ÊµÏÖ
+## ä¸‰ï¼ŒåŸºæ•°æ ‘å®ç°
 
 
-### 1£¬ ÔÚ´´½¨»ùÊıÊ÷Ô¤ÏÈ·ÖÅäAÀàµØÖ·µÄÊıÇ°8Î»
-Ô¤ÏÈ·ÖÅä×Ö¶ÎÊÇ8µÄÓÉÀ´
+### 1ï¼Œ åœ¨åˆ›å»ºåŸºæ•°æ ‘é¢„å…ˆåˆ†é…Aç±»åœ°å€çš„æ•°å‰8ä½
+é¢„å…ˆåˆ†é…å­—æ®µæ˜¯8çš„ç”±æ¥
 
   
-  | Àà   | Ç°×º³¤¶È   |  Ç°×º   | Ê××Ö½Ú|
+  | ç±»   | å‰ç¼€é•¿åº¦   |  å‰ç¼€   | é¦–å­—èŠ‚|
    |:---:| :---:|:---:|:---:| ---:|                           
-   |AÀàµØÖ·|  8Î»      | 0xxxxxxx                                              |0~127|
-   |BÀàµØÖ·| 16Î»      | 10xxxxxx   xxxxxxxx                                   |128~191|
-   |CÀàµØÖ·| 24Î»      | 110xxxxx   xxxxxxxx   xxxxxxxx                        |192~223|
-   |DÀàµØÖ·| ²»¿ÉÓÃ     | 1110xxxx   xxxxxxxx   xxxxxxxx     xxxxxxxx           |224~-239|
-   |EÀàµØÖ·| ²»¿ÉÓÃ     | 1111xxxx   xxxxxxxx   xxxxxxxx     xxxxxxxx   |240~255|
+   |Aç±»åœ°å€|  8ä½      | 0xxxxxxx                                              |0~127|
+   |Bç±»åœ°å€| 16ä½      | 10xxxxxx   xxxxxxxx                                   |128~191|
+   |Cç±»åœ°å€| 24ä½      | 110xxxxx   xxxxxxxx   xxxxxxxx                        |192~223|
+   |Dç±»åœ°å€| ä¸å¯ç”¨     | 1110xxxx   xxxxxxxx   xxxxxxxx     xxxxxxxx           |224~-239|
+   |Eç±»åœ°å€| ä¸å¯ç”¨     | 1111xxxx   xxxxxxxx   xxxxxxxx     xxxxxxxx   |240~255|
 
-¶ÔÓ¦´úÂë
+å¯¹åº”ä»£ç 
 
 ```c
 	uint32 mask = 0x80000000;
 	
-    uint32 preallocate = 8; //Ô¤ÏÈ·ÖÅäAÀàµØÖ·µÄÊıÇ°8bitÎ»
+    uint32 preallocate = 8; //é¢„å…ˆåˆ†é…Aç±»åœ°å€çš„æ•°å‰8bitä½
     while (preallocate--)
     {
-        mask >>= 1;  // ip µØÖ·ÑÚÂë ÊÇ²»Í¬µÄ
+        mask >>= 1;  // ip åœ°å€æ©ç  æ˜¯ä¸åŒçš„
         mask |= 0x80000000;
         printf("mask = %u\n", mask);
     }
@@ -94,27 +94,27 @@ typedef unsigned int	uint32;
 typedef signed int		int32;
 
 /**
- * Ä¬ÈÏµØÖ·
+ * é»˜è®¤åœ°å€
  */
 #define default_ip "127.0.0.1"
 
-// »ùÊıÊ÷ Ó¦ÓÃ³¡¾°ipµØÖ·Ó³Éä
+// åŸºæ•°æ ‘ åº”ç”¨åœºæ™¯ipåœ°å€æ˜ å°„
 struct cradix_tree_node
 {
     struct cradix_tree * left;
     struct cradix_tree * right;
-    char * value; //Êµ¼ÊµÄipÊı¾İ
+    char * value; //å®é™…çš„ipæ•°æ®
 }cradix_tree;
 
 struct cradix_tree
 {
     struct cradix_tree_node * root;
-    uint32  size; //Ô¤ÏÈ·ÖÅäÄ¬ÈÏAÀàµØÖ·µÄÊıÇ°8Î»
+    uint32  size; //é¢„å…ˆåˆ†é…é»˜è®¤Aç±»åœ°å€çš„æ•°å‰8ä½
 };
 
 
 /**
- * »ùÊıÊ÷²åÈëipµÄµØÖ·Ó³Éä¹ØÏµ
+ * åŸºæ•°æ ‘æ’å…¥ipçš„åœ°å€æ˜ å°„å…³ç³»
  * @param tree_ptr
  * @param key
  * @param mask
@@ -137,7 +137,7 @@ void * cradix_tree_insert(struct cradix_tree * tree_ptr, uint32 key, uint32 mask
     uint32 bit = 0x80000000;
     while (bit & mask)
     {
-        //ÕÒµ½ºÏÊÊµÄÎ»ÖÃ²åÈë
+        //æ‰¾åˆ°åˆé€‚çš„ä½ç½®æ’å…¥
         if (bit & key)
         {
             next_node = (struct cradix_tree_node *)cur_node->right;
@@ -151,7 +151,7 @@ void * cradix_tree_insert(struct cradix_tree * tree_ptr, uint32 key, uint32 mask
             break;
         }
         cur_node = next_node;
-        bit >>= 1; //¸ßÎ»
+        bit >>= 1; //é«˜ä½
     }
 
     if (next_node)
@@ -197,8 +197,8 @@ void * cradix_tree_insert(struct cradix_tree * tree_ptr, uint32 key, uint32 mask
 }
 
 /**
- * ´´½¨»ùÊıÊ÷
- * Ô¤ÏÈ·ÖÅäAÀàµØÖ·µÄÊıÇ°8bitÎ»
+ * åˆ›å»ºåŸºæ•°æ ‘
+ * é¢„å…ˆåˆ†é…Aç±»åœ°å€çš„æ•°å‰8bitä½
  * @return
  */
 struct cradix_tree * create_radix_tree()
@@ -225,29 +225,29 @@ struct cradix_tree * create_radix_tree()
     }
 
 
-    //½¨Á¢»ùÊıÊ÷¸ß¶ÈÎª 32ÎªipµØÖ·µÄÊ÷¸ß¶È
+    //å»ºç«‹åŸºæ•°æ ‘é«˜åº¦ä¸º 32ä¸ºipåœ°å€çš„æ ‘é«˜åº¦
 
-    uint32 inc = 0x80000000; // ¶ÔÓ¦32Î» 1000 0000 0000 0000 0000 0000  0000 0000
+    uint32 inc = 0x80000000; // å¯¹åº”32ä½ 1000 0000 0000 0000 0000 0000  0000 0000
     uint32 key = 0;
-    uint32 mask = 0; //ÑÚÂë
+    uint32 mask = 0; //æ©ç 
 
-    uint32 preallocate = tree_ptr->size; //Ô¤ÏÈ·ÖÅäAÀàµØÖ·µÄÊıÇ°8bitÎ»
+    uint32 preallocate = tree_ptr->size; //é¢„å…ˆåˆ†é…Aç±»åœ°å€çš„æ•°å‰8bitä½
     while (preallocate--)
     {
         key = 0;
-        mask >>= 1;  // ip µØÖ·ÑÚÂë ÊÇ²»Í¬µÄ
+        mask >>= 1;  // ip åœ°å€æ©ç  æ˜¯ä¸åŒçš„
         mask |= 0x80000000;
         // 1000 0000 0000 0000 0000 0000 0000 0000  0000 0000
         /**
-           *   ipµÄÑÚÂë AÀàµØÖ·[8bit]  BÀàµØÖ·[16bit] CÀàµØÖ·[24bit] D,EÀàĞÍµØÖ·²»¿ÉÓÃ
-         *   | Àà   | Ç°×º³¤¶È   |  Ç°×º
-         *   |AÀàµØÖ·|  8Î»      | 0xxxxxxx                                              |
-         *   |BÀàµØÖ·| 16Î»      | 10xxxxxx   xxxxxxxx                                   |
-         *   |CÀàµØÖ·| 24Î»      | 110xxxxx   xxxxxxxx   xxxxxxxx                        |
-         *   |DÀàµØÖ·| ²»¿ÉÓÃ     | 1110xxxx   xxxxxxxx   xxxxxxxx     xxxxxxxx           |
-         *   |EÀàµØÖ·| ²»¿ÉÓÃ     | 1111xxxx   xxxxxxxx   xxxxxxxx     xxxxxxxx  			|
+           *   ipçš„æ©ç  Aç±»åœ°å€[8bit]  Bç±»åœ°å€[16bit] Cç±»åœ°å€[24bit] D,Eç±»å‹åœ°å€ä¸å¯ç”¨
+         *   | ç±»   | å‰ç¼€é•¿åº¦   |  å‰ç¼€
+         *   |Aç±»åœ°å€|  8ä½      | 0xxxxxxx                                              |
+         *   |Bç±»åœ°å€| 16ä½      | 10xxxxxx   xxxxxxxx                                   |
+         *   |Cç±»åœ°å€| 24ä½      | 110xxxxx   xxxxxxxx   xxxxxxxx                        |
+         *   |Dç±»åœ°å€| ä¸å¯ç”¨     | 1110xxxx   xxxxxxxx   xxxxxxxx     xxxxxxxx           |
+         *   |Eç±»åœ°å€| ä¸å¯ç”¨     | 1111xxxx   xxxxxxxx   xxxxxxxx     xxxxxxxx  			|
          *   
-         * mask ¶ÔÓ¦ ¾ÍÊÇ AÀàµØÖ·µÄÇ°8Î»bitÎ»£¨Ä¬ÈÏµÚ32Î»ÊÇ1ÔÚ´úÂëÖĞ£©
+         * mask å¯¹åº” å°±æ˜¯ Aç±»åœ°å€çš„å‰8ä½bitä½ï¼ˆé»˜è®¤ç¬¬32ä½æ˜¯1åœ¨ä»£ç ä¸­ï¼‰
             mask = 2147483648 ==> 1000 0000 0000 0000 0000 0000 0000 0000
             mask = 3221225472 ==> 1100 0000 0000 0000 0000 0000 0000 0000
             mask = 3758096384 ==> 1110 0000 0000 0000 0000 0000 0000 0000
@@ -258,13 +258,13 @@ struct cradix_tree * create_radix_tree()
             mask = 4278190080 ==> 1111 1111 0000 0000 0000 0000 0000 0000
             mask = 4286578688 ==> 1111 1111 1000 0000 0000 0000 0000 0000
          */
-        //±éÀú´ÓÊ÷µÄ¶¥²ãÏòÏÂ±éÀú
+        //éå†ä»æ ‘çš„é¡¶å±‚å‘ä¸‹éå†
         do
         {
-            //²åÈëµ±Ç°½ÚµãµÄÊı¾İ
+            //æ’å…¥å½“å‰èŠ‚ç‚¹çš„æ•°æ®
             cradix_tree_insert(tree_ptr, key, mask, NULL);
-            //Õâ±ß¿´³öÀ´ÁËÂğ£¿  ¾Í¼Óµ½ÄÚ´æÒç³ö ¾Í±ä³É'0'°¡
-            key += inc; // ¾ÙÀı  == [0x80000000 + 0x80000000] = [0x100000000]  µ«ÊÇÎŞ·ûºÅintÀàĞÍ·Å²»ÏÂÕâ¸öÊı¾İËùÒÔ ¾ÍÊÇ [0x00000000] ¸ßÎ»Òç³ö
+            //è¿™è¾¹çœ‹å‡ºæ¥äº†å—ï¼Ÿ  å°±åŠ åˆ°å†…å­˜æº¢å‡º å°±å˜æˆ'0'å•Š
+            key += inc; // ä¸¾ä¾‹  == [0x80000000 + 0x80000000] = [0x100000000]  ä½†æ˜¯æ— ç¬¦å·intç±»å‹æ”¾ä¸ä¸‹è¿™ä¸ªæ•°æ®æ‰€ä»¥ å°±æ˜¯ [0x00000000] é«˜ä½æº¢å‡º
         } while (key);
         inc >>= 1;
     }
@@ -273,7 +273,7 @@ struct cradix_tree * create_radix_tree()
 }
 
 /**
- * »ùÊıÊ÷µÄ²éÕÒO(logn)
+ * åŸºæ•°æ ‘çš„æŸ¥æ‰¾O(logn)
  * @param tree_ptr
  * @param key
  * @return
@@ -312,7 +312,7 @@ char * cradix_tree_find(struct cradix_tree * tree_ptr, uint32 key)
 }
 
 /**
- * µİ¹éÊÍ·Å»ùÊıÊ÷µÄ½ÚµãµÄÄÚ´æ
+ * é€’å½’é‡Šæ”¾åŸºæ•°æ ‘çš„èŠ‚ç‚¹çš„å†…å­˜
  * @param tree_ptr
  */
 void cradix_tree_node_destroy(struct cradix_tree_node *tree_ptr)
@@ -336,7 +336,7 @@ void cradix_tree_node_destroy(struct cradix_tree_node *tree_ptr)
 }
 
 /**
- * ÊÍ·Å»ùÊıÊ÷ÄÚ´æ
+ * é‡Šæ”¾åŸºæ•°æ ‘å†…å­˜
  * @param tree_ptr
  */
 void cradix_tree_destroy(struct cradix_tree** tree_ptr)
@@ -363,12 +363,12 @@ void cradix_tree_destroy(struct cradix_tree** tree_ptr)
 }
 
 /**
- * ²âÊÔÊı¾İ½á¹¹
+ * æµ‹è¯•æ•°æ®ç»“æ„
  */
 struct ip_proxy {
     uint32  ip; // ip-> uint32
-    uint32  mask; // ÑÚÂë
-    char *  value; //Ó³ÉäµÄÊı¾İ
+    uint32  mask; // æ©ç 
+    char *  value; //æ˜ å°„çš„æ•°æ®
 };
 
 /**2^0 = 1;
@@ -381,7 +381,7 @@ struct ip_proxy {
  * 2^7 = 128
  *
  *
- * ²âÊÔÊı¾İ
+ * æµ‹è¯•æ•°æ®
  *
  */
 struct ip_proxy ip_data[] =
@@ -427,7 +427,7 @@ int main(int argc, char *argv[])
     {
         printf("ip mask  = %u, ip_proxy = %s, new_ip_proxy = %s\n", ip_data[i].ip, ip_data[i].value, cradix_tree_find(tree_ptr, ip_data[i].ip) );
     }
-    //Ä¬ÈÏ´úÀíipµØÖ·
+    //é»˜è®¤ä»£ç†ipåœ°å€
     printf("not ip mask  = %u, ip_proxy = %s, new_ip_proxy = %s\n", 23432, "", cradix_tree_find(tree_ptr, 23432) );
     cradix_tree_destroy(&tree_ptr);
     return EXIT_SUCCESS;
@@ -435,9 +435,9 @@ int main(int argc, char *argv[])
 ```
 
 
-# ×Ü½á£º
+# æ€»ç»“ï¼š
 
 
 
-[Ô´ÂëµØÖ·:https://github.com/chensongpoixs/cleet_code](https://github.com/chensongpoixs/cleet_code/cradix_tree)
+[æºç åœ°å€:https://github.com/chensongpoixs/cleet_code](https://github.com/chensongpoixs/cleet_code/cradix_tree)
 
