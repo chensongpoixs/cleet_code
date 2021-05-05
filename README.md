@@ -54,6 +54,7 @@ LeetCode刷题思路分析
 |[684. 冗余连接](https://github.com/chensongpoixs/cleet_code/tree/master/0684.RedundantConnection "684. 冗余连接")|2021-01-17|[UnionFind](https://github.com/chensongpoixs/cleet_code/tree/master/UnionFind/README.md  "UnionFind") |Medium|||
 |[720. 词典中最长的单词](https://github.com/chensongpoixs/cleet_code/tree/master/0720.Longest_Word_in_Dictionary "720. 词典中最长的单词")|2020-11-27|[Trie](https://github.com/chensongpoixs/cleet_code/tree/master/Trie/README.md  "Trie"), 深度遍历|Easy|||
 |[738. 单调递增的数字](https://github.com/chensongpoixs/cleet_code/tree/master/0738.MonotoneIncreasingDigitse "738. 单调递增的数字")|2020-12-14|位运算|Medium|||
+|[740. 删除并获得点数](https://github.com/chensongpoixs/cleet_code/tree/master/0740.DeleteandEarn "740. 删除并获得点数")|2021-05-05|[DynamicProgramming](https://github.com/chensongpoixs/cleet_code/tree/master/DynamicProgramming/README.md  "DynamicProgramming")|Medium|||
 |[830. 较大分组的位置](https://github.com/chensongpoixs/cleet_code/tree/master/0830.PositionsofLargeGroups "830. 较大分组的位置")|2021-01-05|数组|Easy|||
 |[990. 等式方程的可满足性](https://github.com/chensongpoixs/cleet_code/tree/master/0990.SatisfiabilityofEqualityEquations "990. 等式方程的可满足性")|2021-01-13|并查集|Medium|||
 |[977.有序数组的平方](https://github.com/chensongpoixs/cleet_code/tree/master "977.有序数组的平方")|2020-11-20|排序|Easy|||

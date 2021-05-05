@@ -176,12 +176,15 @@ jobs:
     - name: 0684. 冗余连接
       run: pwd && cd bin && sudo ./0684.RedundantConnection
 
-    - name: 720.词典中最长的单词
+    - name: 0720.词典中最长的单词
       run: pwd && cd bin && sudo ./0720.Longest_Word_in_Dictionary
 
 
     - name: 0738. 单调递增的数字
       run: pwd && cd bin && sudo ./0738.MonotoneIncreasingDigits
+
+    - name: 0740. 删除并获得点数
+      run: pwd && cd bin && sudo ./0740.DeleteandEarn
 
     - name: 0830. 较大分组的位置
       run: pwd && cd bin && sudo ./0830.PositionsofLargeGroups
