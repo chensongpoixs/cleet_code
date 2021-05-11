@@ -251,6 +251,9 @@ jobs:
     - name: 1638.统计只差一个字符的子串数目
       run: pwd && cd bin && sudo ./1638.Count_Substrings_That_Differ_by_One_Character
 
+    - name: 1734. 解码异或后的排列
+      run: pwd && cd bin && sudo ./1734.DecodeXORedPermutation
+
 
     - name: 5243. 同积元组
       run: pwd && cd bin && sudo ./5243.TuplewithSameProduct
