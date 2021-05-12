@@ -212,7 +212,10 @@ jobs:
 
     - name: 1074.元素和为目标值的子矩阵数量
       run: pwd && cd bin && sudo ./1074.number_of_submatrices_thatJ_sum_to_target
-     
+
+    - name: 1310.子数组异或查询
+      run: pwd && cd bin && sudo ./1310.XORQueriesofaSubarray
+
     - name: 1122.数组的相对排序
       run: pwd && cd bin && sudo ./1122.Relative_Sort_Array
       
