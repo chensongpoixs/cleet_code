@@ -64,6 +64,66 @@ public:
 };
 
 
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ *
+ */
+/**
+ * appfix
+ * @TODO chensong 2021-05-13 优化时间复杂度
+ * @param arr
+ * @param arrSize
+ * @param queries
+ * @param queriesSize
+ * @param queriesColSize
+ * @param returnSize
+ * @return
+ */
+int* xorQueries_appfix(int* arr, int arrSize, int** queries, int queriesSize, int* queriesColSize, int* returnSize)
+{
+    *returnSize = queriesSize;
+    int *arrays = static_cast<int*>(malloc(sizeof(int) * queriesSize));
+    int *appfix = static_cast<int *>(malloc(sizeof(int) * arrSize));
+    memset(appfix, 0, sizeof(int) * arrSize);
+    // printf("arrSize = %d\n", arrSize);
+    memset(arrays, 0, sizeof(int) * queriesSize);
+    appfix[0] = arr[0];
+    for (int i = 1; i < arrSize; ++i)
+    {
+        appfix[i] = appfix[i-1] ^ arr[i];
+    }
+    // printf("size = %d, col= %d\n", queriesSize, queriesColSize[0]);
+    for (int i = 0; i < queriesSize; ++i)
+    {
+        int max_size = arrSize-1;
+        if (max_size > queries[i][1])
+        {
+            max_size = queries[i][1];
+        }
+        arrays[i] = arr[queries[i][0]];
+        if (queries[i][0] == max_size)
+        {
+            continue;
+        }
+
+        if (queries[i][0] <= 0)
+        {
+            arrays[i] = appfix[max_size];
+        }
+        else
+        {
+            arrays[i] = appfix[queries[i][0]-1] ^ appfix[max_size];
+        }
+
+    }
+    if (appfix)
+    {
+        free(appfix);
+        appfix = NULL;
+    }
+    return arrays;
+}
+
 int main(int argc, char *argv[])
 {
     return 0;
