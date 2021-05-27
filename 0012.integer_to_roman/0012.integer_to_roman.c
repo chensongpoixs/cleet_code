@@ -32,7 +32,7 @@ char * intToRoman(int num)
         if (nums[i]<=num)
         {
             int m = num / nums[i];
-            num -= (m*nums[i]);
+            num = num % nums[i];
             while (m>0)
             {
                 size_t len = strlen(num_arrays[i]);

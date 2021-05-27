@@ -48,6 +48,7 @@ LeetCode刷题思路分析
 |[406.根据身高重建队列](https://github.com/chensongpoixs/cleet_code/tree/master/0406.Queue_Reconstruction_by_Height "406.根据身高重建队列")|2020-11-17|排序问题（） 队列问题|Medium||参考LeetCode题解分析|
 |[452. 用最少数量的箭引爆气球](https://github.com/chensongpoixs/cleet_code/tree/master "452. 用最少数量的箭引爆气球")|2020-11-23|排序+贪心算法|Medium|||
 |[454. 四数相加 II](https://github.com/chensongpoixs/cleet_code/tree/master/0454.fourSumCount "454. 四数相加 II")|2020-11-28|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable") 哈希函数时间复杂度O(1)|Medium|||
+|[461. 汉明距离](https://github.com/chensongpoixs/cleet_code/tree/master/0461.HammingDistance "461. 汉明距离")|2021-05-27|[BitManipulation](https://github.com/chensongpoixs/cleet_code/tree/master/BitManipulation/README.md  "BitManipulation")|Easy|||
 |[605. 种花问题](https://github.com/chensongpoixs/cleet_code/tree/master/0605.CanPlaceFlowers "605. 种花问题")|2020-12-30|排序, 贪心算法|Easy|||
 |[621. 任务调度器](https://github.com/chensongpoixs/cleet_code/tree/master/0454.fourSumCount "621. 任务调度器")|2020-12-05|桶排序,次数最多的|Medium|||
 |[648.单词替换](https://github.com/chensongpoixs/cleet_code/tree/master "648.单词替换")|2020-11-20|[Trie](https://github.com/chensongpoixs/cleet_code/tree/master/Trie/README.md  "Trie")|Medium|trie tree||
@@ -62,7 +63,7 @@ LeetCode刷题思路分析
 |[1074.元素和为目标值的子矩阵数量]( "1074.元素和为目标值的子矩阵数量")|2020-11-03|哈希函数,前缀和|Hard||
 |[1122. 数组的相对排序](https://github.com/chensongpoixs/cleet_code/tree/master/1122.Relative_Sort_Array "1122. 数组的相对排序")|2020-11-14|快速排序算法,去重方法|Easy||
 |[1030. 距离顺序排列矩阵单元格](https://github.com/chensongpoixs/cleet_code/tree/master/1030.Matrix_Cells_in_Distance_Order "1030. 距离顺序排列矩阵单元格")|2020-11-17||Easy||30 minute|
-|[1310. 子数组异或查询](https://github.com/chensongpoixs/cleet_code/tree/master/1030.Matrix_Cells_in_Distance_Order "1310. 子数组异或查询")|2021-05-12|[BitManipulation](https://github.com/chensongpoixs/cleet_code/tree/master/BitManipulation/README.md  "BitManipulation")|Medium|||
+|[1310. 子数组异或查询](https://github.com/chensongpoixs/cleet_code/tree/master/1030.Matrix_Cells_in_Distance_Order "1310. 子数组异或查询")|2021-05-12|前缀和, [BitManipulation](https://github.com/chensongpoixs/cleet_code/tree/master/BitManipulation/README.md  "BitManipulation")|Medium|||
 |[1319. 连通网络的操作次数](https://github.com/chensongpoixs/cleet_code/tree/master/1319.NumberofOperationstoMakeNetworkConnected "1319. 连通网络的操作次数")|2021-01-23|[UnionFind](https://github.com/chensongpoixs/cleet_code/tree/master/UnionFind/README.md  "UnionFind"), [DepthfirstSearch](https://github.com/chensongpoixs/cleet_code/tree/master/DepthfirstSearch/README.md  "DepthfirstSearch"), [BreadthFirstSearch](https://github.com/chensongpoixs/cleet_code/tree/master/BreadthFirstSearch/README.md  "BreadthFirstSearch")|Medium|||
 |[1476. 子矩形查询](https://github.com/chensongpoixs/cleet_code/tree/master/1476.Subrectangle_Queries "1476. 子矩形查询")|2020-11-15|需要花一点时间认真读题|Medium||10 minute|
 |[1535.找出数组游戏的赢家](https://github.com/chensongpoixs/cleet_code/tree/master/1535.Find_the_Winner_of_an_Array_Game "1535.找出数组游戏的赢家")|2020-11-18|最细读题,其实只需要遍历一次就可以判断了，两个数比较一定是有大小的|Medium|||
@@ -108,9 +109,6 @@ LeetCode刷题思路分析
 [Sort](https://github.com/chensongpoixs/cleet_code/tree/master/Sort/README.md  "Sort")
 
 [Backtracking](https://github.com/chensongpoixs/cleet_code/tree/master/Backtracking/README.md  "Backtracking")
-
-
-[Bit Manipulation](https://github.com/chensongpoixs/cleet_code/tree/master/Bit_Manipulation/README.md  "Bit Manipulation")
 
 [Stack](https://github.com/chensongpoixs/cleet_code/tree/master/Stack/README.md  "Stack")
 

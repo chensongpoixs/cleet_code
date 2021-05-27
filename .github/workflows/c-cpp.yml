@@ -153,7 +153,11 @@ jobs:
       
     - name: 454. 四数相加 II
       run: pwd && cd bin && sudo ./0454.fourSumCount
-      
+
+
+    - name: 0461. 汉明距离
+      run: pwd && cd bin && sudo ./0461.HammingDistance
+
     - name: 493.翻转对
       run: pwd && cd bin && sudo ./0493.ReversePairs
 
