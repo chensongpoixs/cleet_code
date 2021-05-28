@@ -158,6 +158,9 @@ jobs:
     - name: 0461. 汉明距离
       run: pwd && cd bin && sudo ./0461.HammingDistance
 
+    - name: 0477. 汉明距离总和
+      run: pwd && cd bin && sudo ./0477.TotalHammingDistance
+
     - name: 493.翻转对
       run: pwd && cd bin && sudo ./0493.ReversePairs
 

@@ -20,6 +20,9 @@
 #include <iostream>
 #include <map>
 #include <vector>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 using  namespace std;
 

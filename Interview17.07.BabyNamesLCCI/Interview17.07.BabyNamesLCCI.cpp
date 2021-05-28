@@ -56,7 +56,7 @@ public:
     {
         if (name1.size() >= name2.size())
         {
-            for (int i = 0; i < name2.size(); ++i)
+            for (size_t i = 0; i < name2.size(); ++i)
             {
                 if (name1[i] < name2[i])
                 {
@@ -71,7 +71,7 @@ public:
         }
         else
         {
-            for (int i = 0; i < name1.size(); ++i)
+            for (size_t i = 0; i < name1.size(); ++i)
             {
                 if (name1[i] < name2[i])
                 {
@@ -91,13 +91,13 @@ public:
         std::unordered_map<std::string, int> m_name_index;
         int unoin_find[names.size()+1];
         init(&unoin_find[0], names.size() +1);
-        for (int j = 0; j < names.size(); ++j)
+        for (int j = 0; j < static_cast<int>( names.size()); ++j)
         {
             std::string name ;
             std::string num ;
             bool  name_num = false;
             int name_index = 0;
-            for (int i = 0; i < names[j].size(); ++i)
+            for (int i = 0; i < static_cast<int>(names[j].size()); ++i)
             {
                 if (names[j][i] == '(')
                 {
@@ -124,14 +124,14 @@ public:
         }
 
 
-        for (int j = 0; j < synonyms.size(); ++j)
+        for (int j = 0; j < static_cast<int>(synonyms.size()); ++j)
         {
             std::string name1 ;
             std::string name2;
             int name1_index = 0;
-            bool  name_num = false;
+//            bool  name_num = false;
 
-            for (int i = 2; i < synonyms[j].size(); ++i)
+            for (int i = 2; i < static_cast<int>(synonyms[j].size()); ++i)
             {
                 if (name1_index == 0 && synonyms[j][i] == ',')
                 {
@@ -173,7 +173,7 @@ public:
             if (v1 < v2)
             {
                 unoin_find[m_name_index[name2]] = v1;
-                for (int w = 0; w < names.size(); ++w)
+                for (size_t w = 0; w < names.size(); ++w)
                 {
                     if (unoin_find[w] == v2)
                     {
@@ -185,7 +185,7 @@ public:
             else if (v1 > v2)
             {
                 unoin_find[m_name_index[name1]] = v1;
-                for (int w = 0; w < names.size(); ++w)
+                for (size_t w = 0; w < names.size(); ++w)
                 {
                     if (unoin_find[w] == v1)
                     {
@@ -198,7 +198,7 @@ public:
 
         std::vector<name_size> ret(names.size());
 
-        for (int i = 0; i < names.size(); ++i)
+        for (size_t i = 0; i < names.size(); ++i)
         {
             ret[unoin_find[i]].size += m_name_map[i].size;
             if (ret[unoin_find[i]].name.size() <1)
