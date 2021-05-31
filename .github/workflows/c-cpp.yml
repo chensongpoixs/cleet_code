@@ -111,6 +111,12 @@ jobs:
     - name: 0222.完全二叉树的节点个数
       run: pwd && cd bin && sudo ./0222.Count_Complete_Tree_Nodes
 
+
+
+    - name: 0231. 2的幂
+      run: pwd && cd bin && sudo ./0231.PowerofTwo
+
+
     - name: 0239. 滑动窗口最大值
       run: pwd && cd bin && sudo ./0239.SlidingWindowMaximum
 
@@ -131,7 +137,8 @@ jobs:
     - name: 0328.奇偶链表
       run: pwd && cd bin && sudo ./0328.Odd_Even_Linked_List 1 2 3 4 5
       
-
+    - name: 0342. 4的幂
+      run: pwd && cd bin && sudo ./0342.PowerofFour
 
     - name: 381. O(1) 时间插入、删除和获取随机元素 - 允许重复
       run: pwd && cd bin && sudo ./0381.Insert_Delete_GetRandom_O_Duplicates_allowed
