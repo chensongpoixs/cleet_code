@@ -171,6 +171,9 @@ jobs:
     - name: 493.翻转对
       run: pwd && cd bin && sudo ./0493.ReversePairs
 
+    - name: 0525. 连续数组
+      run: pwd && cd bin && sudo ./0525.ContiguousArray
+
     - name: 0547. 省份数量
       run: pwd && cd bin && sudo ./0547.NumberofProvinces
 

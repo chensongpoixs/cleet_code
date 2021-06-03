@@ -52,6 +52,7 @@ LeetCode刷题思路分析
 |[454. 四数相加 II](https://github.com/chensongpoixs/cleet_code/tree/master/0454.fourSumCount "454. 四数相加 II")|2020-11-28|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable") 哈希函数时间复杂度O(1)|Medium|||
 |[461. 汉明距离](https://github.com/chensongpoixs/cleet_code/tree/master/0461.HammingDistance "461. 汉明距离")|2021-05-27|[BitManipulation](https://github.com/chensongpoixs/cleet_code/tree/master/BitManipulation/README.md  "BitManipulation")|Easy|||
 |[477. 汉明距离总和](https://github.com/chensongpoixs/cleet_code/tree/master/0477.TotalHammingDistance "477. 汉明距离总和")|2021-05-28|[BitManipulation](https://github.com/chensongpoixs/cleet_code/tree/master/BitManipulation/README.md  "BitManipulation")|Medium|||
+|[525. 连续数组](https://github.com/chensongpoixs/cleet_code/tree/master/0525.ContiguousArray "525. 连续数组")|2021-06-03| [HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable") |Medium|||
 |[605. 种花问题](https://github.com/chensongpoixs/cleet_code/tree/master/0605.CanPlaceFlowers "605. 种花问题")|2020-12-30|排序, 贪心算法|Easy|||
 |[621. 任务调度器](https://github.com/chensongpoixs/cleet_code/tree/master/0454.fourSumCount "621. 任务调度器")|2020-12-05|桶排序,次数最多的|Medium|||
 |[648.单词替换](https://github.com/chensongpoixs/cleet_code/tree/master "648.单词替换")|2020-11-20|[Trie](https://github.com/chensongpoixs/cleet_code/tree/master/Trie/README.md  "Trie")|Medium|trie tree||
