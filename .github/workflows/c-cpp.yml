@@ -277,6 +277,9 @@ jobs:
       run: pwd && cd bin && sudo ./1734.DecodeXORedPermutation
 
 
+    - name: 1881. 插入后的最大值
+      run: pwd && cd bin && sudo ./1881.MaximumValueafterInsertion
+
     - name: 5243. 同积元组
       run: pwd && cd bin && sudo ./5243.TuplewithSameProduct
 

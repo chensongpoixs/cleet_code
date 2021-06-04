@@ -1,9 +1,9 @@
 /***********************************************************************************************
-	created: 		2021-06-04
+	created: 		2020-11-22
 
 	author:			chensong
 
-	purpose:		160. 相交链表
+	purpose:		1638. 统计只差一个字符的子串数目
 我可能会遇到很多的人，听他们讲好2多的故事，我来写成故事或编成歌，用我学来的各种乐器演奏它�?
 然后还可能在一个国家遇到一个心仪我的姑娘，她可能会被我帅气的外表捕获，又会被我深邃的内涵吸引，在某个下雨的夜晚，她会全身淋透然后要在我狭小的住处换身上的湿衣服�?
 3小时候后她告诉我她其实是这个国家的公主，她愿意向父皇求婚。我不得已告诉她我是穿越而来的男主角，我始终要回到自己的世界�?
@@ -15,64 +15,80 @@
 沿着自己的回忆，一个个的场景忽闪而过，最后发现，我的本心，在我写代码的时候，会回来�?
 安静，淡然，代码就是我的一切，写代码就是我本心回归的最好方式，我还没找到本心猎手，但我相信，顺着这个线索，我一定能顺藤摸瓜，把他揪出来�?
 ************************************************************************************************/
-
-#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     struct ListNode *next;
- * };
- */
+#define bool int
+#define true 1
+#define false 0
 
-struct ListNode {
-    int val;
-    struct ListNode *next;
-};
-/**
- * 双指针  :
- * 哈希 : 时间复杂度O(M+n)
- *
- * @param headA
- * @param headB
- * @return
- */
-
-
-/**
- * 时间复杂度O(M*n)
- * @param headA
- * @param headB
- * @return
- */
-struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *headB)
+char * maxValue(char * n, int x)
 {
-    struct ListNode * first = headA;
-    struct ListNode * second = headB;
 
-    while (first)
+    size_t len = strlen(n);
+
+    char * ptr = malloc(sizeof(char) * (len +2));
+    if (n[0] == '-')
     {
-        while (second)
+        ++n;
+        ptr[0] = '-';
+        int index = 1;
+        bool find = false;
+        while (*n != '\0')
         {
-            if (second == first)
+            // printf("[%c]\n", *n);
+            if (find == false && *n > (x + '0'))
             {
-                // printf("val = %d\n", first->val);
-                return first;
+                ptr[index++] = (x+'0');
+                find = true;
             }
-            second = second->next;
+            else
+            {
+                ptr[index++] = *n;
+                ++n;
+            }
+            // ++n;
         }
-        second = headB;
-        first = first->next;
+        if (!find)
+        {
+            ptr[index++] = (x+'0');
+        }
+        ptr[index] = '\0';
     }
-    return NULL;
+    else
+    {
+        int index = 0;
+        bool find = false;
+        while (*n != '\0')
+        {
+            // printf("[%c]\n", *n);
+            if (find == false && *n < (x + '0'))
+            {
+                ptr[index++] = (x+'0');
+                find = true;
+            }
+            else
+            {
+                ptr[index++] = *n;
+                ++n;
+            }
+            // ++n;
+        }
+        if (!find)
+        {
+            ptr[index++] = (x+'0');
+        }
+        ptr[index] = '\0';
+    }
+    return ptr;
 }
-
 
 int main(int argc, char *argv[])
 {
+
+    printf("\"-469975787943862651173569913153377\"\n"
+           "3\n");
     return EXIT_SUCCESS;
 }
