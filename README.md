@@ -32,6 +32,7 @@ LeetCode刷题思路分析
 |[86. 分隔链表](https://github.com/chensongpoixs/cleet_code/tree/master/0086.PartitionList "86. 分隔链表")|2021-01-03|双指针,链表|Medium|||
 |[134. 加油站](https://github.com/chensongpoixs/cleet_code/tree/master/0134.Gas_Station "134. 加油站")|2020-11-18|这到题目需要数学公式推理|Medium|||
 |[148. 排序链表](https://github.com/chensongpoixs/cleet_code/tree/master/0148.Sort_List "148. 排序链表")|2020-11-21|归并排序(时间复杂度O(N*logN))|Medium|排序问题||
+|[160. 相交链表](https://github.com/chensongpoixs/cleet_code/tree/master/0160.IntersectionofTwoLinkedLists "160. 相交链表")|2021-06-04|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable")、[LinkedList](https://github.com/chensongpoixs/cleet_code/tree/master/LinkedList/README.md  "LinkedList")|Easy|||
 |[164. 最大间距](https://github.com/chensongpoixs/cleet_code/tree/master/0164.Maximum_Gap "164. 最大间距")|2020-11-25|排序算法|Hard|||
 |[208. 实现 Trie (前缀树)](https://github.com/chensongpoixs/cleet_code/tree/master/0208.trie_tree "208.实现 Trie (前缀树)")|2020-05-31|[Trie](https://github.com/chensongpoixs/cleet_code/tree/master/Trie/README.md  "Trie")|Medium|3, 208,211|
 |[211. 添加与搜索单词 - 数据结构设计](https://github.com/chensongpoixs/cleet_code/tree/master/0211.add_and_search_word "211. 添加与搜索单词 - 数据结构设计")|2020-06-02|[Trie](https://github.com/chensongpoixs/cleet_code/tree/master/Trie/README.md  "Trie"), 深度优先遍历算法（DFS）|Medium|3, 208, 211|

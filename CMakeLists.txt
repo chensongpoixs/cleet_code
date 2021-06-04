@@ -35,6 +35,7 @@ add_subdirectory(0069.Sqrtx)
 add_subdirectory(0086.PartitionList)
 add_subdirectory(0134.Gas_Station)
 add_subdirectory(0148.Sort_List)
+add_subdirectory(0160.IntersectionofTwoLinkedLists)
 add_subdirectory(0164.Maximum_Gap)
 add_subdirectory(0208.trie_tree)
 add_subdirectory(0211.add_and_search_word)
@@ -98,4 +99,5 @@ add_subdirectory(Interviewquestions17.21.Volume_of_Histogram_LCCI)
 
 
 add_subdirectory(cradix_tree)
+add_subdirectory(KMP)
 

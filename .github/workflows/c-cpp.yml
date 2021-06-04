@@ -99,7 +99,9 @@ jobs:
 
     - name: 0148.排序链表
       run: pwd && cd bin && sudo ./0148.Sort_List 4 19 14 5 -3 1 8 5 11 15  -3
-      
+
+    - name: 0160. 相交链表
+      run: pwd && cd bin && sudo ./0160.IntersectionofTwoLinkedLists
       
     - name: 0164. 最大间距
       run: pwd && cd bin && sudo ./0164.Maximum_Gap
@@ -294,7 +296,8 @@ jobs:
     - name: 面试题17.21.直方图的水量
       run: pwd && cd bin && sudo ./Interviewquestions17.21.Volume_of_Histogram_LCCI
 
-
+    - name: KMP算法
+      run: pwd && cd bin && sudo ./kmp
 
 
 
