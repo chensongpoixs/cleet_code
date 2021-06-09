@@ -1,4 +1,4 @@
-project(9.palindrome_number)
+project(0009.palindrome_number)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

@@ -1,4 +1,4 @@
-project(10.regular_expression_matching)
+project(0010.regular_expression_matching)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

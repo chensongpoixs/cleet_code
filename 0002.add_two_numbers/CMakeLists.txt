@@ -1,4 +1,4 @@
-project(2.add_two_numbers)
+project(0002.add_two_numbers)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

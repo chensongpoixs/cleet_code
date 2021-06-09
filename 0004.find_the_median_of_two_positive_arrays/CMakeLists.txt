@@ -1,4 +1,4 @@
-project(4.find_the_median_of_two_positive_arrays)
+project(0004.find_the_median_of_two_positive_arrays)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

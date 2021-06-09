@@ -1,4 +1,4 @@
-project(5.longest_palindromic_substring)
+project(0005.longest_palindromic_substring)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

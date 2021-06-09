@@ -13,36 +13,36 @@ jobs:
     - name: build
       run: mkdir -p linux_build && cd linux_build && cmake .. && make -j 4
 
-    - name: 1.sum_of_two_numbers
-      run: pwd && cd bin && sudo ./1.sum_of_two_numbers 
+    - name: 0001.sum_of_two_numbers
+      run: pwd && cd bin && sudo ./0001.sum_of_two_numbers
     
-    - name: 2.add_two_numbers
-      run: pwd && cd bin && sudo ./2.add_two_numbers 34  54
+    - name: 0002.add_two_numbers
+      run: pwd && cd bin && sudo ./0002.add_two_numbers 34  54
     
-    - name: 3.longest_substring_without_repeating_characters
-      run: pwd && cd bin && sudo ./3.longest_substring_without_repeating_characters  dsfds
+    - name: 0003.longest_substring_without_repeating_characters
+      run: pwd && cd bin && sudo ./0003.longest_substring_without_repeating_characters  dsfds
       
-    - name: 4.find_the_median_of_two_positive_arrays
-      run: pwd && cd bin && sudo ./4.find_the_median_of_two_positive_arrays
+    - name: 0004.find_the_median_of_two_positive_arrays
+      run: pwd && cd bin && sudo ./0004.find_the_median_of_two_positive_arrays
       
-    - name: 5.longest_palindromic_substring
-      run: pwd && cd bin && sudo ./5.longest_palindromic_substring
+    - name: 0005.longest_palindromic_substring
+      run: pwd && cd bin && sudo ./0005.longest_palindromic_substring
       
-    - name: 6.zigzag_conversion
-      run: pwd && cd bin && sudo ./6.zigzag_conversion
+    - name: 0006.zigzag_conversion
+      run: pwd && cd bin && sudo ./0006.zigzag_conversion
       
-    - name: 7.reverse_integer
-      run: pwd && cd bin && sudo ./7.reverse_integer
+    - name: 0007.reverse_integer
+      run: pwd && cd bin && sudo ./0007.reverse_integer
       
-    - name: 8.string_to_integer
-      run: pwd && cd bin && sudo ./8.string_to_integer
+    - name: 0008.string_to_integer
+      run: pwd && cd bin && sudo ./0008.string_to_integer
       
       
-    - name: 9.palindrome_number
-      run: pwd && cd bin && sudo ./9.palindrome_number
+    - name: 0009.palindrome_number
+      run: pwd && cd bin && sudo ./0009.palindrome_number
       
-    - name: 10.regular_expression_matching
-      run: pwd && cd bin && sudo ./10.regular_expression_matching
+    - name: 0010.regular_expression_matching
+      run: pwd && cd bin && sudo ./0010.regular_expression_matching
 
     - name: 0011.盛最多水的容器
       run: pwd && cd bin && sudo ./0011.container_with_most_water 1 8 6 2 5 4 8 3 7

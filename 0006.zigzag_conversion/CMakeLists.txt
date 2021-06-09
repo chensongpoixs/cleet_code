@@ -1,4 +1,4 @@
-project(6.zigzag_conversion)
+project(0006.zigzag_conversion)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

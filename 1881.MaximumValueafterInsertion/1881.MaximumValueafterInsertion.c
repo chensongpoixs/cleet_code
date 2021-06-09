@@ -90,5 +90,20 @@ int main(int argc, char *argv[])
 
     printf("\"-469975787943862651173569913153377\"\n"
            "3\n");
+
+    char *p = "-469975787943862651173569913153377";
+    int x = 3;
+    char *ret = maxValue(p, x);
+    if (!ret)
+    {
+        printf("error !!!\n");
+        return -1;
+    }
+    printf("[%s]\n", ret);
+    if (ret)
+    {
+        free(ret);
+        ret = NULL;
+    }
     return EXIT_SUCCESS;
 }

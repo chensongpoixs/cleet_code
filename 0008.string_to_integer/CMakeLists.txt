@@ -1,4 +1,4 @@
-project(8.string_to_integer)
+project(0008.string_to_integer)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

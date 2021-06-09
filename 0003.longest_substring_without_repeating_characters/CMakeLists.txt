@@ -1,4 +1,4 @@
-project(3.longest_substring_without_repeating_characters)
+project(0003.longest_substring_without_repeating_characters)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 MESSAGE(STATUS "#########################")
 MESSAGE(STATUS ${PROJECT_NAME})

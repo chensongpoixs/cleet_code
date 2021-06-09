@@ -1,8 +1,9 @@
 
 
-#include <iostream>
+
 #include <string>
 #include <vector>
+#include <iostream>
 
 /**
  *
@@ -12,7 +13,7 @@
  */
 int kmp(std::string S, std::string T)
 {
-    std::string s = " " + S + "#" + T;
+    std::string s = " " + S + "#" + T; // [ chenli#chensongldskfjsdlkfchenlijdchensyangylsdkfjlds]
     ::printf("[%s][%d][%s]\n", __FUNCTION__, __LINE__, s.c_str());
     std::vector<int> next(s.size());
     for(int i = 1; i < s.size(); ++i)
@@ -21,7 +22,7 @@ int kmp(std::string S, std::string T)
 //         show(next);
         for(int len = next[i]; ; len = next[len])
         {
-            printf("[i = %d][len = %d]\n", i, len);
+//            printf("[i = %d][len = %d]\n", i, len);
             if(s[len + 1] == s[i + 1])
             {
                 next[i + 1] = len + 1;
@@ -52,8 +53,8 @@ int kmp(std::string S, std::string T)
 
 int main(int argc, char *argv[])
 {
-    std::string s = "chensongldskfjsdlkfchenlijdchensyangylsdkfjlds";
-    std::string p = "chenli";
+    std::string s = "chenchenlisongldschenlikfjsdlkfchenlijdchensyangchenliylsdkfjlchenlidschenli";
+    std::string p = "c";
     int count = kmp(p, s);
     printf("[s = %s][p = %s][count = %d]\n", s.c_str(), p.c_str(), count);
     return EXIT_SUCCESS;
