@@ -70,6 +70,7 @@ add_subdirectory(0740.DeleteandEarn)
 add_subdirectory(0830.PositionsofLargeGroups)
 add_subdirectory(0867.transpose_matrix)
 add_subdirectory(0922.Sort_Array_By_Parity_II)
+add_subdirectory(0930.BinarySubarraysWithSum)
 add_subdirectory(0977.SquaresofaSorted_Array)
 add_subdirectory(0990.SatisfiabilityofEqualityEquations)
 add_subdirectory(1011.CapacityToShipPackagesWithinDDays)
@@ -101,4 +102,5 @@ add_subdirectory(Interviewquestions17.21.Volume_of_Histogram_LCCI)
 
 add_subdirectory(cradix_tree)
 add_subdirectory(KMP)
+#add_subdirectory(mac)
 

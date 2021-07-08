@@ -215,9 +215,13 @@ jobs:
     - name: 0922.按奇偶排序数组II
       run: pwd && cd bin && sudo ./0922.Sort_Array_By_Parity_II 4 2 5 7
 
+    - name: 0922.按奇偶排序数组II
+      run: pwd && cd bin && sudo ./0922.Sort_Array_By_Parity_II 4 2 5 7
 
-    - name: 0977.有序数组的平方
-      run: pwd && cd bin && sudo ./0977.SquaresofaSorted_Array
+
+
+    - name: 0930. 和相同的二元子数组
+      run: pwd && cd bin && sudo ./0930.BinarySubarraysWithSum
 
     - name: 0990. 等式方程的可满足性
       run: pwd && cd bin && sudo ./0990.SatisfiabilityofEqualityEquations
@@ -301,6 +305,7 @@ jobs:
 
     - name: KMP算法
       run: pwd && cd bin && sudo ./kmp
+
 
 
 

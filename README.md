@@ -62,6 +62,7 @@ LeetCode刷题思路分析
 |[738. 单调递增的数字](https://github.com/chensongpoixs/cleet_code/tree/master/0738.MonotoneIncreasingDigitse "738. 单调递增的数字")|2020-12-14|位运算|Medium|||
 |[740. 删除并获得点数](https://github.com/chensongpoixs/cleet_code/tree/master/0740.DeleteandEarn "740. 删除并获得点数")|2021-05-05|[DynamicProgramming](https://github.com/chensongpoixs/cleet_code/tree/master/DynamicProgramming/README.md  "DynamicProgramming")|Medium|||
 |[830. 较大分组的位置](https://github.com/chensongpoixs/cleet_code/tree/master/0830.PositionsofLargeGroups "830. 较大分组的位置")|2021-01-05|数组|Easy|||
+|[930. 和相同的二元子数组](https://github.com/chensongpoixs/cleet_code/tree/master/0930.BinarySubarraysWithSum "930. 和相同的二元子数组")|2021-07-08|[Array](https://github.com/chensongpoixs/cleet_code/tree/master/Array/README.md  "Array")、[PrefixSum](https://github.com/chensongpoixs/cleet_code/tree/master/PrefixSum/README.md  "PrefixSum")、[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable")|Medium|[5642. 大餐计数](https://github.com/chensongpoixs/cleet_code/tree/master/5642.CountGoodMeals "5642. 大餐计数")、[2. 两数相加](https://github.com/chensongpoixs/cleet_code/tree/master/0002.add_two_numbers "2. 两数相加")||
 |[990. 等式方程的可满足性](https://github.com/chensongpoixs/cleet_code/tree/master/0990.SatisfiabilityofEqualityEquations "990. 等式方程的可满足性")|2021-01-13|并查集|Medium|||
 |[977.有序数组的平方](https://github.com/chensongpoixs/cleet_code/tree/master "977.有序数组的平方")|2020-11-20|排序|Easy|||
 |[1011. 在 D 天内送达包裹的能力](https://github.com/chensongpoixs/cleet_code/tree/master/1011.CapacityToShipPackagesWithinDDays "1011. 在 D 天内送达包裹的能力")|2021-04-26|[Array](https://github.com/chensongpoixs/cleet_code/tree/master/Array/README.md  "Array"),[BinarySearch](https://github.com/chensongpoixs/cleet_code/tree/master/BinarySearch/README.md  "BinarySearch") |Hard||
@@ -81,7 +82,7 @@ LeetCode刷题思路分析
 |[1881. 插入后的最大值](https://github.com/chensongpoixs/cleet_code/tree/master/1881.MaximumValueafterInsertion "1881. 插入后的最大值")|2021-06-04|[Greedy](https://github.com/chensongpoixs/cleet_code/tree/master/Greedy/README.md  "Greedy") |Medium|||
 |[5243. 同积元组](https://github.com/chensongpoixs/cleet_code/tree/master/5243.TuplewithSameProduct "5243. 同积元组")|2021-01-17|[HashTable](https://github.com/chensongpoixs/cleet_code/tree/master/HashTable/README.md  "HashTable"), [Math](https://github.com/chensongpoixs/cleet_code/tree/master/Math/README.md  "Math") |Medium|||
 |[5630. 删除子数组的最大得分](https://github.com/chensongpoixs/cleet_code/tree/master/5630.MaximumErasureValue "5630. 删除子数组的最大得分")|2020-12-20|哈希， 前缀和 |Medium|||
-|[5642. 大餐计数](https://github.com/chensongpoixs/cleet_code/tree/master/5642.CountGoodMeals "5642. 大餐计数")|2021-01-03|哈希,2的幂|Medium|||
+|[5642. 大餐计数](https://github.com/chensongpoixs/cleet_code/tree/master/5642.CountGoodMeals "5642. 大餐计数")|2021-01-03|哈希,2的幂|Medium|[2. 两数相加](https://github.com/chensongpoixs/cleet_code/tree/master/0002.add_two_numbers "2. 两数相加")||
 |[面试题 17.07. 婴儿名字](https://github.com/chensongpoixs/cleet_code/tree/master/Interview17.07.BabyNamesLCCI "面试题 17.07. 婴儿名字")|2021-01-13|深度优先搜索,广度优先搜索,并查集|Medium|||
 |[面试题 17.10. 主要元素](https://github.com/chensongpoixs/cleet_code/tree/master/Interviewquestions17.10.Find_Majority_Element_LCCI "面试题 17.10. 主要元素")|2020-11-18|选举问题大于2n+1, 摩尔投票法(redis中哨兵选举问题)|Easy|||
 |[面试题 17.21. 直方图的水量](https://github.com/chensongpoixs/cleet_code/tree/master/Interviewquestions17.21.Volume_of_Histogram_LCCI "面试题 17.21. 直方图的水量")|2020-11-14|有序链表|Hard||
@@ -98,6 +99,8 @@ LeetCode刷题思路分析
 [String](https://github.com/chensongpoixs/cleet_code/tree/master/String/README.md  "String")
 
 [Math](https://github.com/chensongpoixs/cleet_code/tree/master/Math/README.md  "Math")
+
+[PrefixSum](https://github.com/chensongpoixs/cleet_code/tree/master/PrefixSum/README.md  "PrefixSum")
 
 [Tree](https://github.com/chensongpoixs/cleet_code/tree/master/Tree/README.md  "Tree")
 
