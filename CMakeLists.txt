@@ -93,7 +93,7 @@ add_subdirectory(1881.MaximumValueafterInsertion)
 add_subdirectory(5243.TuplewithSameProduct)
 add_subdirectory(5630.MaximumErasureValue)
 add_subdirectory(5642.CountGoodMeals)
-
+add_subdirectory(5187.MinimumGardenPerimetertoCollectEnoughApples)
 add_subdirectory(Interview17.07.BabyNamesLCCI)
 add_subdirectory(Interviewquestions17.10.Find_Majority_Element_LCCI)
 add_subdirectory(Interviewquestions17.21.Volume_of_Histogram_LCCI)

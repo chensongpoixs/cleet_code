@@ -293,6 +293,9 @@ jobs:
     - name: 5642. 大餐计数
       run: pwd && cd bin && sudo ./5642.CountGoodMeals 4567 83 34 34 34 343 232 232 232 232 232 23
       
+    - name: 5187. 收集足够苹果的最小花园周长
+      run: pwd && cd bin && sudo ./5187.MinimumGardenPerimetertoCollectEnoughApples
+
 
     - name: 面试题 17.07. 婴儿名字
       run: pwd && cd bin && sudo ./Interview17.07.BabyNamesLCCI
